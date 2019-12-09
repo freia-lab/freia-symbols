@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>rf-switch</name>
+  <width>20</width>
+  <height>30</height>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <width>20</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>IntlkF-cRio1:Intlk:sTriggered-$(N)</pv_name>
+      <height>30</height>
+      <off_color>
+        <color name="OK" red="61" green="216" blue="61">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="STOP" red="222" green="33" blue="22">
+        </color>
+      </on_color>
+      <line_color>
+        <color red="0" green="0" blue="0" alpha="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol</name>
+      <pv_name>IntlkF-cRio1:Intlk:sTriggered-$(N)</pv_name>
+      <symbols>
+        <symbol>../electronics/JS Disconnecting Switch On.svg</symbol>
+        <symbol>../electronics/JS Disconnecting Switch Off.svg</symbol>
+      </symbols>
+      <width>20</width>
+      <height>30</height>
+    </widget>
+  </widget>
+</display>
