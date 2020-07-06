@@ -191,11 +191,11 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_14</name>
-      <text>Man. Set.Pos RB</text>
+      <text>Auto Set.Pos RB</text>
       <x>10</x>
       <y>150</y>
       <width>127</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Code Pro" style="BOLD" size="14.0">
         </font>
@@ -308,6 +308,7 @@ else:
           <pv_name>CstatH-Ctrl:opMode:sLocal</pv_name>
         </rule>
       </rules>
+      <tooltip>$(actions)</tooltip>
     </widget>
   </widget>
 </display>
