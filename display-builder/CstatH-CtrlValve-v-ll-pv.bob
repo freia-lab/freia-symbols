@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>cvalve-v-ll</name>
+  <width>55</width>
+  <height>50</height>
+  <background_color>
+    <color red="0" green="0" blue="0" alpha="0">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <widget type="group" version="2.0.0">
+    <name>c-valve-v</name>
+    <width>55</width>
+    <height>50</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_9</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <symbols>
+        <symbol>../cryogenics/valve_control_RED_v.svg</symbol>
+        <symbol>../cryogenics/valve_control_GREEN_v.svg</symbol>
+      </symbols>
+      <x>23</x>
+      <y>3</y>
+      <width>26</width>
+      <height>40</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_10</name>
+      <text>$(V)</text>
+      <y>32</y>
+      <width>45</width>
+      <height>10</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="MINOR" red="252" green="242" blue="17">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <wrap_words>false</wrap_words>
+      <rules>
+        <rule name="Background" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="MINOR" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
+        </rule>
+        <rule name="Transparency" prop_id="transparent" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <y>16</y>
+      <width>30</width>
+      <height>14</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>true</transparent>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_9</name>
+      <actions>
+        <action type="open_display">
+          <file>CstatH-Cvalve-cmdPanel.bob</file>
+          <macros>
+            <Cvalve>$(P)-$(S):$(V)</Cvalve>
+          </macros>
+          <target>standalone</target>
+        </action>
+      </actions>
+      <text></text>
+      <x>13</x>
+      <width>35</width>
+      <height>50</height>
+      <background_color>
+        <color red="236" green="236" blue="236" alpha="0">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <tooltip>$(V)</tooltip>
+    </widget>
+  </widget>
+</display>
