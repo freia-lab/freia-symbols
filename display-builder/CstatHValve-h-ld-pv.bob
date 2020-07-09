@@ -65,7 +65,7 @@
       <name>Action Button_8</name>
       <actions>
         <action type="open_display">
-          <file>../../m-epics-ioc-gersemi-freia/opi/CmdPanels/CstatH-Valve.bob</file>
+          <file>CmdPanels/CstatH-Valve.bob</file>
           <macros>
             <v_name>$(P)-$(S):$(V)</v_name>
           </macros>

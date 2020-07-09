@@ -98,7 +98,7 @@
       <name>Action Button_28</name>
       <actions>
         <action type="open_display">
-          <file>../../m-epics-ioc-gersemi-freia/opi/CmdPanels/CstatV-Heater2.bob</file>
+          <file>CmdPanels/CstatV-Heater2.bob</file>
           <macros>
             <Heater2>$(P)-$(S):$(V)</Heater2>
           </macros>

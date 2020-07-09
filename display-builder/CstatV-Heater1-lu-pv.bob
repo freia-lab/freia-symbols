@@ -35,7 +35,7 @@
       <x>29</x>
       <y>14</y>
       <width>23</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -97,7 +97,7 @@
       <name>Action Button_28</name>
       <actions>
         <action type="open_display">
-          <file>../../m-epics-ioc-gersemi-freia/opi/CmdPanels/CstatV-Heater1.bob</file>
+          <file>CmdPanels/CstatV-Heater1.bob</file>
           <macros>
             <Heater1>$(P)-$(S):$(V)</Heater1>
           </macros>
