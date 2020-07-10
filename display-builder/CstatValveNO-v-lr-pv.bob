@@ -72,7 +72,7 @@
       <name>Action Button_7</name>
       <actions>
         <action type="open_display">
-          <file>../../m-epics-ioc-gersemi-freia/opi/CmdPanels/CstatV-ValveNO.bob</file>
+          <file>CmdPanels/CstatV-ValveNO.bob</file>
           <macros>
             <v_name>$(P)-$(S):$(V)</v_name>
           </macros>

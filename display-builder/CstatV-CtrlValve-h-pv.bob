@@ -99,7 +99,7 @@
       <name>Action Button_9</name>
       <actions>
         <action type="open_display">
-          <file>../../m-epics-ioc-gersemi-freia/opi/CmdPanels/CstatV-Cvalve.bob</file>
+          <file>CmdPanels/CstatV-Cvalve.bob</file>
           <macros>
             <Cvalve>$(P)-$(S):$(V)</Cvalve>
           </macros>

@@ -65,7 +65,7 @@
     <name>Action Button_8</name>
     <actions>
       <action type="open_display">
-        <file>../../m-epics-ioc-gersemi-freia/opi/CmdPanels/CstatV-Evalve.bob</file>
+        <file>CmdPanels/CstatV-Evalve.bob</file>
         <macros>
           <Evalve>$(P)-$(S):$(V)</Evalve>
         </macros>

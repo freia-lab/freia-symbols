@@ -55,26 +55,6 @@
         </rule>
       </rules>
     </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_28</name>
-      <actions>
-        <action type="open_display">
-          <file>../../m-epics-ioc-gersemi-freia/opi/CmdPanels/CstatV-Heater1.bob</file>
-          <macros>
-            <Heater1>$(P)-$(S):$(V)</Heater1>
-          </macros>
-          <target>standalone</target>
-          <description>Heater 1 Control</description>
-        </action>
-      </actions>
-      <text></text>
-      <x>30</x>
-      <y>33</y>
-      <width>40</width>
-      <height>40</height>
-      <transparent>true</transparent>
-      <tooltip>$(P)-$(S):$(V)</tooltip>
-    </widget>
     <widget type="label" version="2.0.0">
       <name>Label_10</name>
       <text>$(V)</text>
@@ -113,6 +93,26 @@
           <pv_name>$(P)-$(S):$(V):sAuto</pv_name>
         </rule>
       </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_28</name>
+      <actions>
+        <action type="open_display">
+          <file>CmdPanels/CstatV-Heater1.bob</file>
+          <macros>
+            <Heater1>$(P)-$(S):$(V)</Heater1>
+          </macros>
+          <target>standalone</target>
+          <description>Heater 1 Control</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>30</x>
+      <y>33</y>
+      <width>40</width>
+      <height>40</height>
+      <transparent>true</transparent>
+      <tooltip>$(P)-$(S):$(V)</tooltip>
     </widget>
   </widget>
 </display>
