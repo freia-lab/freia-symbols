@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>CstatH-MKS</name>
+  <width>76</width>
+  <height>37</height>
+  <background_color>
+    <color red="0" green="0" blue="0" alpha="0">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <widget type="group" version="2.0.0">
+    <name>c-valve-h</name>
+    <width>75</width>
+    <height>37</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <y>1</y>
+      <width>74</width>
+      <height>34</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="MINOR" red="252" green="242" blue="17">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="Transparent" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 != 0">
+            <value>false</value>
+          </exp>
+          <pv_name>CstatH-MKS:$(B):sAuto</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_28</name>
+      <actions>
+        <action type="open_display">
+          <file>CmdPanels/CstatH-MKS.bob</file>
+          <macros>
+            <MKS>CstatH-MKS:$(B)</MKS>
+            <MKSname>$(B)</MKSname>
+          </macros>
+          <target>standalone</target>
+          <description>MKS Control</description>
+        </action>
+      </actions>
+      <text>$(B)</text>
+      <x>2</x>
+      <y>3</y>
+      <width>70</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <tooltip>CstatH-MKS:$(B)</tooltip>
+    </widget>
+  </widget>
+</display>

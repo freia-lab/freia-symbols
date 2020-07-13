@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>$(PID)</name>
+  <name>CstatH-PID</name>
   <width>300</width>
   <height>280</height>
   <background_color>
@@ -13,9 +13,9 @@
   <widget type="label" version="2.0.0">
     <name>Label Template</name>
     <text>$(PID)</text>
-    <x>50</x>
+    <x>22</x>
     <y>1</y>
-    <width>201</width>
+    <width>250</width>
     <height>32</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="25.0">
@@ -67,7 +67,7 @@
         <exp bool_exp="pv0==0">
           <value>false</value>
         </exp>
-        <pv_name>CstatV-Ctrl:opMode:sLocal</pv_name>
+        <pv_name>CstatH-Ctrl:opMode:sLocal</pv_name>
       </rule>
     </rules>
     <border_color>
