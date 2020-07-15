@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>cvalve-h</name>
-  <width>110</width>
+  <name>Heater1-flip-ll</name>
+  <width>130</width>
   <height>95</height>
   <background_color>
     <color red="0" green="0" blue="0" alpha="0">
@@ -15,7 +15,7 @@
       <symbol>../cryogenics/HX_General_BLACK.svg</symbol>
       <symbol>../cryogenics/HX_General_GREEN.svg</symbol>
     </symbols>
-    <x>13</x>
+    <x>29</x>
     <y>7</y>
     <width>92</width>
     <height>75</height>
@@ -24,7 +24,7 @@
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle</name>
-    <x>36</x>
+    <x>52</x>
     <y>23</y>
     <width>44</width>
     <height>44</height>
@@ -50,8 +50,9 @@
   <widget type="label" version="2.0.0">
     <name>Label_10</name>
     <text>$(V)$(MULTI_HTR)</text>
+    <x>10</x>
     <y>37</y>
-    <width>23</width>
+    <width>45</width>
     <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
@@ -97,7 +98,7 @@
       </action>
     </actions>
     <text></text>
-    <x>39</x>
+    <x>55</x>
     <y>26</y>
     <width>40</width>
     <height>40</height>

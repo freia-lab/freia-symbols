@@ -60,7 +60,7 @@
       <text>$(V)$(MULTI_HTR)</text>
       <x>5</x>
       <y>71</y>
-      <width>56</width>
+      <width>107</width>
       <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
@@ -74,6 +74,7 @@
         <color name="MINOR" red="252" green="242" blue="17">
         </color>
       </background_color>
+      <auto_size>true</auto_size>
       <wrap_words>false</wrap_words>
       <rules>
         <rule name="Background" prop_id="background_color" out_exp="false">

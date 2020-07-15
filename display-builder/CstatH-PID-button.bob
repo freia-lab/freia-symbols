@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>CstatH-PID</name>
-  <width>76</width>
+  <width>66</width>
   <height>37</height>
   <background_color>
     <color red="0" green="0" blue="0" alpha="0">
@@ -10,7 +10,7 @@
   <grid_visible>false</grid_visible>
   <widget type="group" version="2.0.0">
     <name>c-valve-h</name>
-    <width>75</width>
+    <width>65</width>
     <height>37</height>
     <style>3</style>
     <transparent>true</transparent>
@@ -19,7 +19,7 @@
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle</name>
       <y>1</y>
-      <width>74</width>
+      <width>64</width>
       <height>34</height>
       <line_width>2</line_width>
       <line_color>
@@ -55,7 +55,7 @@
       <text>$(L)</text>
       <x>2</x>
       <y>3</y>
-      <width>70</width>
+      <width>60</width>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>

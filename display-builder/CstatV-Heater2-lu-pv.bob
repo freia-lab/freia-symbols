@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>cvalve-h</name>
+  <name>Heater2-flip-lu</name>
   <width>95</width>
   <height>95</height>
   <background_color>
@@ -30,12 +30,11 @@
       <tooltip></tooltip>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>Label_10</name>
       <text>$(V)$(MULTI_HTR)</text>
       <x>29</x>
       <y>14</y>
-      <width>55</width>
-      <height>18</height>
+      <width>107</width>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
