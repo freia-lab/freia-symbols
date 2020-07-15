@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>$(Cvalve)</name>
-  <width>300</width>
-  <height>300</height>
+  <width>450</width>
+  <height>480</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -13,7 +13,8 @@
   <widget type="label" version="2.0.0">
     <name>$(Cvalve)</name>
     <text>$(Cvalve)</text>
-    <y>3</y>
+    <x>33</x>
+    <y>4</y>
     <width>245</width>
     <height>23</height>
     <font>
@@ -54,7 +55,7 @@
     </actions>
     <pv_name>$(Cvalve):sAuto</pv_name>
     <text>Ctrl Mode</text>
-    <x>88</x>
+    <x>117</x>
     <y>76</y>
     <height>26</height>
     <font>
@@ -69,8 +70,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_5</name>
     <text>Controlled from WinCC! </text>
-    <x>26</x>
-    <y>25</y>
+    <x>32</x>
+    <y>28</y>
     <width>185</width>
     <height>24</height>
     <font>
@@ -134,7 +135,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template</name>
     <pv_name>$(Cvalve):cSetV</pv_name>
-    <x>171</x>
+    <x>220</x>
     <y>124</y>
     <width>44</width>
     <height>17</height>
@@ -235,7 +236,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_1</name>
     <pv_name>$(Cvalve):sRdV</pv_name>
-    <x>171</x>
+    <x>220</x>
     <y>155</y>
     <width>44</width>
     <height>17</height>
@@ -265,7 +266,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_2</name>
     <pv_name>$(Cvalve):sAutoRdV</pv_name>
-    <x>171</x>
+    <x>220</x>
     <y>186</y>
     <width>44</width>
     <height>17</height>
@@ -296,7 +297,7 @@
     <name>Label</name>
     <text>Auto</text>
     <x>32</x>
-    <y>52</y>
+    <y>57</y>
     <width>45</width>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -308,7 +309,7 @@
     <pv_name>$(Cvalve):sAuto</pv_name>
     <bit>0</bit>
     <x>32</x>
-    <y>72</y>
+    <y>77</y>
     <width>35</width>
     <height>35</height>
     <off_label>OFF</off_label>

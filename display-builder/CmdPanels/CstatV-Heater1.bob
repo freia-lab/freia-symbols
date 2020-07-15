@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>$(Heater1)</name>
-  <width>320</width>
-  <height>345</height>
+  <width>450</width>
+  <height>450</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -13,7 +13,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template</name>
     <text>$(Heater1)</text>
-    <y>5</y>
+    <x>50</x>
+    <y>44</y>
     <width>305</width>
     <height>23</height>
     <font>
@@ -54,8 +55,8 @@
     </actions>
     <pv_name>$(Heater1):sAuto</pv_name>
     <text>Ctrl Mode</text>
-    <x>53</x>
-    <y>82</y>
+    <x>97</x>
+    <y>127</y>
     <height>26</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -69,10 +70,10 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_5</name>
     <text>Controlled from WinCC! </text>
-    <x>62</x>
-    <y>27</y>
+    <x>106</x>
+    <y>72</y>
     <width>175</width>
-    <height>23</height>
+    <height>22</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="17.0">
       </font>
@@ -106,8 +107,8 @@
     <name>LED Template</name>
     <pv_name>$(Heater1):sTsw</pv_name>
     <bit>0</bit>
-    <x>164</x>
-    <y>139</y>
+    <x>208</x>
+    <y>184</y>
     <off_color>
       <color name="LED-GREEN-ON" red="70" green="255" blue="70">
       </color>
@@ -130,8 +131,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_6</name>
     <text>Thermoswitch</text>
-    <x>12</x>
-    <y>136</y>
+    <x>56</x>
+    <y>181</y>
     <width>97</width>
     <height>21</height>
     <foreground_color>
@@ -154,10 +155,10 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_7</name>
     <text>Lower limit [K]:</text>
-    <x>17</x>
-    <y>258</y>
+    <x>61</x>
+    <y>334</y>
     <width>89</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -182,8 +183,8 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template</name>
     <pv_name>$(Heater1):cLL</pv_name>
-    <x>142</x>
-    <y>257</y>
+    <x>186</x>
+    <y>333</y>
     <width>56</width>
     <height>21</height>
     <font>
@@ -218,8 +219,8 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_1</name>
     <pv_name>$(Heater1):cHL</pv_name>
-    <x>142</x>
-    <y>227</y>
+    <x>186</x>
+    <y>303</y>
     <width>56</width>
     <height>21</height>
     <font>
@@ -261,8 +262,8 @@
       </action>
     </actions>
     <pv_name>$(Heater1):cmdSet</pv_name>
-    <x>167</x>
-    <y>80</y>
+    <x>211</x>
+    <y>125</y>
     <width>70</width>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -291,8 +292,8 @@
       </action>
     </actions>
     <pv_name>$(Heater1):cmdRst</pv_name>
-    <x>243</x>
-    <y>80</y>
+    <x>287</x>
+    <y>125</y>
     <width>70</width>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -315,8 +316,8 @@
     <name>LED Template_1</name>
     <pv_name>$(Heater1):sCmd</pv_name>
     <bit>0</bit>
-    <x>164</x>
-    <y>162</y>
+    <x>208</x>
+    <y>207</y>
     <off_color>
       <color name="RED" red="252" green="13" blue="27">
       </color>
@@ -339,8 +340,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_8</name>
     <text>Htr Cmd On</text>
-    <x>12</x>
-    <y>159</y>
+    <x>56</x>
+    <y>204</y>
     <width>79</width>
     <height>21</height>
     <foreground_color>
@@ -363,10 +364,10 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_9</name>
     <text>Upper limit [K]:</text>
-    <x>17</x>
-    <y>228</y>
+    <x>61</x>
+    <y>304</y>
     <width>89</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -391,8 +392,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_1</name>
     <pv_name>$(Heater1):sHL</pv_name>
-    <x>222</x>
-    <y>229</y>
+    <x>266</x>
+    <y>305</y>
     <width>56</width>
     <height>17</height>
     <font>
@@ -420,8 +421,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_2</name>
     <pv_name>$(Heater1):sLL</pv_name>
-    <x>222</x>
-    <y>259</y>
+    <x>266</x>
+    <y>335</y>
     <width>56</width>
     <height>17</height>
     <font>
@@ -450,8 +451,8 @@
     <name>LED Template_2</name>
     <pv_name>$(Heater1):sCmdAuto</pv_name>
     <bit>0</bit>
-    <x>164</x>
-    <y>187</y>
+    <x>208</x>
+    <y>232</y>
     <off_color>
       <color name="RED" red="252" green="13" blue="27">
       </color>
@@ -474,8 +475,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_10</name>
     <text>Htr CmdAuto On</text>
-    <x>12</x>
-    <y>184</y>
+    <x>56</x>
+    <y>229</y>
     <width>110</width>
     <height>21</height>
     <foreground_color>
@@ -497,8 +498,8 @@
   </widget>
   <widget type="group" version="2.0.0">
     <name>Grouping Container</name>
-    <x>220</x>
-    <y>136</y>
+    <x>293</x>
+    <y>182</y>
     <width>59</width>
     <height>72</height>
     <style>2</style>
@@ -577,6 +578,7 @@ $(pv_value)</tooltip>
       <text>Heater</text>
       <x>8</x>
       <width>43</width>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="15.0">
         </font>
@@ -605,6 +607,7 @@ $(pv_value)</tooltip>
       <x>3</x>
       <y>15</y>
       <width>53</width>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="15.0">
         </font>
@@ -631,8 +634,8 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <text>Auto</text>
-    <x>9</x>
-    <y>59</y>
+    <x>41</x>
+    <y>104</y>
     <width>45</width>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -643,8 +646,8 @@ $(pv_value)</tooltip>
     <name>LED Template_3</name>
     <pv_name>$(Heater1):sAuto</pv_name>
     <bit>0</bit>
-    <x>7</x>
-    <y>79</y>
+    <x>39</x>
+    <y>124</y>
     <width>35</width>
     <height>35</height>
     <off_label>OFF</off_label>

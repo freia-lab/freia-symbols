@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>$(MKS)</name>
-  <width>420</width>
-  <height>440</height>
+  <width>430</width>
+  <height>470</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -440,7 +440,7 @@ $(pv_value)</tooltip>
     <x>113</x>
     <y>172</y>
     <width>28</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -468,7 +468,7 @@ $(pv_value)</tooltip>
     <x>192</x>
     <y>172</y>
     <width>25</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>

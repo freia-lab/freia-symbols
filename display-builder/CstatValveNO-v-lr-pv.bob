@@ -26,8 +26,8 @@
       <name>Symbol_7</name>
       <pv_name>$(P)-$(S):$(V):sOn</pv_name>
       <symbols>
-        <symbol>../cryogenics/valve_general_closed_RED.svg</symbol>
         <symbol>../cryogenics/valve_general_GREEN.svg</symbol>
+        <symbol>../cryogenics/valve_general_closed_RED.svg</symbol>
       </symbols>
       <y>3</y>
       <width>20</width>

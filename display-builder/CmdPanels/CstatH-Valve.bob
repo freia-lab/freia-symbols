@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>V</name>
+  <name>$(v_name)</name>
   <width>460</width>
-  <height>300</height>
+  <height>470</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>

@@ -31,10 +31,10 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_10</name>
-      <text>$(V)</text>
+      <text>$(V)$(MULTI_HTR)</text>
       <x>29</x>
       <y>14</y>
-      <width>23</width>
+      <width>55</width>
       <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">

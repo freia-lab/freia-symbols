@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>$(v_name)</name>
-  <width>420</width>
-  <height>240</height>
+  <width>450</width>
+  <height>450</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -70,7 +70,7 @@
     <name>Text Update Template</name>
     <pv_name>$(v_name):sNO</pv_name>
     <x>11</x>
-    <y>192</y>
+    <y>111</y>
     <width>365</width>
     <height>17</height>
     <font>
@@ -98,7 +98,7 @@
     <pv_name>$(v_name):sOff</pv_name>
     <bit>0</bit>
     <x>140</x>
-    <y>145</y>
+    <y>190</y>
     <width>36</width>
     <height>36</height>
     <off_label>OFF</off_label>
@@ -131,7 +131,7 @@
     <pv_name>$(v_name):sOn</pv_name>
     <bit>0</bit>
     <x>140</x>
-    <y>106</y>
+    <y>151</y>
     <width>36</width>
     <height>36</height>
     <off_label>OFF</off_label>
@@ -163,41 +163,8 @@
     <name>LED Template_3</name>
     <pv_name>$(v_name):sCmd</pv_name>
     <bit>0</bit>
-    <x>340</x>
-    <y>106</y>
-    <width>36</width>
-    <height>36</height>
-    <off_label>OFF</off_label>
-    <off_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
-      </color>
-    </off_color>
-    <on_label>ON</on_label>
-    <on_color>
-      <color name="LED-BLUE-ON" red="81" green="232" blue="255">
-      </color>
-    </on_color>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <line_color>
-      <color name="GRAY" red="169" green="169" blue="169">
-      </color>
-    </line_color>
-    <actions>
-    </actions>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED Template_4</name>
-    <pv_name>$(v_name):sSim</pv_name>
-    <bit>0</bit>
-    <x>340</x>
-    <y>145</y>
+    <x>382</x>
+    <y>151</y>
     <width>36</width>
     <height>36</height>
     <off_label>OFF</off_label>
@@ -251,7 +218,7 @@
     <name>Label Template_1</name>
     <text>Pos. Open Switch:</text>
     <x>9</x>
-    <y>153</y>
+    <y>198</y>
     <width>106</width>
     <height>19</height>
     <font>
@@ -279,7 +246,7 @@
     <name>Label Template_2</name>
     <text>Pos. Closed Switch:</text>
     <x>10</x>
-    <y>114</y>
+    <y>159</y>
     <width>114</width>
     <height>19</height>
     <font>
@@ -305,39 +272,11 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_3</name>
-    <text>Actuation:</text>
-    <x>223</x>
-    <y>114</y>
-    <width>61</width>
+    <text>"Closed" Actuation:</text>
+    <x>210</x>
+    <y>159</y>
+    <width>115</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_4</name>
-    <text>Simulation mode:</text>
-    <x>223</x>
-    <y>153</y>
-    <width>105</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -365,7 +304,7 @@
     <x>94</x>
     <y>27</y>
     <width>185</width>
-    <height>24</height>
+    <height>23</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -509,5 +448,251 @@
     </line_color>
     <actions>
     </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_6</name>
+    <text>"Closed" actuation Auto:</text>
+    <x>208</x>
+    <y>201</y>
+    <width>145</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template_6</name>
+    <pv_name>$(v_name):sCmdAuto</pv_name>
+    <bit>0</bit>
+    <x>382</x>
+    <y>193</y>
+    <width>36</width>
+    <height>36</height>
+    <off_label>OFF</off_label>
+    <off_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </off_color>
+    <on_label>ON</on_label>
+    <on_color>
+      <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+      </color>
+    </on_color>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container</name>
+    <x>208</x>
+    <y>238</y>
+    <width>213</width>
+    <height>81</height>
+    <style>2</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_7</name>
+      <pv_name>$(v_name):sSim</pv_name>
+      <bit>0</bit>
+      <x>172</x>
+      <y>2</y>
+      <width>36</width>
+      <height>36</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_8</name>
+      <pv_name>$(v_name):sFlt</pv_name>
+      <bit>0</bit>
+      <x>172</x>
+      <y>40</y>
+      <width>36</width>
+      <height>36</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_7</name>
+      <text>Simulation mode:</text>
+      <x>2</x>
+      <y>10</y>
+      <width>105</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_8</name>
+      <text>Valve fault:</text>
+      <x>2</x>
+      <y>48</y>
+      <width>65</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button Template_3</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Sim. Off</description>
+      </action>
+    </actions>
+    <pv_name>$(v_name):cmdSimRst</pv_name>
+    <x>105</x>
+    <y>240</y>
+    <width>97</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button Template_4</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Sim. On</description>
+      </action>
+    </actions>
+    <pv_name>$(v_name):cmdSimSet</pv_name>
+    <x>4</x>
+    <y>240</y>
+    <width>96</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
   </widget>
 </display>

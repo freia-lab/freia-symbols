@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>CstatH-MKS</name>
+  <name>CstatV-PID-LED</name>
   <width>76</width>
   <height>37</height>
   <background_color>
@@ -10,7 +10,8 @@
   <grid_visible>false</grid_visible>
   <widget type="group" version="2.0.0">
     <name>c-valve-h</name>
-    <width>75</width>
+    <x>10</x>
+    <width>65</width>
     <height>37</height>
     <style>3</style>
     <transparent>true</transparent>
@@ -19,7 +20,7 @@
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle</name>
       <y>1</y>
-      <width>74</width>
+      <width>64</width>
       <height>34</height>
       <line_width>2</line_width>
       <line_color>
@@ -36,7 +37,7 @@
           <exp bool_exp="pv0 != 0">
             <value>false</value>
           </exp>
-          <pv_name>CstatH-MKS:$(L):sAuto</pv_name>
+          <pv_name>$(P)-$(S):$(L):sAuto</pv_name>
         </rule>
       </rules>
     </widget>
@@ -44,19 +45,18 @@
       <name>Action Button_28</name>
       <actions>
         <action type="open_display">
-          <file>CmdPanels/CstatH-MKS.bob</file>
+          <file>CmdPanels/CstatV-PID.bob</file>
           <macros>
-            <MKS>CstatH-MKS:$(L)</MKS>
-            <MKSname>$(L)</MKSname>
+            <PID>$(P)-$(S):$(L)</PID>
           </macros>
           <target>standalone</target>
-          <description>MKS Control</description>
+          <description>PID Control</description>
         </action>
       </actions>
       <text>$(L)</text>
       <x>2</x>
       <y>3</y>
-      <width>70</width>
+      <width>60</width>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
@@ -65,7 +65,35 @@
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <tooltip>CstatH-MKS:$(L)</tooltip>
+      <tooltip>$(P)-$(S):$(L)</tooltip>
     </widget>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P)-$(S):$(L):sRegOn</pv_name>
+    <x>1</x>
+    <y>3</y>
+    <width>10</width>
+    <height>10</height>
+    <off_color>
+      <color red="0" green="100" blue="0">
+      </color>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <square>true</square>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
 </display>

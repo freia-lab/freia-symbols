@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>cvalve-h</name>
-  <width>110</width>
+  <name>Heater1-ll</name>
+  <width>130</width>
   <height>95</height>
   <background_color>
     <color red="0" green="0" blue="0" alpha="0">
@@ -18,11 +18,10 @@
     </actions>
     <widget type="label" version="2.0.0">
       <name>Label_10</name>
-      <text>$(V)</text>
-      <x>1</x>
+      <text>$(V)$(MULTI_HTR)</text>
       <y>35</y>
-      <width>23</width>
-      <height>18</height>
+      <width>56</width>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -35,7 +34,6 @@
         <color name="MINOR" red="252" green="242" blue="17">
         </color>
       </background_color>
-      <auto_size>true</auto_size>
       <wrap_words>false</wrap_words>
       <rules>
         <rule name="Background" prop_id="background_color" out_exp="false">
@@ -63,7 +61,7 @@
       <symbol>../cryogenics/HX_General_BLACK.svg</symbol>
       <symbol>../cryogenics/HX_General_GREEN.svg</symbol>
     </symbols>
-    <x>14</x>
+    <x>32</x>
     <y>7</y>
     <width>92</width>
     <height>75</height>
@@ -71,7 +69,7 @@
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle</name>
-    <x>38</x>
+    <x>56</x>
     <y>23</y>
     <width>44</width>
     <height>44</height>
@@ -107,11 +105,11 @@
       </action>
     </actions>
     <text></text>
-    <x>41</x>
+    <x>49</x>
     <y>26</y>
     <width>40</width>
     <height>40</height>
     <transparent>true</transparent>
-    <tooltip>$(P)-$(S):$(V)</tooltip>
+    <tooltip>$(P)-$(S):$(V)$(MULTI_HTR)</tooltip>
   </widget>
 </display>

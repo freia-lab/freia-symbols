@@ -36,7 +36,7 @@
           <exp bool_exp="pv0 != 0">
             <value>false</value>
           </exp>
-          <pv_name>$(system):$(B):sAuto</pv_name>
+          <pv_name>$(system):$(L):sAuto</pv_name>
         </rule>
       </rules>
     </widget>
@@ -46,13 +46,13 @@
         <action type="open_display">
           <file>CmdPanels/CstatH-PID.bob</file>
           <macros>
-            <PID>$(system):$(B)</PID>
+            <PID>$(system):$(L)</PID>
           </macros>
           <target>standalone</target>
           <description>PID Control</description>
         </action>
       </actions>
-      <text>$(B)</text>
+      <text>$(L)</text>
       <x>2</x>
       <y>3</y>
       <width>70</width>
@@ -64,7 +64,7 @@
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <tooltip>$(system):$(B)</tooltip>
+      <tooltip>$(system):$(L)</tooltip>
     </widget>
   </widget>
 </display>

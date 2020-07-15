@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <width>300</width>
-  <height>220</height>
+  <name>AI-SIM</name>
+  <width>430</width>
+  <height>450</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
