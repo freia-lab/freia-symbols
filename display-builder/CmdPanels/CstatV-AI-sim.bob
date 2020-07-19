@@ -69,7 +69,7 @@
     <actions>
     </actions>
     <scripts>
-      <script file="../scripts/PVname2Macro.js">
+      <script file="scripts/PVname2Macro.py">
         <pv_name>loc://GersemiAIdevNam</pv_name>
       </script>
     </scripts>

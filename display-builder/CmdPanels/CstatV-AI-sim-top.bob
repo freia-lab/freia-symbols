@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <width>300</width>
-  <height>300</height>
+  <name>AI-sim-top</name>
+  <width>450</width>
+  <height>500</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -44,7 +45,7 @@ Device Name: CstatV-LHe:LI680</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Linking Container</name>
-    <file>CstatV-AI-sim.opi</file>
+    <file>CstatV-AI-sim.bob</file>
     <y>30</y>
     <width>296</width>
     <height>231</height>
@@ -68,7 +69,7 @@ Device Name: CstatV-LHe:LI680</tooltip>
       </rule>
     </rules>
     <scripts>
-      <script file="../scripts/PVname2Macro.js">
+      <script file="scripts/PVname2Macro.py">
         <pv_name>loc://GersemiAIdevNam</pv_name>
       </script>
     </scripts>

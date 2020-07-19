@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>$(Heater1)</name>
-  <width>435</width>
-  <height>480</height>
+  <width>480</width>
+  <height>500</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -73,7 +73,7 @@
     <x>77</x>
     <y>31</y>
     <width>175</width>
-    <height>22</height>
+    <height>23</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="17.0">
       </font>

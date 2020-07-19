@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>$(Cvalve)</name>
-  <width>300</width>
-  <height>300</height>
+  <width>470</width>
+  <height>470</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -109,7 +109,7 @@
     <x>30</x>
     <y>185</y>
     <width>105</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -174,7 +174,7 @@
     <x>30</x>
     <y>123</y>
     <width>109</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -210,7 +210,7 @@
     <x>30</x>
     <y>154</y>
     <width>75</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>

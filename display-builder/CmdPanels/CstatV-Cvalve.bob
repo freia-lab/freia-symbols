@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>$(Cvalve)</name>
-  <width>450</width>
-  <height>480</height>
+  <width>470</width>
+  <height>500</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>

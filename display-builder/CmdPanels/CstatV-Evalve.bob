@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>$(Evalve)</name>
-  <width>430</width>
-  <height>500</height>
+  <width>450</width>
+  <height>550</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -56,7 +56,7 @@
     <pv_name>$(Evalve):sAuto</pv_name>
     <text>Ctrl Mode</text>
     <x>87</x>
-    <y>94</y>
+    <y>97</y>
     <height>26</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -130,7 +130,7 @@
     <x>39</x>
     <y>44</y>
     <width>189</width>
-    <height>23</height>
+    <height>24</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -170,8 +170,8 @@
       </action>
     </actions>
     <pv_name>$(Evalve):cmdSet</pv_name>
-    <x>214</x>
-    <y>93</y>
+    <x>220</x>
+    <y>95</y>
     <width>65</width>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -200,8 +200,8 @@
       </action>
     </actions>
     <pv_name>$(Evalve):cmdRst</pv_name>
-    <x>289</x>
-    <y>93</y>
+    <x>295</x>
+    <y>95</y>
     <width>90</width>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -281,7 +281,7 @@
     <name>Label</name>
     <text>Auto</text>
     <x>33</x>
-    <y>76</y>
+    <y>70</y>
     <width>45</width>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -293,7 +293,7 @@
     <pv_name>$(Evalve):sAuto</pv_name>
     <bit>0</bit>
     <x>29</x>
-    <y>97</y>
+    <y>91</y>
     <width>41</width>
     <height>41</height>
     <off_label>OFF</off_label>

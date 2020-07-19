@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Valve-Bin</name>
+  <width>33</width>
+  <height>30</height>
+  <background_color>
+    <color red="0" green="0" blue="0" alpha="0">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <widget type="symbol" version="2.0.0">
+    <name>Symbol_8</name>
+    <pv_name>$(P)-$(S):$(V):cOn</pv_name>
+    <symbols>
+      <symbol>../cryogenics/valve_general_closed_RED.svg</symbol>
+      <symbol>../cryogenics/valve_general_GREEN.svg</symbol>
+      <symbol>../cryogenics/valve_general_closed_RED.svg</symbol>
+    </symbols>
+    <x>6</x>
+    <y>3</y>
+    <width>20</width>
+    <height>15</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>$(V)</text>
+    <y>16</y>
+    <width>32</width>
+    <height>10</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_8</name>
+    <actions>
+      <action type="open_display">
+        <file>CmdPanels/LocBinaryOnOff.bob</file>
+        <macros>
+          <v_name>$(P)-$(S):$(V)</v_name>
+        </macros>
+        <target>standalone</target>
+      </action>
+    </actions>
+    <text></text>
+    <width>32</width>
+    <height>29</height>
+    <background_color>
+      <color red="236" green="236" blue="236" alpha="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <tooltip>$(P)-$(S):$(V)
+</tooltip>
+  </widget>
+</display>

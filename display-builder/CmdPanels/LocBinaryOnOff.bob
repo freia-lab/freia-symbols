@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>Binary Command</name>
-  <width>300</width>
-  <height>155</height>
+  <name>$(P)-$(S):$(V)</name>
+  <width>450</width>
+  <height>500</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -12,8 +12,8 @@
   <grid_visible>false</grid_visible>
   <widget type="label" version="2.0.0">
     <name>Label Template</name>
-    <text>$(P)</text>
-    <x>5</x>
+    <text>$(P)-$(S):$(V)</text>
+    <x>50</x>
     <y>10</y>
     <width>290</width>
     <height>36</height>
@@ -47,9 +47,9 @@
         <description>$(ON_ACT)</description>
       </action>
     </actions>
-    <pv_name>$(P):cOn</pv_name>
-    <x>25</x>
-    <y>50</y>
+    <pv_name>$(P)-$(S):$(V):cOn</pv_name>
+    <x>70</x>
+    <y>65</y>
     <width>80</width>
     <height>40</height>
     <font>
@@ -70,9 +70,9 @@
         <description>$(OFF_ACT)</description>
       </action>
     </actions>
-    <pv_name>$(P):cOn</pv_name>
-    <x>215</x>
-    <y>50</y>
+    <pv_name>$(P)-$(S):$(V):cOn</pv_name>
+    <x>240</x>
+    <y>65</y>
     <width>80</width>
     <height>40</height>
     <font>
