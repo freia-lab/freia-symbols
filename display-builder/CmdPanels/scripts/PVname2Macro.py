@@ -1,7 +1,9 @@
-from org.csstudio.opibuilder.scriptUtil import PVUtil
+from org.csstudio.display.builder.runtime.script import PVUtil
 
-macroInput = DataUtil.createMacrosInput(true);
-GersemiAIdevNam = PVUtil.getString(pvArray[0])
+channel = PVUtil.getString(pvs[0])
 
-macroInput.put("AI2Macro", GersemiAIdevNam);
-widgetController.setPropertyValue("macros", macroInput);
+# Adding the macros on the widget that will consume this script
+widget.getPropertyValue("macros").add("AI2Macro", channel)
+
+widget.setPropertyValue("file", "")
+widget.setPropertyValue("file", "./CstatV-AI-sim.bob")

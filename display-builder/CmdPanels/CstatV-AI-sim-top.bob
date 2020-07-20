@@ -31,6 +31,10 @@
     </background_color>
     <actions>
     </actions>
+    <scripts>
+      <script file="scripts/PVname2Macro.py">
+      </script>
+    </scripts>
     <tooltip>Enter Device Name
 Process Variable name without 
 the last part after the colon.
