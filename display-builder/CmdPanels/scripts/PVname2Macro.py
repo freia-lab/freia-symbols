@@ -6,4 +6,4 @@ channel = PVUtil.getString(pvs[0])
 widget.getPropertyValue("macros").add("AI2Macro", channel)
 
 widget.setPropertyValue("file", "")
-widget.setPropertyValue("file", "./CstatV-AI-sim.bob")
+widget.setPropertyValue("file", "./Cstat-AI-sim.bob")

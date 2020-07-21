@@ -39,7 +39,7 @@
         <exp bool_exp="pv0==0">
           <value>false</value>
         </exp>
-        <pv_name>CstatV-Ctrl:opMode:sLocal</pv_name>
+        <pv_name>$(P)-Ctrl:opMode:sLocal</pv_name>
       </rule>
     </rules>
     <border_color>
@@ -70,7 +70,7 @@
     </actions>
     <scripts>
       <script file="scripts/PVname2Macro.py">
-        <pv_name>loc://GersemiAIdevNam</pv_name>
+        <pv_name>loc://$(P)-AIdevNam</pv_name>
       </script>
     </scripts>
     <widget type="action_button" version="3.0.0">
