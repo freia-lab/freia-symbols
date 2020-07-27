@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Turbo Pump TP001</name>
+  <macros>
+    <P>CstatH-Vac:TP001</P>
+  </macros>
+  <width>650</width>
+  <height>700</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_visible>false</grid_visible>
+  <widget type="label" version="2.0.0">
+    <name>Label Template</name>
+    <text>Speed</text>
+    <x>95</x>
+    <y>505</y>
+    <width>32</width>
+    <height>12</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_4</name>
+    <text>Power Supply</text>
+    <x>470</x>
+    <y>600</y>
+    <width>68</width>
+    <height>12</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Pump Controls</name>
+    <x>16</x>
+    <y>20</y>
+    <width>387</width>
+    <height>333</height>
+    <actions>
+    </actions>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button Template_1</name>
+      <pv_name>$(P):cOn</pv_name>
+      <x>202</x>
+      <width>110</width>
+      <height>40</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <show_confirm_dialog>1</show_confirm_dialog>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template</name>
+      <text>Pump Status:</text>
+      <x>5</x>
+      <y>162</y>
+      <width>79</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Speed SetPoints</name>
+      <x>175</x>
+      <y>45</y>
+      <width>174</width>
+      <height>113</height>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>Label Template</name>
+        <text>Low:</text>
+        <y>8</y>
+        <width>28</width>
+        <height>19</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Input Template</name>
+        <pv_name>$(P):cLowSpeedSP</pv_name>
+        <x>41</x>
+        <y>7</y>
+        <width>80</width>
+        <height>25</height>
+        <foreground_color>
+          <color name="WHITE" red="255" green="255" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template</name>
+        <text>High:</text>
+        <y>43</y>
+        <width>31</width>
+        <height>18</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Input Template</name>
+        <pv_name>$(P):cHiSpeedSP</pv_name>
+        <x>41</x>
+        <y>42</y>
+        <width>80</width>
+        <height>25</height>
+        <foreground_color>
+          <color name="WHITE" red="255" green="255" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_1</name>
+      <text>Cycle No:</text>
+      <x>202</x>
+      <y>162</y>
+      <width>55</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_8</name>
+      <text>Last Cycle Time:</text>
+      <x>5</x>
+      <y>219</y>
+      <width>95</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_9</name>
+      <text>Power Limit:</text>
+      <x>8</x>
+      <y>269</y>
+      <width>74</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_9</name>
+      <text>Total Running Time:</text>
+      <x>5</x>
+      <y>244</y>
+      <width>119</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_1</name>
+      <pv_name>$(P):sNoOfStarts</pv_name>
+      <x>284</x>
+      <y>163</y>
+      <width>46</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>$(P):sStatus</pv_name>
+      <x>101</x>
+      <y>163</y>
+      <width>96</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_1</name>
+      <pv_name>$(P):sLastOnTime</pv_name>
+      <x>145</x>
+      <y>220</y>
+      <width>85</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_1</name>
+      <pv_name>$(P):sOpTime</pv_name>
+      <x>145</x>
+      <y>245</y>
+      <width>85</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_1</name>
+      <pv_name>$(P):sMotPLimit</pv_name>
+      <x>145</x>
+      <y>270</y>
+      <width>85</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Boolean Button Template_2</name>
+      <pv_name>$(P):cRemote</pv_name>
+      <y>5</y>
+      <width>140</width>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Boolean Button Template_1</name>
+      <pv_name>$(P):cLowSpeed</pv_name>
+      <y>40</y>
+      <width>140</width>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Boolean Button Template</name>
+      <pv_name>$(P):cNormalStart</pv_name>
+      <y>75</y>
+      <width>140</width>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(P):cRemote</pv_name>
+      <x>141</x>
+      <y>7</y>
+      <width>26</width>
+      <height>26</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <pv_name>$(P):cLowSpeed</pv_name>
+      <x>141</x>
+      <y>42</y>
+      <width>26</width>
+      <height>26</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(P):cNormalStart</pv_name>
+      <x>141</x>
+      <y>77</y>
+      <width>26</width>
+      <height>26</height>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Fault details</name>
+      <x>5</x>
+      <y>187</y>
+      <width>325</width>
+      <height>20</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0">
+            <value>true</value>
+          </exp>
+          <pv_name>$(P):sStatus</pv_name>
+        </rule>
+      </rules>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_5</name>
+        <pv_name>$(P):sFaults</pv_name>
+        <x>96</x>
+        <width>229</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="WHITE" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_11</name>
+        <text>Fault Details:</text>
+        <width>77</width>
+        <height>18</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Temperatures</name>
+    <x>202</x>
+    <y>370</y>
+    <width>440</width>
+    <height>259</height>
+    <widget type="linear-meter" version="2.0.0">
+      <name>Thermometer Template_4</name>
+      <pv_name>$(P):sBearingT</pv_name>
+      <orientation>1</orientation>
+      <y>1</y>
+      <width>136</width>
+      <height>227</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <title>Pump Bearings</title>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)$(pv_value)</tooltip>
+      <maximum>400.0</maximum>
+      <lcd_design>30</lcd_design>
+      <lcd_font>4</lcd_font>
+    </widget>
+    <widget type="linear-meter" version="2.0.0">
+      <name>Thermometer Template_3</name>
+      <pv_name>$(P):sCPU_T</pv_name>
+      <orientation>1</orientation>
+      <x>136</x>
+      <y>1</y>
+      <width>136</width>
+      <height>227</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <title>Control Unit CPU</title>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)$(pv_value)</tooltip>
+      <lcd_design>30</lcd_design>
+      <lcd_font>4</lcd_font>
+    </widget>
+    <widget type="linear-meter" version="2.0.0">
+      <name>Thermometer Template_5</name>
+      <pv_name>$(P):sPSupplyT</pv_name>
+      <orientation>1</orientation>
+      <x>272</x>
+      <y>1</y>
+      <width>136</width>
+      <height>227</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <title>Power Supply</title>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)$(pv_value)</tooltip>
+      <lcd_design>30</lcd_design>
+      <lcd_font>4</lcd_font>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Pump Speed</name>
+    <x>16</x>
+    <y>370</y>
+    <width>186</width>
+    <height>230</height>
+    <widget type="meter" version="2.0.0">
+      <name>Gauge Template</name>
+      <pv_name>$(P):sFreq</pv_name>
+      <skin>0</skin>
+      <knob_position>3</knob_position>
+      <x>3</x>
+      <y>1</y>
+      <width>138</width>
+      <height>138</height>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <transparent>false</transparent>
+      <actions>
+      </actions>
+      <highligh_zones>false</highligh_zones>
+      <lcd_visible>false</lcd_visible>
+      <needle_color>
+        <color name="IO Stick" red="0" green="32" blue="92">
+        </color>
+      </needle_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_1</name>
+      <text>Set-point:</text>
+      <y>165</y>
+      <width>59</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>$(P):sFreqSP</pv_name>
+      <x>62</x>
+      <y>165</y>
+      <width>76</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Pump Motor</name>
+    <x>440</x>
+    <y>20</y>
+    <width>202</width>
+    <height>333</height>
+    <widget type="meter" version="2.0.0">
+      <name>Meter Template</name>
+      <pv_name>$(P):sMotI</pv_name>
+      <y>17</y>
+      <width>170</width>
+      <height>75</height>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <transparent>false</transparent>
+      <actions>
+      </actions>
+      <highligh_zones>false</highligh_zones>
+      <lcd_visible>false</lcd_visible>
+      <needle_color>
+        <color name="IO Stick" red="0" green="32" blue="92">
+        </color>
+      </needle_color>
+    </widget>
+    <widget type="meter" version="2.0.0">
+      <name>Meter Template_1</name>
+      <pv_name>$(P):sMotV</pv_name>
+      <y>113</y>
+      <width>170</width>
+      <height>75</height>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <transparent>false</transparent>
+      <actions>
+      </actions>
+      <highligh_zones>false</highligh_zones>
+      <lcd_visible>false</lcd_visible>
+      <needle_color>
+        <color name="IO Stick" red="0" green="32" blue="92">
+        </color>
+      </needle_color>
+    </widget>
+    <widget type="meter" version="2.0.0">
+      <name>Meter Template_2</name>
+      <pv_name>$(P):sMotP</pv_name>
+      <y>211</y>
+      <width>170</width>
+      <height>75</height>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <transparent>false</transparent>
+      <level_low>0.0</level_low>
+      <level_lolo>0.0</level_lolo>
+      <title>Power</title>
+      <actions>
+      </actions>
+      <needle_color>
+        <color name="IO Stick" red="0" green="32" blue="92">
+        </color>
+      </needle_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_5</name>
+      <text>Motor Current [A]</text>
+      <x>35</x>
+      <width>102</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_6</name>
+      <text>Motor Voltage [V]</text>
+      <x>36</x>
+      <y>95</y>
+      <width>101</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_7</name>
+      <text>Motor Power [W]</text>
+      <x>36</x>
+      <y>193</y>
+      <width>98</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+</display>
