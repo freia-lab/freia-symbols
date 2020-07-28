@@ -43,7 +43,7 @@
     <x>470</x>
     <y>600</y>
     <width>68</width>
-    <height>12</height>
+    <height>13</height>
     <font>
       <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
       </font>
@@ -99,7 +99,7 @@
       <x>5</x>
       <y>162</y>
       <width>79</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -220,7 +220,7 @@
       <x>202</x>
       <y>162</y>
       <width>55</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -244,7 +244,7 @@
       <x>5</x>
       <y>219</y>
       <width>95</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -268,7 +268,7 @@
       <x>8</x>
       <y>269</y>
       <width>74</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -292,7 +292,7 @@
       <x>5</x>
       <y>244</y>
       <width>119</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -611,62 +611,139 @@
     <y>370</y>
     <width>440</width>
     <height>259</height>
-    <widget type="linear-meter" version="2.0.0">
+    <widget type="thermometer" version="2.0.0">
       <name>Thermometer Template_4</name>
       <pv_name>$(P):sBearingT</pv_name>
-      <orientation>1</orientation>
-      <y>1</y>
-      <width>136</width>
-      <height>227</height>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <title>Pump Bearings</title>
+      <x>6</x>
+      <y>28</y>
+      <width>121</width>
+      <height>170</height>
       <actions>
       </actions>
       <tooltip>$(pv_name)$(pv_value)</tooltip>
+      <limits_from_pv>false</limits_from_pv>
       <maximum>400.0</maximum>
-      <lcd_design>30</lcd_design>
-      <lcd_font>4</lcd_font>
     </widget>
-    <widget type="linear-meter" version="2.0.0">
+    <widget type="thermometer" version="2.0.0">
       <name>Thermometer Template_3</name>
       <pv_name>$(P):sCPU_T</pv_name>
-      <orientation>1</orientation>
       <x>136</x>
-      <y>1</y>
-      <width>136</width>
-      <height>227</height>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <title>Control Unit CPU</title>
+      <y>28</y>
+      <width>121</width>
+      <height>170</height>
       <actions>
       </actions>
       <tooltip>$(pv_name)$(pv_value)</tooltip>
-      <lcd_design>30</lcd_design>
-      <lcd_font>4</lcd_font>
+      <limits_from_pv>false</limits_from_pv>
     </widget>
-    <widget type="linear-meter" version="2.0.0">
+    <widget type="thermometer" version="2.0.0">
       <name>Thermometer Template_5</name>
       <pv_name>$(P):sPSupplyT</pv_name>
-      <orientation>1</orientation>
       <x>272</x>
-      <y>1</y>
-      <width>136</width>
-      <height>227</height>
+      <y>28</y>
+      <width>121</width>
+      <height>170</height>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Pump Bearings</text>
+      <x>21</x>
+      <y>7</y>
+      <width>89</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <title>Power Supply</title>
-      <actions>
-      </actions>
-      <tooltip>$(pv_name)$(pv_value)</tooltip>
-      <lcd_design>30</lcd_design>
-      <lcd_font>4</lcd_font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>$(P):sBearingT</pv_name>
+      <x>32</x>
+      <y>203</y>
+      <width>70</width>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Control Unit CPU</text>
+      <x>145</x>
+      <y>7</y>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>Power Supply</text>
+      <x>292</x>
+      <y>7</y>
+      <width>81</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):sCPU_T</pv_name>
+      <x>161</x>
+      <y>202</y>
+      <width>70</width>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(P):sPSupplyT</pv_name>
+      <x>297</x>
+      <y>202</y>
+      <width>70</width>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -822,6 +899,8 @@
       <title>Power</title>
       <actions>
       </actions>
+      <highligh_zones>false</highligh_zones>
+      <lcd_visible>false</lcd_visible>
       <needle_color>
         <color name="IO Stick" red="0" green="32" blue="92">
         </color>
