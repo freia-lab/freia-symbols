@@ -316,7 +316,7 @@
         <text></text>
         <y>200</y>
         <width>0</width>
-        <height>12</height>
+        <height>13</height>
         <font>
           <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
           </font>
@@ -864,11 +864,11 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>Linking Container Template</name>
-        <file>../DVpump.opi</file>
         <macros>
           <pump>P3B</pump>
         </macros>
-        <x>274</x>
+        <file>../DVpump.opi</file>
+        <x>273</x>
         <y>110</y>
         <width>100</width>
         <height>48</height>
@@ -881,11 +881,11 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>Linking Container Template_6</name>
-        <file>../DVpump.bob</file>
         <macros>
           <pump>P3A</pump>
         </macros>
-        <x>83</x>
+        <file>../DVpump.bob</file>
+        <x>82</x>
         <y>104</y>
         <width>100</width>
         <height>48</height>
@@ -898,11 +898,11 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>Linking Container Template</name>
-        <file>../DVpump.bob</file>
         <macros>
           <pump>P1A</pump>
         </macros>
-        <x>189</x>
+        <file>../DVpump.bob</file>
+        <x>188</x>
         <y>459</y>
         <width>100</width>
         <height>48</height>
@@ -915,11 +915,11 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>Linking Container Template</name>
-        <file>../DVpump.bob</file>
         <macros>
           <pump>P1C</pump>
         </macros>
-        <x>189</x>
+        <file>../DVpump.bob</file>
+        <x>188</x>
         <y>349</y>
         <width>100</width>
         <height>48</height>
@@ -932,11 +932,11 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>Linking Container Template</name>
-        <file>../DVpump.bob</file>
         <macros>
           <pump>P2</pump>
         </macros>
-        <x>189</x>
+        <file>../DVpump.bob</file>
+        <x>188</x>
         <y>224</y>
         <width>100</width>
         <height>49</height>
@@ -979,11 +979,11 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>Linking Container Template</name>
-        <file>../DVpump.bob</file>
         <macros>
           <pump>P1B</pump>
         </macros>
-        <x>88</x>
+        <file>../DVpump.bob</file>
+        <x>87</x>
         <y>349</y>
         <width>100</width>
         <height>48</height>
@@ -996,11 +996,11 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>Linking Container Template</name>
-        <file>../DVpump.bob</file>
         <macros>
           <pump>P1D</pump>
         </macros>
-        <x>280</x>
+        <file>../DVpump.bob</file>
+        <x>279</x>
         <y>349</y>
         <width>100</width>
         <height>48</height>
@@ -2075,7 +2075,7 @@ Overtemp.
 Temp. Reg.</text>
         <y>12</y>
         <width>76</width>
-        <height>89</height>
+        <height>94</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="13.0">
           </font>

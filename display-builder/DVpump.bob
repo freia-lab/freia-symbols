@@ -38,7 +38,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template</name>
-    <x>19</x>
+    <x>20</x>
     <width>1</width>
     <height>56</height>
     <line_width>2</line_width>
