@@ -1258,7 +1258,7 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <text>More...</text>
-    <x>268</x>
+    <x>250</x>
     <y>152</y>
     <width>46</width>
     <height>21</height>
@@ -1310,9 +1310,9 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <text>Asyn Menus</text>
-    <x>325</x>
+    <x>310</x>
     <y>146</y>
-    <width>111</width>
+    <width>130</width>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="15.0">
       </font>
@@ -1648,5 +1648,161 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255">
       </color>
     </border_color>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_1</name>
+    <pv_name>$(P)$(R).TB0</pv_name>
+    <x>12</x>
+    <y>323</y>
+    <width>55</width>
+    <height>20</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_2</name>
+    <pv_name>$(P)$(R).TB1</pv_name>
+    <x>12</x>
+    <y>347</y>
+    <width>55</width>
+    <height>20</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_3</name>
+    <pv_name>$(P)$(R).TB2</pv_name>
+    <x>12</x>
+    <y>370</y>
+    <width>55</width>
+    <height>20</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_4</name>
+    <pv_name>$(P)$(R).TB3</pv_name>
+    <x>12</x>
+    <y>393</y>
+    <width>55</width>
+    <height>20</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_5</name>
+    <pv_name>$(P)$(R).TB4</pv_name>
+    <x>12</x>
+    <y>416</y>
+    <width>55</width>
+    <height>20</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_6</name>
+    <pv_name>$(P)$(R).TB5</pv_name>
+    <x>12</x>
+    <y>439</y>
+    <width>55</width>
+    <height>20</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_7</name>
+    <pv_name>$(P)$(R).TIB0</pv_name>
+    <x>186</x>
+    <y>324</y>
+    <width>55</width>
+    <height>20</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_8</name>
+    <pv_name>$(P)$(R).TIB2</pv_name>
+    <x>186</x>
+    <y>347</y>
+    <width>55</width>
+    <height>20</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_9</name>
+    <pv_name>$(P)$(R).TIB2</pv_name>
+    <x>186</x>
+    <y>370</y>
+    <width>55</width>
+    <height>20</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_10</name>
+    <pv_name>$(P)$(R).TINB0</pv_name>
+    <x>186</x>
+    <y>470</y>
+    <width>55</width>
+    <height>20</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_11</name>
+    <pv_name>$(P)$(R).TINB1</pv_name>
+    <x>186</x>
+    <y>493</y>
+    <width>55</width>
+    <height>20</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_12</name>
+    <pv_name>$(P)$(R).TINB2</pv_name>
+    <x>186</x>
+    <y>516</y>
+    <width>55</width>
+    <height>20</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_13</name>
+    <pv_name>$(P)$(R).TINB3</pv_name>
+    <x>186</x>
+    <y>539</y>
+    <width>55</width>
+    <height>20</height>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
   </widget>
 </display>
