@@ -135,8 +135,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_6</name>
     <text>Kp</text>
-    <x>80</x>
-    <y>219</y>
+    <x>77</x>
+    <y>260</y>
     <width>16</width>
     <height>19</height>
     <font>
@@ -163,8 +163,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_7</name>
     <text>Ti</text>
-    <x>155</x>
-    <y>219</y>
+    <x>152</x>
+    <y>260</y>
     <width>11</width>
     <height>19</height>
     <font>
@@ -191,8 +191,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_8</name>
     <text>Td</text>
-    <x>229</x>
-    <y>219</y>
+    <x>226</x>
+    <y>260</y>
     <width>16</width>
     <height>19</height>
     <font>
@@ -216,87 +216,13 @@
       </color>
     </border_color>
   </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Input Template_1</name>
-    <pv_name>$(PID):cSetP</pv_name>
-    <x>233</x>
-    <y>172</y>
-    <width>49</width>
-    <height>21</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
-      </color>
-    </background_color>
-    <precision>2</precision>
-    <show_units>false</show_units>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="Rule" prop_id="visible" out_exp="false">
-        <exp bool_exp="pv0">
-          <value>false</value>
-        </exp>
-        <pv_name>$(PID):sAuto</pv_name>
-      </rule>
-    </rules>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Input Template_2</name>
-    <pv_name>$(PID):cOutput</pv_name>
-    <x>233</x>
-    <y>142</y>
-    <width>49</width>
-    <height>21</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
-      </color>
-    </background_color>
-    <precision>2</precision>
-    <show_units>false</show_units>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="Rule" prop_id="visible" out_exp="false">
-        <exp bool_exp="pv0">
-          <value>false</value>
-        </exp>
-        <pv_name>$(PID):sAuto</pv_name>
-      </rule>
-    </rules>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_9</name>
-    <text>Setpoint [%]:</text>
-    <x>59</x>
-    <y>172</y>
-    <width>77</width>
-    <height>19</height>
+    <text>Setpoint:</text>
+    <x>60</x>
+    <y>200</y>
+    <width>54</width>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -320,11 +246,11 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_10</name>
-    <text>Output [%]:</text>
+    <text>Output:</text>
     <x>59</x>
     <y>142</y>
-    <width>69</width>
-    <height>19</height>
+    <width>46</width>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -349,8 +275,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_2</name>
     <pv_name>$(PID):sKp</pv_name>
-    <x>63</x>
-    <y>238</y>
+    <x>60</x>
+    <y>279</y>
     <width>48</width>
     <height>17</height>
     <font>
@@ -379,8 +305,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_2</name>
     <pv_name>$(PID):sTi</pv_name>
-    <x>138</x>
-    <y>238</y>
+    <x>135</x>
+    <y>279</y>
     <width>48</width>
     <height>17</height>
     <font>
@@ -409,9 +335,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_4</name>
     <pv_name>$(PID):sOutV</pv_name>
-    <x>172</x>
+    <x>160</x>
     <y>144</y>
-    <width>55</width>
+    <width>67</width>
     <height>17</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -426,7 +352,6 @@
       </color>
     </background_color>
     <precision>2</precision>
-    <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
@@ -439,9 +364,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_3</name>
     <pv_name>$(PID):sSetP</pv_name>
-    <x>172</x>
-    <y>174</y>
-    <width>55</width>
+    <x>160</x>
+    <y>202</y>
+    <width>68</width>
     <height>17</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -456,7 +381,6 @@
       </color>
     </background_color>
     <precision>2</precision>
-    <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
@@ -469,8 +393,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_1</name>
     <pv_name>$(PID):sTd</pv_name>
-    <x>212</x>
-    <y>238</y>
+    <x>209</x>
+    <y>279</y>
     <width>48</width>
     <height>17</height>
     <font>
@@ -585,5 +509,43 @@
       </color>
     </foreground_color>
     <auto_size>true</auto_size>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_3</name>
+    <pv_name>$(PID):cSetP</pv_name>
+    <x>240</x>
+    <y>200</y>
+    <width>49</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Rule" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pvInt0 || (!pvInt1))">
+          <value>false</value>
+        </exp>
+        <pv_name>$(PID):sAuto</pv_name>
+        <pv_name>$(PID):sRegOn</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
   </widget>
 </display>
