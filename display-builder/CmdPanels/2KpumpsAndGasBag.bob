@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>2KpumpsAndGasBag</name>
+  <width>560</width>
+  <height>235</height>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <macros>
+      <P>CstatH</P>
+    </macros>
+    <width>531</width>
+    <height>230</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_59</name>
+      <x>10</x>
+      <width>3</width>
+      <height>230</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="230.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>valve-h-u</name>
+      <macros>
+        <S>RHtr</S>
+        <V>FV551</V>
+      </macros>
+      <file>../CstatValve-v-lr.bob</file>
+      <y>65</y>
+      <width>45</width>
+      <height>32</height>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Tank_5</name>
+      <pv_name>=(360-`Cryo-Rec:LP:GasBagLidar`)/1.62
+</pv_name>
+      <x>371</x>
+      <y>20</y>
+      <height>110</height>
+      <fill_color>
+        <color name="YELLOW-BORDER" red="150" green="144" blue="10">
+        </color>
+      </fill_color>
+      <tooltip>Scale: % between the switches controlling the HP storage comperssor.
+$(pv_name)
+$(pv_value)</tooltip>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>115.0</maximum>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_23</name>
+      <x>60</x>
+      <y>100</y>
+      <width>172</width>
+      <height>78</height>
+      <points>
+        <point x="310.0" y="10.0">
+        </point>
+        <point x="285.0" y="10.0">
+        </point>
+        <point x="285.0" y="132.0">
+        </point>
+        <point x="0.0" y="132.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>valve-v-l</name>
+      <macros>
+        <S>RHtr</S>
+        <V>FV556</V>
+      </macros>
+      <file>../CstatValve-v-ll.bob</file>
+      <x>26</x>
+      <y>140</y>
+      <width>45</width>
+      <height>24</height>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_1</name>
+      <x>69</x>
+      <y>40</y>
+      <width>120</width>
+      <height>180</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>2K_Pumps</name>
+        <width>120</width>
+        <height>180</height>
+        <line_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </background_color>
+        <corner_width>10</corner_width>
+        <corner_height>10</corner_height>
+      </widget>
+      <widget type="symbol" version="2.0.0">
+        <name>Symbol_6</name>
+        <pv_name>$(P)-2Kpumps:Ctrl:sOn</pv_name>
+        <symbols>
+          <symbol>../../cryogenics/PV_Vacuum_Pump_RED.svg</symbol>
+          <symbol>../../cryogenics/PV_Vacuum_Pump_GREEN.svg</symbol>
+        </symbols>
+        <x>30</x>
+        <y>29</y>
+        <width>60</width>
+        <height>60</height>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_19</name>
+        <pv_name>$(P)-2Kpumps:Ctrl:sRdy2Start</pv_name>
+        <bit>0</bit>
+        <x>10</x>
+        <y>110</y>
+        <width>100</width>
+        <height>26</height>
+        <off_label>Start Disabled</off_label>
+        <off_color>
+          <color name="IO Default" red="255" green="0" blue="0">
+          </color>
+        </off_color>
+        <on_label>Ready To Start</on_label>
+        <on_color>
+          <color name="IO OK" red="0" green="255" blue="0">
+          </color>
+        </on_color>
+        <font>
+          <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color red="150" green="150" blue="150">
+          </color>
+        </line_color>
+        <square>true</square>
+        <actions>
+        </actions>
+        <rules>
+          <rule name="Visibility" prop_id="visible" out_exp="false">
+            <exp bool_exp="pvInt0">
+              <value>false</value>
+            </exp>
+            <pv_name>$(P)-2Kpumps:Ctrl:sOn</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_20</name>
+        <text>2K Pumps</text>
+        <y>10</y>
+        <width>120</width>
+        <height>23</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_21</name>
+        <pv_name>$(P)-2Kpumps:PT552:sRdV</pv_name>
+        <x>15</x>
+        <y>90</y>
+        <width>90</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+      <widget type="bool_button" version="2.0.0">
+        <name>Boolean Button</name>
+        <pv_name>$(P)-2Kpumps:Ctrl:cOn</pv_name>
+        <x>10</x>
+        <y>140</y>
+        <off_label>ON/OFF</off_label>
+        <on_label>ON/OFF</on_label>
+        <show_confirm_dialog>1</show_confirm_dialog>
+      </widget>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_24</name>
+      <x>11</x>
+      <y>100</y>
+      <width>89</width>
+      <height>1</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="94.56249999999999" y="0.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_25</name>
+      <x>152</x>
+      <y>100</y>
+      <width>183</width>
+      <height>1</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="220.0" y="0.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>valve-h-u_1</name>
+      <macros>
+        <S>RHtr</S>
+        <V>FV555</V>
+      </macros>
+      <file>../CstatValve-h-lu.bob</file>
+      <x>194</x>
+      <y>78</y>
+      <width>32</width>
+      <height>32</height>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_4</name>
+      <macros>
+        <D>FT551</D>
+        <S>RHtr</S>
+      </macros>
+      <x>241</x>
+      <y>70</y>
+      <width>83</width>
+      <height>52</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_22</name>
+        <pv_name>$(P)-$(S):$(D):sRdV</pv_name>
+        <y>13</y>
+        <width>83</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_21</name>
+        <text>$(D)</text>
+        <width>73</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_23</name>
+        <pv_name>$(P)-$(S):$(D):sCalcV</pv_name>
+        <y>32</y>
+        <width>83</width>
+        <height>15</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>2</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+      </widget>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture</name>
+      <file>../../Fluid/Valves/VC On-Off 2-way Hand Valve 3 White.svg</file>
+      <x>322</x>
+      <y>85</y>
+      <width>40</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <text>HV551</text>
+      <x>326</x>
+      <y>70</y>
+      <width>32</width>
+      <height>16</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_26</name>
+      <x>60</x>
+      <y>22</y>
+      <width>172</width>
+      <height>78</height>
+      <points>
+        <point x="0.0" y="78.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="172.0" y="0.0">
+        </point>
+        <point x="172.0" y="78.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>valve-h-u_2</name>
+      <macros>
+        <S>RHtr</S>
+        <V>FV554</V>
+      </macros>
+      <file>../CstatValve-h-lu.bob</file>
+      <x>114</x>
+      <width>32</width>
+      <height>32</height>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>BauerComp</name>
+      <macros>
+        <D>C1</D>
+        <P>Cryo</P>
+        <S>Cmp</S>
+      </macros>
+      <x>371</x>
+      <y>140</y>
+      <width>112</width>
+      <height>90</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <tooltip>Liquefier</tooltip>
+      <widget type="rectangle" version="2.0.0">
+        <name>Compressor_1</name>
+        <width>112</width>
+        <height>90</height>
+        <line_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </background_color>
+        <corner_width>10</corner_width>
+        <corner_height>10</corner_height>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Bauer</name>
+        <x>25</x>
+        <y>10</y>
+        <width>62</width>
+        <height>46</height>
+        <style>3</style>
+        <foreground_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <actions>
+        </actions>
+        <widget type="polygon" version="2.0.0">
+          <name>Polygon Template_1</name>
+          <width>61</width>
+          <height>46</height>
+          <points>
+            <point x="60.0" y="9.0">
+            </point>
+            <point x="0.0" y="0.0">
+            </point>
+            <point x="0.0" y="45.0">
+            </point>
+            <point x="60.0" y="36.0">
+            </point>
+          </points>
+          <line_width>2</line_width>
+          <line_color>
+            <color name="BLACK" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="GRAY" red="169" green="169" blue="169">
+            </color>
+          </background_color>
+          <actions>
+          </actions>
+          <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        </widget>
+        <widget type="polyline" version="2.0.0">
+          <name>Polyline Template_108</name>
+          <x>34</x>
+          <y>10</y>
+          <width>13</width>
+          <height>22</height>
+          <points>
+            <point x="0.0" y="0.0">
+            </point>
+            <point x="12.0" y="11.0">
+            </point>
+            <point x="0.0" y="21.0">
+            </point>
+          </points>
+          <line_width>2</line_width>
+          <line_color>
+            <color name="BLACK" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <actions>
+          </actions>
+          <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        </widget>
+        <widget type="polyline" version="2.0.0">
+          <name>Polyline Template_109</name>
+          <x>16</x>
+          <y>10</y>
+          <width>13</width>
+          <height>22</height>
+          <points>
+            <point x="0.0" y="0.0">
+            </point>
+            <point x="12.0" y="11.0">
+            </point>
+            <point x="0.0" y="21.0">
+            </point>
+          </points>
+          <line_width>2</line_width>
+          <line_color>
+            <color name="BLACK" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <actions>
+          </actions>
+          <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        </widget>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_1</name>
+        <pv_name>Cryo-Rec:LP:GSH7225</pv_name>
+        <x>21</x>
+        <y>60</y>
+        <width>70</width>
+        <off_label>OFF</off_label>
+        <on_label>ON</on_label>
+        <square>true</square>
+      </widget>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_27</name>
+      <x>456</x>
+      <y>173</y>
+      <width>56</width>
+      <height>1</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="55.0" y="0.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>10</arrow_length>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_23</name>
+      <text>To HP
+Storage</text>
+      <x>486</x>
+      <y>180</y>
+      <width>40</width>
+      <height>34</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_24</name>
+      <pv_name>Cryo-Rec:LP:GasBagLidar</pv_name>
+      <x>401</x>
+      <width>90</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <precision>1</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_1</name>
+      <x>521</x>
+      <y>45</y>
+      <width>10</width>
+      <height>80</height>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <rules>
+        <rule name="FillPerc" prop_id="height" out_exp="true">
+          <exp bool_exp="True">
+            <expression>(165-pv0)*0.8</expression>
+          </exp>
+          <pv_name>Cryo-Rec:LP:GasBagSonar</pv_name>
+        </rule>
+        <rule name="Position" prop_id="y" out_exp="true">
+          <exp bool_exp="True">
+            <expression>125-(165-pv0)*0.8</expression>
+          </exp>
+          <pv_name>Cryo-Rec:LP:GasBagSonar</pv_name>
+        </rule>
+      </rules>
+      <tooltip>Gas Bag height calculated from
+Cryo-Rec:LP:GasBagSonar</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_28</name>
+      <x>356</x>
+      <y>120</y>
+      <width>17</width>
+      <height>54</height>
+      <points>
+        <point x="14.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="54.0">
+        </point>
+        <point x="35.0" y="54.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>10</arrow_length>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_60</name>
+      <x>10</x>
+      <y>160</y>
+      <width>1</width>
+      <height>30</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="30.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_32</name>
+      <text>From
+Gersemi</text>
+      <x>14</x>
+      <y>190</y>
+      <width>42</width>
+      <height>34</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>valve-h-u_4</name>
+      <macros>
+        <P>CstatV</P>
+        <S>RHtr</S>
+        <V>FV585</V>
+      </macros>
+      <file>../CstatValve-v-lr.bob</file>
+      <y>110</y>
+      <width>45</width>
+      <height>32</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_33</name>
+      <text>From
+HNOSS</text>
+      <x>14</x>
+      <width>37</width>
+      <height>34</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_61</name>
+      <x>361</x>
+      <width>3</width>
+      <height>100</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="100.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_62</name>
+      <x>10</x>
+      <y>20</y>
+      <width>1</width>
+      <height>30</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="30.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>15</arrow_length>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_63</name>
+      <x>361</x>
+      <y>20</y>
+      <width>1</width>
+      <height>30</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="30.0">
+        </point>
+      </points>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>15</arrow_length>
+    </widget>
+  </widget>
+</display>

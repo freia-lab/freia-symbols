@@ -12,7 +12,7 @@
   <grid_visible>false</grid_visible>
   <widget type="textentry" version="3.0.0">
     <name>Text Input</name>
-    <pv_name>loc://$(P)-AIdevNam</pv_name>
+    <pv_name>loc://$(P)-AIdevNam("Paste PV name here")</pv_name>
     <x>25</x>
     <y>1</y>
     <width>271</width>
@@ -31,16 +31,9 @@
     </background_color>
     <actions>
     </actions>
-    <scripts>
-      <script file="scripts/PVname2Macro.py">
-      </script>
-    </scripts>
-    <tooltip>Enter Device Name
-Process Variable name without 
-the last part after the colon.
+    <tooltip>Enter Process Variable name.
 Example:
-PV Name:        CstatV-LHe:LI680:sRdV
-Device Name: CstatV-LHe:LI680</tooltip>
+PV Name:        CstatV-LHe:LI680:sRdV</tooltip>
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <border_color>
       <color red="0" green="128" blue="255">
@@ -70,25 +63,23 @@ Device Name: CstatV-LHe:LI680</tooltip>
     <y>13</y>
     <width>26</width>
     <height>1</height>
-    <line_width>5</line_width>
-    <line_color>
-      <color red="30" green="144" blue="255">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="25.0" y="0.0">
       </point>
     </points>
+    <line_width>5</line_width>
+    <line_color>
+      <color red="30" green="144" blue="255">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
     <actions>
     </actions>
-    <tooltip>Enter Device Name
-Process Variable name without 
-the last part after the colon.
+    <tooltip>Enter Process Variable name.
 Example:
 PV Name:        CstatV-LHe:LI680:sRdV
-Device Name: CstatV-LHe:LI680</tooltip>
+</tooltip>
   </widget>
 </display>

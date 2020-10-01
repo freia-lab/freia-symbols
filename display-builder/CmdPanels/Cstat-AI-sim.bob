@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>AI-SIM</name>
-  <width>430</width>
-  <height>450</height>
+  <width>300</width>
+  <height>230</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -68,11 +68,6 @@
     <transparent>true</transparent>
     <actions>
     </actions>
-    <scripts>
-      <script file="scripts/PVname2Macro.py">
-        <pv_name>loc://$(P)-AIdevNam</pv_name>
-      </script>
-    </scripts>
     <widget type="action_button" version="3.0.0">
       <name>Menu Button Template</name>
       <actions>
@@ -256,14 +251,6 @@
       <transparent>true</transparent>
       <actions>
       </actions>
-      <rules>
-        <rule name="VisibilityRule" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0">
-            <value>true</value>
-          </exp>
-          <pv_name>$(AI2Macro):sForced</pv_name>
-        </rule>
-      </rules>
       <widget type="textentry" version="3.0.0">
         <name>Text Input Template</name>
         <pv_name>$(AI2Macro):cSetV</pv_name>
@@ -280,14 +267,6 @@
         </background_color>
         <actions>
         </actions>
-        <rules>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>9</value>
-            </exp>
-            <pv_name>$(pv_name).SIMM</pv_name>
-          </rule>
-        </rules>
         <border_color>
           <color name="IO Border" red="215" green="215" blue="215">
           </color>
