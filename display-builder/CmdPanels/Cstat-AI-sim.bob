@@ -16,7 +16,7 @@
     <x>25</x>
     <y>11</y>
     <width>196</width>
-    <height>25</height>
+    <height>24</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
       </font>
@@ -251,6 +251,14 @@
       <transparent>true</transparent>
       <actions>
       </actions>
+      <rules>
+        <rule name="New Rule" prop_id="visible" out_exp="false">
+          <exp bool_exp="pvInt0">
+            <value>true</value>
+          </exp>
+          <pv_name>$(AI2Macro):sForced</pv_name>
+        </rule>
+      </rules>
       <widget type="textentry" version="3.0.0">
         <name>Text Input Template</name>
         <pv_name>$(AI2Macro):cSetV</pv_name>
