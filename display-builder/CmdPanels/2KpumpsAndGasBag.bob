@@ -638,7 +638,7 @@ Gersemi</text>
       <macros>
         <P>CstatV</P>
         <S>RHtr</S>
-        <V>FV585</V>
+        <V>FV582</V>
       </macros>
       <file>../CstatValve-v-lr.bob</file>
       <y>110</y>

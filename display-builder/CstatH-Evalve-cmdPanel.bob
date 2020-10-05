@@ -101,14 +101,6 @@
     </line_color>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_3</name>
@@ -263,14 +255,6 @@
     </line_color>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_6</name>
