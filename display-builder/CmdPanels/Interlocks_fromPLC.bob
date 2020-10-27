@@ -16,7 +16,7 @@
       <P>WtrC-Dwtr:PwrCpl</P>
       <x>TT</x>
     </macros>
-    <x>675</x>
+    <x>685</x>
     <y>556</y>
     <width>183</width>
     <height>87</height>
@@ -216,7 +216,7 @@
       <P>WtrC-Dwtr:PwrCpl</P>
       <x>FT</x>
     </macros>
-    <x>675</x>
+    <x>685</x>
     <y>461</y>
     <width>183</width>
     <height>87</height>
@@ -416,7 +416,7 @@
       <P>WtrC-Dwtr:Kly</P>
       <x>FT</x>
     </macros>
-    <x>679</x>
+    <x>689</x>
     <y>205</y>
     <width>183</width>
     <height>87</height>
@@ -590,33 +590,33 @@
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
-    <file>Interlocks-display.bob</file>
     <macros>
       <P>$(P1)</P>
     </macros>
-    <x>10</x>
+    <file>Interlocks-display.bob</file>
+    <x>20</x>
     <y>155</y>
     <width>315</width>
     <height>330</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_1</name>
-    <file>Interlocks-display.bob</file>
     <macros>
       <P>$(P3)</P>
     </macros>
-    <x>359</x>
+    <file>Interlocks-display.bob</file>
+    <x>369</x>
     <y>15</y>
     <width>315</width>
     <height>330</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_2</name>
-    <file>Interlocks-display.bob</file>
     <macros>
       <P>$(P2)</P>
     </macros>
-    <x>355</x>
+    <file>Interlocks-display.bob</file>
+    <x>365</x>
     <y>366</y>
     <width>315</width>
     <height>330</height>
@@ -624,7 +624,7 @@
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <text>FT04</text>
-    <x>677</x>
+    <x>687</x>
     <y>205</y>
     <width>80</width>
     <foreground_color>
@@ -647,15 +647,10 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template_2</name>
-    <x>345</x>
+    <x>355</x>
     <y>360</y>
     <width>15</width>
     <height>340</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="14.0" y="0.0">
       </point>
@@ -666,6 +661,11 @@
       <point x="14.0" y="339.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -673,15 +673,10 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template</name>
-    <x>345</x>
+    <x>355</x>
     <y>10</y>
     <width>15</width>
     <height>340</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="14.0" y="0.0">
       </point>
@@ -692,6 +687,11 @@ $(pv_value)</tooltip>
       <point x="14.0" y="339.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -699,22 +699,22 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template_1</name>
-    <x>320</x>
+    <x>330</x>
     <y>330</y>
     <width>26</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
     <points>
       <point x="25.0" y="0.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -722,25 +722,63 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template_3</name>
-    <x>320</x>
+    <x>330</x>
     <y>375</y>
     <width>26</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
     <points>
       <point x="25.0" y="0.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>10</x>
+    <y>280</y>
+    <width>130</width>
+    <height>230</height>
+    <points>
+      <point x="10.0" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="230.0">
+      </point>
+      <point x="130.0" y="230.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Reset Sofware Interlock</description>
+      </action>
+    </actions>
+    <pv_name>LLRF-Ctrl:SoftwareIntlk:cOK</pv_name>
+    <x>140</x>
+    <y>495</y>
+    <width>180</width>
+    <tooltip>$(actions)</tooltip>
   </widget>
 </display>
