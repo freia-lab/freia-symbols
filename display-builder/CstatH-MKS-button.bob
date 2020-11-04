@@ -65,6 +65,17 @@
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
+      <rules>
+        <rule name="background" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="MINOR" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>CstatH-MKS:$(L):sAuto</pv_name>
+        </rule>
+      </rules>
       <tooltip>CstatH-MKS:$(L)</tooltip>
     </widget>
   </widget>

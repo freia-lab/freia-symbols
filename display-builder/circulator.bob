@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>CIRCULATOR</name>
+  <width>60</width>
+  <height>60</height>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse</name>
+    <x>5</x>
+    <y>5</y>
+    <width>50</width>
+    <line_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="arc" version="2.0.0">
+    <name>Arc</name>
+    <x>15</x>
+    <y>15</y>
+    <width>30</width>
+    <height>30</height>
+    <start_angle>80.0</start_angle>
+    <total_angle>120.0</total_angle>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="TEXT" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>▶︎</text>
+    <x>26</x>
+    <y>9</y>
+    <width>14</width>
+    <height>14</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="9.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+</display>
