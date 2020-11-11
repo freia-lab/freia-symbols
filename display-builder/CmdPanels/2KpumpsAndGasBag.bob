@@ -41,7 +41,7 @@
     </widget>
     <widget type="tank" version="2.0.0">
       <name>Tank_5</name>
-      <pv_name>=(360-`Cryo-Rec:LP:GasBagLidar`)/1.62
+      <pv_name>=(425-`Cryo-Rec:LP:GasBagLidar`)/2.35
 </pv_name>
       <x>371</x>
       <y>20</y>
@@ -561,13 +561,13 @@ Storage</text>
       <rules>
         <rule name="FillPerc" prop_id="height" out_exp="true">
           <exp bool_exp="True">
-            <expression>(165-pv0)*0.8</expression>
+            <expression>(205-pv0)*0.85</expression>
           </exp>
           <pv_name>Cryo-Rec:LP:GasBagSonar</pv_name>
         </rule>
         <rule name="Position" prop_id="y" out_exp="true">
           <exp bool_exp="True">
-            <expression>125-(165-pv0)*0.8</expression>
+            <expression>125-(205-pv0)*0.85</expression>
           </exp>
           <pv_name>Cryo-Rec:LP:GasBagSonar</pv_name>
         </rule>

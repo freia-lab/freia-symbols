@@ -1,0 +1,1540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Seq1</name>
+  <width>540</width>
+  <height>410</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_visible>false</grid_visible>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container Template</name>
+    <file>Seq_top.bob</file>
+    <width>540</width>
+    <height>160</height>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_5</name>
+    <text>Pressure [mbar]: </text>
+    <x>13</x>
+    <y>163</y>
+    <width>134</width>
+    <height>23</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_6</name>
+    <text>Timer [s]:</text>
+    <x>317</x>
+    <y>163</y>
+    <width>74</width>
+    <height>24</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_7</name>
+    <text>High Vacuum:</text>
+    <x>10</x>
+    <y>191</y>
+    <width>82</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_8</name>
+    <text>Low Vacuum:</text>
+    <x>10</x>
+    <y>216</y>
+    <width>79</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_9</name>
+    <text>High Filling:</text>
+    <x>10</x>
+    <y>241</y>
+    <width>70</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_10</name>
+    <text>Low Filling:</text>
+    <x>10</x>
+    <y>266</y>
+    <width>67</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_11</name>
+    <text>Vacuum Test:</text>
+    <x>270</x>
+    <y>192</y>
+    <width>79</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_12</name>
+    <text>Pressure Test:</text>
+    <x>270</x>
+    <y>217</y>
+    <width>83</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_13</name>
+    <text>Timeout Pump-down:</text>
+    <x>270</x>
+    <y>242</y>
+    <width>129</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_14</name>
+    <text>Timeout Filiing GHe:</text>
+    <x>269</x>
+    <y>267</y>
+    <width>119</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cVacFlt</pv_name>
+    <x>97</x>
+    <y>191</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_1</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cVac</pv_name>
+    <x>97</x>
+    <y>216</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_2</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cPressEOF</pv_name>
+    <x>97</x>
+    <y>241</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_3</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cPressFlt</pv_name>
+    <x>97</x>
+    <y>266</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_4</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cVacRate</pv_name>
+    <x>402</x>
+    <y>190</y>
+    <width>66</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_5</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cPressRate</pv_name>
+    <x>402</x>
+    <y>215</y>
+    <width>66</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_6</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cVacRateAlrm</pv_name>
+    <x>402</x>
+    <y>240</y>
+    <width>66</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_7</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cPresRateAlrm</pv_name>
+    <x>402</x>
+    <y>265</y>
+    <width>66</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_19</name>
+    <text>Valves [%]</text>
+    <x>10</x>
+    <y>300</y>
+    <width>81</width>
+    <height>23</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_20</name>
+    <text>CV100</text>
+    <x>13</x>
+    <y>327</y>
+    <width>37</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_8</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cP_CV100</pv_name>
+    <x>68</x>
+    <y>327</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_24</name>
+    <text>CV104</text>
+    <x>193</x>
+    <y>351</y>
+    <width>37</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_12</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cP_CV104</pv_name>
+    <x>248</x>
+    <y>350</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_25</name>
+    <text>CV105</text>
+    <x>370</x>
+    <y>352</y>
+    <width>37</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_13</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cP_CV105</pv_name>
+    <x>417</x>
+    <y>350</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_26</name>
+    <text>CV550</text>
+    <x>13</x>
+    <y>375</y>
+    <width>37</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_14</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cP_CV550</pv_name>
+    <x>68</x>
+    <y>375</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_27</name>
+    <text>CV551</text>
+    <x>193</x>
+    <y>375</y>
+    <width>37</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_15</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):cP_CV551</pv_name>
+    <x>248</x>
+    <y>374</y>
+    <width>52</width>
+    <height>21</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_5</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sVacFlt</pv_name>
+    <x>157</x>
+    <y>193</y>
+    <width>40</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_6</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sVac</pv_name>
+    <x>157</x>
+    <y>218</y>
+    <width>40</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_7</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sPressEOF</pv_name>
+    <x>157</x>
+    <y>243</y>
+    <width>40</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_8</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sPressFlt</pv_name>
+    <x>157</x>
+    <y>268</y>
+    <width>40</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_9</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sVacRate</pv_name>
+    <x>479</x>
+    <y>192</y>
+    <width>56</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_10</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sPressRate</pv_name>
+    <x>479</x>
+    <y>217</y>
+    <width>56</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_11</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sVacRateAlrm</pv_name>
+    <x>479</x>
+    <y>242</y>
+    <width>56</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_12</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sPresRateAlrm</pv_name>
+    <x>479</x>
+    <y>267</y>
+    <width>56</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_13</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sP_CV100</pv_name>
+    <x>128</x>
+    <y>329</y>
+    <width>47</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_19</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sP_CV550</pv_name>
+    <x>128</x>
+    <y>377</y>
+    <width>47</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_17</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sP_CV104</pv_name>
+    <x>308</x>
+    <y>352</y>
+    <width>47</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_20</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sP_CV551</pv_name>
+    <x>308</x>
+    <y>376</y>
+    <width>47</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_18</name>
+    <pv_name>CstatH-Ctrl:$(seq_no):sP_CV105</pv_name>
+    <x>477</x>
+    <y>352</y>
+    <width>47</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Invisible_inCM_mode</name>
+    <x>13</x>
+    <y>326</y>
+    <width>511</width>
+    <height>46</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>false</value>
+        </exp>
+        <pv_name>CstatH-Ctrl:opMode:sCMmode</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_21</name>
+      <text>CV101</text>
+      <x>180</x>
+      <y>1</y>
+      <width>37</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_9</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV101</pv_name>
+      <x>235</x>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_14</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV101</pv_name>
+      <x>295</x>
+      <y>2</y>
+      <width>47</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_22</name>
+      <text>CV102</text>
+      <x>357</x>
+      <y>2</y>
+      <width>37</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV102</pv_name>
+      <x>404</x>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV102</pv_name>
+      <x>464</x>
+      <y>2</y>
+      <width>47</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_16</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):sP_CV103</pv_name>
+      <x>115</x>
+      <y>27</y>
+      <width>47</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_11</name>
+      <pv_name>CstatH-Ctrl:$(seq_no):cP_CV103</pv_name>
+      <x>55</x>
+      <y>25</y>
+      <width>52</width>
+      <height>21</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_23</name>
+      <text>CV103</text>
+      <y>25</y>
+      <width>37</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_21</name>
+    <pv_name>CstatH-RHtr:PT552:sRdV</pv_name>
+    <x>210</x>
+    <y>205</y>
+    <width>40</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_22</name>
+    <pv_name>CstatH-RHtr:PT551:sRdV</pv_name>
+    <x>210</x>
+    <y>255</y>
+    <width>40</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+</display>
