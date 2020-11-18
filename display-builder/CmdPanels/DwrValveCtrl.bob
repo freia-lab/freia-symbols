@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>DwrV control</name>
+  <width>650</width>
+  <height>400</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>Linde Dewar Valve Control</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>550</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <macros>
+      <P1>CM</P1>
+      <P2>CstatH</P2>
+      <V>5202</V>
+    </macros>
+    <x>20</x>
+    <y>70</y>
+    <width>280</width>
+    <height>290</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Automatic control</text>
+      <y>110</y>
+      <width>122</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <class>COMMENT</class>
+      <text>Request to open from the CM</text>
+      <y>180</y>
+      <width>106</width>
+      <height>50</height>
+      <font>
+        <font name="Comment" family="Source Sans Pro" style="ITALIC" size="16.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>valve-h-u</name>
+      <macros>
+        <P>Cryo</P>
+        <S>Dwr</S>
+      </macros>
+      <x>10</x>
+      <width>54</width>
+      <height>50</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_7</name>
+        <x>20</x>
+        <y>15</y>
+        <width>1</width>
+        <height>6</height>
+        <points>
+          <point x="0.0" y="6.0">
+          </point>
+          <point x="0.0" y="0.0">
+          </point>
+        </points>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="symbol" version="2.0.0">
+        <name>Symbol_8</name>
+        <pv_name>$(P)-$(S):V:UY$(V)-PercOut</pv_name>
+        <symbols>
+          <symbol>../../cryogenics/valve_general_closed_RED.svg</symbol>
+          <symbol>../../cryogenics/valve_general_GREEN.svg</symbol>
+        </symbols>
+        <x>10</x>
+        <y>14</y>
+        <width>20</width>
+        <height>15</height>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_9</name>
+        <text>CV$(V)</text>
+        <width>45</width>
+        <height>14</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <wrap_words>false</wrap_words>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED</name>
+        <pv_name>$(P)-$(S):Dwr:StCV$(V)_Slctd</pv_name>
+        <x>17</x>
+        <y>12</y>
+        <width>6</width>
+        <height>5</height>
+        <off_color>
+          <color name="LED-RED-ON" red="255" green="60" blue="46">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <line_color>
+          <color red="0" green="0" blue="0" alpha="0">
+          </color>
+        </line_color>
+        <square>true</square>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(P)-$(S):V:UY$(V)-PercOut</pv_name>
+        <y>30</y>
+        <width>45</width>
+        <height>16</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>Cryo-Dwr:CV$(V):cAuto</pv_name>
+      <x>140</x>
+      <y>110</y>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <pv_name>$(P1)-Ctrl:CV$(V):sOpenReq</pv_name>
+      <x>250</x>
+      <y>190</y>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <class>COMMENT</class>
+      <text>Request to open from HNOSS</text>
+      <y>240</y>
+      <width>106</width>
+      <height>50</height>
+      <font>
+        <font name="Comment" family="Source Sans Pro" style="ITALIC" size="16.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_2</name>
+      <pv_name>$(P2)-Ctrl:CV$(V):sOpenReq</pv_name>
+      <x>140</x>
+      <y>250</y>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <pv_name>$(P2)-Ctrl:CV$(V):sOpenReq</pv_name>
+      <x>250</x>
+      <y>250</y>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_3</name>
+      <pv_name>CstatH-Ctrl:opMode:sCMmode</pv_name>
+      <x>250</x>
+      <y>70</y>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Menu Button Template_2</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>CstatH-Ctrl:opMode:cmdSetCMmode</pv_name>
+          <value>1</value>
+          <description>Cryomodule mode on</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>CstatH-Ctrl:opMode:cmdRstCMmode</pv_name>
+          <value>1</value>
+          <description>Cryomodule mode off</description>
+        </action>
+      </actions>
+      <pv_name>CstatH-Ctrl:opMode:sCMmode</pv_name>
+      <text>Cryomod. Mode</text>
+      <x>110</x>
+      <y>70</y>
+      <width>130</width>
+      <height>26</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <tooltip>Menu button
+$(pv_name)
+$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_10</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Open/Close</description>
+        </action>
+      </actions>
+      <pv_name>Cryo-Dwr:CV-$(V):OpenClsCmd</pv_name>
+      <x>150</x>
+      <y>10</y>
+      <tooltip>Toggle between Open and Close
+of UY$(V).</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Interlock</text>
+      <x>80</x>
+      <width>60</width>
+      <height>21</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_8</name>
+      <pv_name>Cryo-ICn:LP:US5206</pv_name>
+      <x>80</x>
+      <y>20</y>
+      <width>49</width>
+      <height>18</height>
+      <off_label>Fault</off_label>
+      <off_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <macros>
+      <P>CstatV</P>
+      <V>5203</V>
+    </macros>
+    <x>330</x>
+    <y>70</y>
+    <width>280</width>
+    <height>230</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>valve-h-u_1</name>
+      <macros>
+        <P>Cryo</P>
+        <S>Dwr</S>
+      </macros>
+      <x>10</x>
+      <width>54</width>
+      <height>50</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_8</name>
+        <x>20</x>
+        <y>15</y>
+        <width>1</width>
+        <height>6</height>
+        <points>
+          <point x="0.0" y="6.0">
+          </point>
+          <point x="0.0" y="0.0">
+          </point>
+        </points>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+      </widget>
+      <widget type="symbol" version="2.0.0">
+        <name>Symbol_9</name>
+        <pv_name>$(P)-$(S):V:UY$(V)-PercOut</pv_name>
+        <symbols>
+          <symbol>../../cryogenics/valve_general_closed_RED.svg</symbol>
+          <symbol>../../cryogenics/valve_general_GREEN.svg</symbol>
+        </symbols>
+        <x>10</x>
+        <y>14</y>
+        <width>20</width>
+        <height>15</height>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_10</name>
+        <text>CV$(V)</text>
+        <width>45</width>
+        <height>14</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <wrap_words>false</wrap_words>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_4</name>
+        <pv_name>$(P)-$(S):Dwr:StCV$(V)_Slctd</pv_name>
+        <x>17</x>
+        <y>12</y>
+        <width>6</width>
+        <height>5</height>
+        <off_color>
+          <color name="LED-RED-ON" red="255" green="60" blue="46">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <line_color>
+          <color red="0" green="0" blue="0" alpha="0">
+          </color>
+        </line_color>
+        <square>true</square>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_1</name>
+        <pv_name>$(P)-$(S):V:UY$(V)-PercOut</pv_name>
+        <y>30</y>
+        <width>45</width>
+        <height>16</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_11</name>
+      <text>Automatic control</text>
+      <y>110</y>
+      <width>122</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <class>COMMENT</class>
+      <text>Request to open from Gersemi</text>
+      <y>180</y>
+      <width>106</width>
+      <height>50</height>
+      <font>
+        <font name="Comment" family="Source Sans Pro" style="ITALIC" size="16.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_4</name>
+      <pv_name>Cryo-Dwr:CV$(V):cAuto</pv_name>
+      <x>140</x>
+      <y>110</y>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_5</name>
+      <pv_name>$(P)-Ctrl:CV$(V):sOpenReq</pv_name>
+      <x>140</x>
+      <y>190</y>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_5</name>
+      <pv_name>$(P)-Ctrl:CV$(V):sOpenReq</pv_name>
+      <x>250</x>
+      <y>190</y>
+      <width>30</width>
+      <height>30</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_12</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Open/Close</description>
+        </action>
+      </actions>
+      <pv_name>Cryo-Dwr:CV-$(V):OpenClsCmd</pv_name>
+      <x>150</x>
+      <y>10</y>
+      <tooltip>Toggle between Open and Close
+of UY$(V).</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>Interlock</text>
+      <x>80</x>
+      <width>60</width>
+      <height>21</height>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_9</name>
+      <pv_name>Cryo-ICn:LP:US5207</pv_name>
+      <x>80</x>
+      <y>20</y>
+      <width>49</width>
+      <height>18</height>
+      <off_label>Fault</off_label>
+      <off_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+</display>
