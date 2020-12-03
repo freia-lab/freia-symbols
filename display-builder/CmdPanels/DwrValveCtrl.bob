@@ -25,22 +25,27 @@
     <wrap_words use_class="true">false</wrap_words>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group</name>
+    <name>  CV$(V)  </name>
     <macros>
       <P1>CM</P1>
       <P2>CstatH</P2>
       <V>5202</V>
     </macros>
     <x>20</x>
-    <y>70</y>
-    <width>280</width>
-    <height>290</height>
-    <style>3</style>
+    <y>50</y>
+    <width>282</width>
+    <height>313</height>
+    <style>1</style>
+    <foreground_color>
+      <color name="GREEN-GROUP-BORDER" red="131" green="150" blue="131">
+      </color>
+    </foreground_color>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label_1</name>
       <text>Automatic control</text>
-      <y>110</y>
+      <x>19</x>
+      <y>78</y>
       <width>122</width>
       <height>30</height>
       <vertical_alignment>1</vertical_alignment>
@@ -49,7 +54,8 @@
       <name>Label_2</name>
       <class>COMMENT</class>
       <text>Request to open from the CM</text>
-      <y>180</y>
+      <x>19</x>
+      <y>178</y>
       <width>106</width>
       <height>50</height>
       <font>
@@ -64,7 +70,8 @@
         <P>Cryo</P>
         <S>Dwr</S>
       </macros>
-      <x>10</x>
+      <x>20</x>
+      <y>10</y>
       <width>54</width>
       <height>50</height>
       <style>3</style>
@@ -153,14 +160,14 @@
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button</name>
       <pv_name>Cryo-Dwr:CV$(V):cAuto</pv_name>
-      <x>140</x>
-      <y>110</y>
+      <x>159</x>
+      <y>78</y>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_1</name>
       <pv_name>$(P1)-Ctrl:CV$(V):sOpenReq</pv_name>
-      <x>250</x>
-      <y>190</y>
+      <x>229</x>
+      <y>188</y>
       <width>30</width>
       <height>30</height>
     </widget>
@@ -168,7 +175,8 @@
       <name>Label_3</name>
       <class>COMMENT</class>
       <text>Request to open from HNOSS</text>
-      <y>240</y>
+      <x>19</x>
+      <y>238</y>
       <width>106</width>
       <height>50</height>
       <font>
@@ -180,22 +188,23 @@
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_2</name>
       <pv_name>$(P2)-Ctrl:CV$(V):sOpenReq</pv_name>
-      <x>140</x>
-      <y>250</y>
+      <x>138</x>
+      <y>248</y>
+      <width>70</width>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_2</name>
       <pv_name>$(P2)-Ctrl:CV$(V):sOpenReq</pv_name>
-      <x>250</x>
-      <y>250</y>
+      <x>229</x>
+      <y>248</y>
       <width>30</width>
       <height>30</height>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_3</name>
       <pv_name>CstatH-Ctrl:opMode:sCMmode</pv_name>
-      <x>250</x>
-      <y>70</y>
+      <x>189</x>
+      <y>128</y>
       <width>30</width>
       <height>30</height>
     </widget>
@@ -215,8 +224,8 @@
       </actions>
       <pv_name>CstatH-Ctrl:opMode:sCMmode</pv_name>
       <text>Cryomod. Mode</text>
-      <x>110</x>
-      <y>70</y>
+      <x>49</x>
+      <y>128</y>
       <width>130</width>
       <height>26</height>
       <font>
@@ -241,15 +250,16 @@ $(actions)</tooltip>
         </action>
       </actions>
       <pv_name>Cryo-Dwr:CV-$(V):OpenClsCmd</pv_name>
-      <x>150</x>
-      <y>10</y>
+      <x>160</x>
+      <y>20</y>
       <tooltip>Toggle between Open and Close
 of UY$(V).</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_4</name>
       <text>Interlock</text>
-      <x>80</x>
+      <x>90</x>
+      <y>10</y>
       <width>60</width>
       <height>21</height>
       <auto_size>true</auto_size>
@@ -257,8 +267,8 @@ of UY$(V).</tooltip>
     <widget type="led" version="2.0.0">
       <name>LED_8</name>
       <pv_name>Cryo-ICn:LP:US5206</pv_name>
-      <x>80</x>
-      <y>20</y>
+      <x>90</x>
+      <y>30</y>
       <width>49</width>
       <height>18</height>
       <off_label>Fault</off_label>
@@ -289,16 +299,20 @@ of UY$(V).</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Group</name>
+    <name>  CV$(V)  </name>
     <macros>
       <P>CstatV</P>
       <V>5203</V>
     </macros>
-    <x>330</x>
-    <y>70</y>
-    <width>280</width>
-    <height>230</height>
-    <style>3</style>
+    <x>340</x>
+    <y>50</y>
+    <width>282</width>
+    <height>253</height>
+    <style>1</style>
+    <foreground_color>
+      <color name="GREEN-GROUP-BORDER" red="131" green="150" blue="131">
+      </color>
+    </foreground_color>
     <transparent>true</transparent>
     <widget type="group" version="2.0.0">
       <name>valve-h-u_1</name>
@@ -306,7 +320,8 @@ of UY$(V).</tooltip>
         <P>Cryo</P>
         <S>Dwr</S>
       </macros>
-      <x>10</x>
+      <x>19</x>
+      <y>9</y>
       <width>54</width>
       <height>50</height>
       <style>3</style>
@@ -395,7 +410,8 @@ of UY$(V).</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_11</name>
       <text>Automatic control</text>
-      <y>110</y>
+      <x>19</x>
+      <y>78</y>
       <width>122</width>
       <height>30</height>
       <vertical_alignment>1</vertical_alignment>
@@ -404,7 +420,8 @@ of UY$(V).</tooltip>
       <name>Label_12</name>
       <class>COMMENT</class>
       <text>Request to open from Gersemi</text>
-      <y>180</y>
+      <x>30</x>
+      <y>160</y>
       <width>106</width>
       <height>50</height>
       <font>
@@ -416,20 +433,14 @@ of UY$(V).</tooltip>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_4</name>
       <pv_name>Cryo-Dwr:CV$(V):cAuto</pv_name>
-      <x>140</x>
-      <y>110</y>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Boolean Button_5</name>
-      <pv_name>$(P)-Ctrl:CV$(V):sOpenReq</pv_name>
-      <x>140</x>
-      <y>190</y>
+      <x>159</x>
+      <y>78</y>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_5</name>
       <pv_name>$(P)-Ctrl:CV$(V):sOpenReq</pv_name>
-      <x>250</x>
-      <y>190</y>
+      <x>170</x>
+      <y>170</y>
       <width>30</width>
       <height>30</height>
     </widget>
@@ -443,15 +454,16 @@ of UY$(V).</tooltip>
         </action>
       </actions>
       <pv_name>Cryo-Dwr:CV-$(V):OpenClsCmd</pv_name>
-      <x>150</x>
-      <y>10</y>
+      <x>159</x>
+      <y>19</y>
       <tooltip>Toggle between Open and Close
 of UY$(V).</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_5</name>
       <text>Interlock</text>
-      <x>80</x>
+      <x>89</x>
+      <y>9</y>
       <width>60</width>
       <height>21</height>
       <auto_size>true</auto_size>
@@ -459,8 +471,8 @@ of UY$(V).</tooltip>
     <widget type="led" version="2.0.0">
       <name>LED_9</name>
       <pv_name>Cryo-ICn:LP:US5207</pv_name>
-      <x>80</x>
-      <y>20</y>
+      <x>89</x>
+      <y>29</y>
       <width>49</width>
       <height>18</height>
       <off_label>Fault</off_label>
