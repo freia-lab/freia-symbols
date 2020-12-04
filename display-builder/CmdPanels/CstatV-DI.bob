@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>$(DI)</name>
-  <width>430</width>
-  <height>450</height>
+  <width>400</width>
+  <height>300</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -55,9 +55,9 @@
     </actions>
     <pv_name>$(DI):sForced</pv_name>
     <text>Mode</text>
-    <x>198</x>
+    <x>160</x>
     <y>70</y>
-    <width>120</width>
+    <width>80</width>
     <height>26</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -67,6 +67,7 @@
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_5</name>
@@ -109,7 +110,7 @@
     <name>Label Template_11</name>
     <text>Read-in value:</text>
     <x>30</x>
-    <y>165</y>
+    <y>188</y>
     <width>96</width>
     <height>21</height>
     <foreground_color>
@@ -133,7 +134,7 @@
     <name>Label Template_13</name>
     <text>Process value:</text>
     <x>30</x>
-    <y>129</y>
+    <y>152</y>
     <width>96</width>
     <height>21</height>
     <foreground_color>
@@ -157,7 +158,7 @@
     <name>Text Update Template_1</name>
     <pv_name>$(DI):sProcInp</pv_name>
     <x>223</x>
-    <y>127</y>
+    <y>150</y>
     <width>60</width>
     <height>30</height>
     <foreground_color>
@@ -181,7 +182,7 @@
     <name>Text Update Template_2</name>
     <pv_name>$(DI):sInp</pv_name>
     <x>223</x>
-    <y>163</y>
+    <y>186</y>
     <width>60</width>
     <height>30</height>
     <foreground_color>
@@ -204,7 +205,7 @@
   <widget type="group" version="2.0.0">
     <name>Grouping Container</name>
     <x>30</x>
-    <y>90</y>
+    <y>110</y>
     <width>256</width>
     <height>31</height>
     <visible>false</visible>
@@ -296,7 +297,7 @@
     <name>LED</name>
     <pv_name>$(DI):sProcInp</pv_name>
     <x>303</x>
-    <y>130</y>
+    <y>153</y>
     <width>23</width>
     <height>23</height>
     <off_color>
@@ -322,7 +323,7 @@
     <name>LED_1</name>
     <pv_name>$(DI):sInp</pv_name>
     <x>303</x>
-    <y>166</y>
+    <y>189</y>
     <width>23</width>
     <height>23</height>
     <off_color>
@@ -343,5 +344,13 @@
     </line_color>
     <actions>
     </actions>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(DI):sForced</pv_name>
+    <x>250</x>
+    <y>70</y>
+    <width>70</width>
+    <height>26</height>
   </widget>
 </display>
