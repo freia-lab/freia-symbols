@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <width>1600</width>
-  <height>1024</height>
+  <name>2K Pumps</name>
+  <width>1000</width>
+  <height>750</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -11,7 +12,7 @@
   <grid_visible>false</grid_visible>
   <widget type="group" version="2.0.0">
     <name>Panel 2</name>
-    <x>71</x>
+    <x>25</x>
     <y>25</y>
     <width>948</width>
     <height>706</height>
@@ -560,22 +561,9 @@
           <y>47</y>
           <width>66</width>
           <height>21</height>
-          <font>
-            <font family="Source Sans Pro" style="BOLD" size="13.0">
-            </font>
-          </font>
-          <foreground_color>
-            <color name="WHITE" red="255" green="255" blue="255">
-            </color>
-          </foreground_color>
-          <background_color>
-            <color name="GRAY-BORDER" red="121" green="121" blue="121">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <actions>
           </actions>
-          <border_width>2</border_width>
           <border_color>
             <color name="BLACK" red="0" green="0" blue="0">
             </color>
@@ -588,22 +576,9 @@
           <y>12</y>
           <width>66</width>
           <height>21</height>
-          <font>
-            <font family="Source Sans Pro" style="BOLD" size="13.0">
-            </font>
-          </font>
-          <foreground_color>
-            <color name="WHITE" red="255" green="255" blue="255">
-            </color>
-          </foreground_color>
-          <background_color>
-            <color name="GRAY-BORDER" red="121" green="121" blue="121">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <actions>
           </actions>
-          <border_width>2</border_width>
           <border_color>
             <color name="BLACK" red="0" green="0" blue="0">
             </color>
@@ -656,22 +631,9 @@
           <y>11</y>
           <width>66</width>
           <height>21</height>
-          <font>
-            <font family="Source Sans Pro" style="BOLD" size="13.0">
-            </font>
-          </font>
-          <foreground_color>
-            <color name="WHITE" red="255" green="255" blue="255">
-            </color>
-          </foreground_color>
-          <background_color>
-            <color name="GRAY-BORDER" red="121" green="121" blue="121">
-            </color>
-          </background_color>
           <show_units>false</show_units>
           <actions>
           </actions>
-          <border_width>2</border_width>
           <border_color>
             <color name="BLACK" red="0" green="0" blue="0">
             </color>
@@ -815,18 +777,18 @@
         <y>199</y>
         <width>1</width>
         <height>351</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-        <arrows>2</arrows>
         <points>
           <point x="0.0" y="0.0">
           </point>
           <point x="0.0" y="350.0">
           </point>
         </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <arrows>2</arrows>
         <actions>
         </actions>
         <tooltip>$(pv_name)
@@ -838,11 +800,6 @@ $(pv_value)</tooltip>
         <y>77</y>
         <width>192</width>
         <height>121</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="101.0" y="0.0">
           </point>
@@ -857,6 +814,11 @@ $(pv_value)</tooltip>
           <point x="100.0" y="0.0">
           </point>
         </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
         <actions>
         </actions>
         <tooltip>$(pv_name)
@@ -953,11 +915,6 @@ $(pv_value)</tooltip>
         <y>324</y>
         <width>193</width>
         <height>96</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="101.0" y="0.0">
           </point>
@@ -972,6 +929,11 @@ $(pv_value)</tooltip>
           <point x="101.0" y="0.0">
           </point>
         </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
         <actions>
         </actions>
         <tooltip>$(pv_name)
@@ -1601,17 +1563,17 @@ $(pv_value)</tooltip>
         <y>146</y>
         <width>16</width>
         <height>39</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="0.0" y="14.0">
           </point>
           <point x="0.0" y="0.0">
           </point>
         </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_1</name>
@@ -1619,17 +1581,17 @@ $(pv_value)</tooltip>
         <y>153</y>
         <width>16</width>
         <height>39</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="0.0" y="14.0">
           </point>
           <point x="0.0" y="0.0">
           </point>
         </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_2</name>
@@ -1637,17 +1599,17 @@ $(pv_value)</tooltip>
         <y>265</y>
         <width>16</width>
         <height>39</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="0.0" y="14.0">
           </point>
           <point x="0.0" y="0.0">
           </point>
         </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_3</name>
@@ -1655,17 +1617,17 @@ $(pv_value)</tooltip>
         <y>390</y>
         <width>16</width>
         <height>39</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="0.0" y="14.0">
           </point>
           <point x="0.0" y="0.0">
           </point>
         </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_5</name>
@@ -1673,17 +1635,17 @@ $(pv_value)</tooltip>
         <y>386</y>
         <width>16</width>
         <height>39</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="0.0" y="14.0">
           </point>
           <point x="0.0" y="0.0">
           </point>
         </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_6</name>
@@ -1691,17 +1653,17 @@ $(pv_value)</tooltip>
         <y>388</y>
         <width>16</width>
         <height>39</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="0.0" y="14.0">
           </point>
           <point x="0.0" y="0.0">
           </point>
         </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_7</name>
@@ -1709,17 +1671,17 @@ $(pv_value)</tooltip>
         <y>503</y>
         <width>16</width>
         <height>39</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="0.0" y="14.0">
           </point>
           <point x="0.0" y="0.0">
           </point>
         </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="polyline" version="2.0.0">
         <name>Polyline_8</name>
@@ -1727,17 +1689,17 @@ $(pv_value)</tooltip>
         <y>77</y>
         <width>16</width>
         <height>39</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </line_color>
         <points>
           <point x="0.0" y="0.0">
           </point>
           <point x="10.0" y="0.0">
           </point>
         </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </line_color>
       </widget>
       <widget type="label" version="2.0.0">
         <name>Label Template_2</name>
@@ -2135,18 +2097,18 @@ Normally DV freq is set to 100% and the pressure is adjusted by setting WH pumps
       <y>26</y>
       <width>1</width>
       <height>80</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>2</arrows>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="0.0" y="79.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
