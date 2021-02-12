@@ -49,7 +49,7 @@
             <MKS>CstatH-MKS:$(L)</MKS>
             <MKSname>$(L)</MKSname>
           </macros>
-          <target>standalone</target>
+          <target>window</target>
           <description>MKS Control</description>
         </action>
       </actions>
