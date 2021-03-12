@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>AI-SIM</name>
-  <width>300</width>
-  <height>230</height>
+  <width>310</width>
+  <height>310</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -55,7 +55,7 @@
     <x>30</x>
     <y>40</y>
     <width>259</width>
-    <height>175</height>
+    <height>255</height>
     <style>3</style>
     <foreground_color>
       <color red="0" green="128" blue="255">
@@ -148,14 +148,6 @@
       <y>68</y>
       <width>120</width>
       <height>30</height>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
@@ -171,14 +163,6 @@
       <y>104</y>
       <width>120</width>
       <height>30</height>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
@@ -217,14 +201,6 @@
       <y>145</y>
       <width>120</width>
       <height>30</height>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
@@ -310,14 +286,82 @@
       <x>139</x>
       <width>120</width>
       <height>26</height>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_15</name>
+      <text>LOPR</text>
+      <y>185</y>
+      <width>37</width>
+      <height>21</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_5</name>
+      <pv_name>$(AI2Macro):cSetV.LOPR</pv_name>
+      <x>139</x>
+      <y>180</y>
+      <width>120</width>
+      <height>30</height>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_16</name>
+      <text>HOPR</text>
+      <y>220</y>
+      <width>40</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_6</name>
+      <pv_name>$(AI2Macro):cSetV.HOPR</pv_name>
+      <x>139</x>
+      <y>215</y>
+      <width>120</width>
+      <height>30</height>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>AI-sim-top</name>
-  <width>450</width>
-  <height>500</height>
+  <width>360</width>
+  <height>380</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -44,8 +44,7 @@ PV Name:        CstatV-LHe:LI680:sRdV</tooltip>
     <name>Linking Container</name>
     <file>Cstat-AI-sim.bob</file>
     <y>30</y>
-    <width>296</width>
-    <height>231</height>
+    <width>300</width>
     <actions>
     </actions>
     <scripts>
