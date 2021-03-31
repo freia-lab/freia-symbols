@@ -150,8 +150,8 @@ $(actions)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_6</name>
     <text>Kp [%]</text>
-    <x>51</x>
-    <y>332</y>
+    <x>60</x>
+    <y>360</y>
     <width>45</width>
     <height>21</height>
     <background_color>
@@ -169,8 +169,8 @@ $(actions)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_7</name>
     <text>Ti [%]</text>
-    <x>126</x>
-    <y>332</y>
+    <x>60</x>
+    <y>390</y>
     <width>39</width>
     <height>21</height>
     <background_color>
@@ -188,8 +188,8 @@ $(actions)</tooltip>
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_1</name>
     <pv_name>$(MKS):cSetP</pv_name>
-    <x>213</x>
-    <y>285</y>
+    <x>130</x>
+    <y>280</y>
     <width>56</width>
     <precision>2</precision>
     <show_units>false</show_units>
@@ -211,8 +211,8 @@ $(actions)</tooltip>
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_2</name>
     <pv_name>$(MKS):cOutput</pv_name>
-    <x>213</x>
-    <y>247</y>
+    <x>130</x>
+    <y>250</y>
     <width>56</width>
     <precision>2</precision>
     <show_units>false</show_units>
@@ -234,9 +234,10 @@ $(actions)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_9</name>
     <text>Setpoint [mbar]:</text>
-    <x>21</x>
-    <y>285</y>
+    <x>10</x>
+    <y>280</y>
     <width>111</width>
+    <height>21</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -260,6 +261,7 @@ $(actions)</tooltip>
     <x>21</x>
     <y>250</y>
     <width>78</width>
+    <height>21</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -426,7 +428,7 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_2</name>
     <pv_name>$(MKS):sKp</pv_name>
-    <x>50</x>
+    <x>200</x>
     <y>360</y>
     <width>50</width>
     <format>1</format>
@@ -475,8 +477,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_5</name>
     <pv_name>$(MKS):sOutV</pv_name>
-    <x>138</x>
-    <y>249</y>
+    <x>200</x>
+    <y>250</y>
     <width>61</width>
     <precision>2</precision>
     <show_units>false</show_units>
@@ -491,8 +493,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_3</name>
     <pv_name>$(MKS):sSetP</pv_name>
-    <x>138</x>
-    <y>285</y>
+    <x>200</x>
+    <y>280</y>
     <width>61</width>
     <precision>2</precision>
     <show_units>false</show_units>
@@ -507,8 +509,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_2</name>
     <pv_name>$(MKS):sTi</pv_name>
-    <x>126</x>
-    <y>360</y>
+    <x>200</x>
+    <y>390</y>
     <width>50</width>
     <precision>2</precision>
     <show_units>false</show_units>
@@ -719,5 +721,21 @@ $(actions)</tooltip>
     <width>120</width>
     <tooltip>Reset "Fault on send" error bit.
 $(pv_name)</tooltip>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(MKS):cKp</pv_name>
+    <x>130</x>
+    <y>360</y>
+    <width>50</width>
+    <precision>2</precision>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_1</name>
+    <pv_name>$(MKS):cTi</pv_name>
+    <x>130</x>
+    <y>390</y>
+    <width>50</width>
+    <precision>2</precision>
   </widget>
 </display>
