@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>AI-sim-top</name>
+  <name>DI-sim-top</name>
   <width>360</width>
   <height>380</height>
   <background_color>
@@ -12,7 +12,7 @@
   <grid_visible>false</grid_visible>
   <widget type="textentry" version="3.0.0">
     <name>Text Input</name>
-    <pv_name>loc://$(P)-AIdevNam("Paste PV name here")</pv_name>
+    <pv_name>loc://$(P)-DIdevNam("Paste PV name here")</pv_name>
     <x>30</x>
     <y>1</y>
     <width>271</width>
@@ -31,9 +31,9 @@
     </background_color>
     <actions>
     </actions>
-    <tooltip>Enter Process Variable name.
+    <tooltip>Enter Process Variable name (must end with ":sInp" or ":sProcInp")
 Example:
-PV Name:        CstatV-LHe:LI680:sRdV</tooltip>
+PV Name:        CstatV-Ctrl:MagIns:sInp</tooltip>
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <border_color>
       <color red="0" green="128" blue="255">
@@ -42,14 +42,16 @@ PV Name:        CstatV-LHe:LI680:sRdV</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Linking Container</name>
-    <file>Cstat-AI-sim.bob</file>
+    <file>Cstat-DI-sim.bob</file>
+    <x>5</x>
     <y>30</y>
-    <width>300</width>
+    <width>305</width>
+    <height>260</height>
     <actions>
     </actions>
     <scripts>
       <script file="scripts/PVname2Macro.py">
-        <pv_name>loc://$(P)-AIdevNam</pv_name>
+        <pv_name>loc://$(P)-DIdevNam</pv_name>
       </script>
     </scripts>
     <border_color>
