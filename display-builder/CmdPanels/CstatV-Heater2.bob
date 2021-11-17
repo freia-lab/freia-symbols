@@ -138,9 +138,9 @@
       </action>
     </actions>
     <pv_name>$(Heater2):sSim</pv_name>
-    <text>Menu</text>
-    <x>15</x>
-    <y>166</y>
+    <text>Sim Mode</text>
+    <x>10</x>
+    <y>180</y>
     <width>126</width>
     <height>26</height>
     <font>
@@ -215,11 +215,6 @@
       <y>56</y>
       <width>84</width>
       <height>1</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -232,6 +227,11 @@
         <point x="83.0" y="0.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -355,13 +355,6 @@ $(pv_value)</tooltip>
       <y>9</y>
       <width>86</width>
       <height>95</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
-      <arrow_length>15</arrow_length>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -372,6 +365,13 @@ $(pv_value)</tooltip>
         <point x="82.0" y="94.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -383,11 +383,6 @@ $(pv_value)</tooltip>
       <y>35</y>
       <width>84</width>
       <height>1</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -400,6 +395,11 @@ $(pv_value)</tooltip>
         <point x="83.0" y="0.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </line_color>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -439,11 +439,6 @@ $(pv_value)</tooltip>
       <y>78</y>
       <width>84</width>
       <height>2</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="1.0">
         </point>
@@ -456,6 +451,11 @@ $(pv_value)</tooltip>
         <point x="43.0" y="1.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </line_color>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -858,7 +858,7 @@ $(pv_value)</tooltip>
     <name>Panel 2_2</name>
     <x>124</x>
     <y>310</y>
-    <width>218</width>
+    <width>236</width>
     <height>106</height>
     <style>3</style>
     <foreground_color>
@@ -877,12 +877,8 @@ $(pv_value)</tooltip>
       <text>Limit 1 [K]:</text>
       <x>10</x>
       <y>72</y>
-      <width>63</width>
+      <width>70</width>
       <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -903,22 +899,10 @@ $(pv_value)</tooltip>
     <widget type="textentry" version="3.0.0">
       <name>Text Input Template_2</name>
       <pv_name>$(Heater2):cL3</pv_name>
-      <x>162</x>
+      <x>170</x>
       <y>12</y>
       <width>49</width>
       <height>21</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
-        </color>
-      </background_color>
       <precision>1</precision>
       <actions>
       </actions>
@@ -930,7 +914,6 @@ $(pv_value)</tooltip>
           <pv_name>CstatV-Ctrl:opMode:sLocal</pv_name>
         </rule>
       </rules>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -941,12 +924,8 @@ $(pv_value)</tooltip>
       <text>Limit 3 [K]:</text>
       <x>10</x>
       <y>12</y>
-      <width>63</width>
+      <width>70</width>
       <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -967,22 +946,10 @@ $(pv_value)</tooltip>
     <widget type="textentry" version="3.0.0">
       <name>Text Input Template</name>
       <pv_name>$(Heater2):cL1</pv_name>
-      <x>162</x>
+      <x>170</x>
       <y>72</y>
       <width>49</width>
       <height>21</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
-        </color>
-      </background_color>
       <precision>1</precision>
       <actions>
       </actions>
@@ -994,7 +961,6 @@ $(pv_value)</tooltip>
           <pv_name>CstatV-Ctrl:opMode:sLocal</pv_name>
         </rule>
       </rules>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -1003,22 +969,10 @@ $(pv_value)</tooltip>
     <widget type="textentry" version="3.0.0">
       <name>Text Input Template_1</name>
       <pv_name>$(Heater2):cL2</pv_name>
-      <x>162</x>
+      <x>170</x>
       <y>42</y>
       <width>49</width>
       <height>21</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
-        </color>
-      </background_color>
       <precision>1</precision>
       <actions>
       </actions>
@@ -1030,7 +984,6 @@ $(pv_value)</tooltip>
           <pv_name>CstatV-Ctrl:opMode:sLocal</pv_name>
         </rule>
       </rules>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -1041,12 +994,8 @@ $(pv_value)</tooltip>
       <text>Limit 2 [K]:</text>
       <x>10</x>
       <y>42</y>
-      <width>63</width>
+      <width>70</width>
       <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -1069,25 +1018,12 @@ $(pv_value)</tooltip>
       <pv_name>$(Heater2):sL3</pv_name>
       <x>101</x>
       <y>13</y>
-      <width>48</width>
+      <width>60</width>
       <height>17</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <precision>1</precision>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -1098,25 +1034,12 @@ $(pv_value)</tooltip>
       <pv_name>$(Heater2):sL2</pv_name>
       <x>101</x>
       <y>43</y>
-      <width>48</width>
+      <width>60</width>
       <height>17</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <precision>1</precision>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -1127,25 +1050,12 @@ $(pv_value)</tooltip>
       <pv_name>$(Heater2):sL1</pv_name>
       <x>101</x>
       <y>73</y>
-      <width>48</width>
+      <width>60</width>
       <height>17</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <precision>1</precision>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -1424,5 +1334,63 @@ $(pv_value)</tooltip>
     </line_color>
     <actions>
     </actions>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template_9</name>
+    <pv_name>$(Heater2):sSim</pv_name>
+    <bit>0</bit>
+    <x>60</x>
+    <y>140</y>
+    <width>35</width>
+    <height>35</height>
+    <off_label>OFF</off_label>
+    <off_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </off_color>
+    <on_label>ON</on_label>
+    <on_color>
+      <color name="MINOR" red="252" green="242" blue="17">
+      </color>
+    </on_color>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Sim.:</text>
+    <x>20</x>
+    <y>145</y>
+    <width>45</width>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>$(TT):</text>
+    <x>160</x>
+    <y>420</y>
+    <width>60</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)-$(S):$(TT):sRdV</pv_name>
+    <x>220</x>
+    <y>420</y>
+    <width>60</width>
   </widget>
 </display>
