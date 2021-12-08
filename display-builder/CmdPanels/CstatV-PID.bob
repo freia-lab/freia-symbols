@@ -225,7 +225,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_11</name>
     <text>Kp</text>
-    <x>110</x>
+    <x>130</x>
     <y>220</y>
     <width>19</width>
     <height>21</height>
@@ -249,7 +249,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_12</name>
     <text>Ti</text>
-    <x>110</x>
+    <x>130</x>
     <y>250</y>
     <width>13</width>
     <height>21</height>
@@ -273,7 +273,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_13</name>
     <text>Td</text>
-    <x>110</x>
+    <x>130</x>
     <y>280</y>
     <width>18</width>
     <height>21</height>
@@ -393,7 +393,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_5</name>
     <pv_name>$(PID):sKp</pv_name>
-    <x>230</x>
+    <x>250</x>
     <y>220</y>
     <width>48</width>
     <height>17</height>
@@ -410,7 +410,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_6</name>
     <pv_name>$(PID):sTi</pv_name>
-    <x>230</x>
+    <x>250</x>
     <y>250</y>
     <width>48</width>
     <height>17</height>
@@ -461,7 +461,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_9</name>
     <pv_name>$(PID):sTd</pv_name>
-    <x>230</x>
+    <x>250</x>
     <y>280</y>
     <width>48</width>
     <height>17</height>
@@ -478,7 +478,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Entry</name>
     <pv_name>$(PID):cKp</pv_name>
-    <x>160</x>
+    <x>180</x>
     <y>220</y>
     <width>50</width>
     <precision>2</precision>
@@ -486,7 +486,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Entry_1</name>
     <pv_name>$(PID):cTi</pv_name>
-    <x>160</x>
+    <x>180</x>
     <y>250</y>
     <width>50</width>
     <precision>1</precision>
@@ -494,9 +494,55 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Entry_2</name>
     <pv_name>$(PID):cTd</pv_name>
-    <x>160</x>
+    <x>180</x>
     <y>280</y>
     <width>50</width>
     <precision>1</precision>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(PID):sPSEL</pv_name>
+    <x>310</x>
+    <y>220</y>
+    <width>80</width>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>$(PID):sPSEL</pv_name>
+    <x>310</x>
+    <y>250</y>
+    <width>80</width>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_2</name>
+    <pv_name>$(PID):sDSEL</pv_name>
+    <x>310</x>
+    <y>280</y>
+    <width>80</width>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(PID):cmdSetDSEL</pv_name>
+        <value>1</value>
+        <description>DSEL On</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>$(PID):cmdRstDSEL</pv_name>
+        <value>1</value>
+        <description>DSEL Off</description>
+      </action>
+    </actions>
+    <text>DSEL On/Off</text>
+    <x>20</x>
+    <y>276</y>
+    <tooltip>$(actions)</tooltip>
   </widget>
 </display>
