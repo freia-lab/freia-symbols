@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>pump-h-r</name>
+  <width>45</width>
+  <height>24</height>
+  <background_color>
+    <color red="255" green="255" blue="255" alpha="0">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <widget type="group" version="2.0.0">
+    <name>Group_7</name>
+    <width>55</width>
+    <height>55</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol_7</name>
+      <pv_name>$(P)-$(S):$(Pmp)-sOn:sProcInp</pv_name>
+      <symbols>
+        <symbol>../cryogenics/PV_Vacuum_Pump_RED.svg</symbol>
+        <symbol>../cryogenics/PV_Vacuum_Pump_GREEN.svg</symbol>
+      </symbols>
+      <x>3</x>
+      <y>3</y>
+      <width>50</width>
+      <height>50</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_10</name>
+      <text>$(Pmp)</text>
+      <x>12</x>
+      <y>20</y>
+      <width>32</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <wrap_words>false</wrap_words>
+      <rules>
+        <rule name="Background" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>
+              <color name="MINOR" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(P)-$(S):$(Pmp)-sCmdOn:sForced</pv_name>
+        </rule>
+        <rule name="Transparency" prop_id="transparent" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)-$(S):$(Pmp)-sCmdOn:sForced</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_7</name>
+      <actions>
+        <action type="open_display">
+          <file>CmdPanels/CstatV-Pump.bob</file>
+          <macros>
+            <p_name>$(P)-$(S):$(Pmp)</p_name>
+          </macros>
+          <target>window</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>2</x>
+      <y>2</y>
+      <width>50</width>
+      <height>50</height>
+      <transparent>true</transparent>
+      <tooltip>$(Pmp)</tooltip>
+    </widget>
+  </widget>
+</display>

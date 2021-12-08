@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(p_name)</name>
+  <width>400</width>
+  <height>430</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_visible>false</grid_visible>
+  <widget type="label" version="2.0.0">
+    <name>Label Template</name>
+    <text>$(p_name)</text>
+    <x>15</x>
+    <y>5</y>
+    <width>369</width>
+    <height>23</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="22.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template</name>
+    <pv_name>$(p_name)-sCmdOn:sForced</pv_name>
+    <bit>0</bit>
+    <x>8</x>
+    <y>54</y>
+    <width>41</width>
+    <height>41</height>
+    <off_label>ON</off_label>
+    <off_color>
+      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+      </color>
+    </off_color>
+    <on_label>OFF</on_label>
+    <on_color>
+      <color name="MINOR" red="252" green="242" blue="17">
+      </color>
+    </on_color>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button Template</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(p_name)-sCmdOn:cmdNorm</pv_name>
+        <value>1</value>
+        <description>Auto</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>$(p_name)-sCmdOn:cmdForced</pv_name>
+        <value>1</value>
+        <description>Manual</description>
+      </action>
+    </actions>
+    <text>Ctrl Mode</text>
+    <x>55</x>
+    <y>62</y>
+    <width>125</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template_3</name>
+    <pv_name>$(p_name)-sCmdOn:sInp</pv_name>
+    <bit>0</bit>
+    <x>233</x>
+    <y>110</y>
+    <width>36</width>
+    <height>36</height>
+    <off_label>OFF</off_label>
+    <off_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </off_color>
+    <on_label>ON</on_label>
+    <on_color>
+      <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+      </color>
+    </on_color>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_3</name>
+    <text>"Start" actuation Auto:</text>
+    <x>60</x>
+    <y>120</y>
+    <width>134</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_5</name>
+    <text>Controlled from WinCC! </text>
+    <x>110</x>
+    <y>27</y>
+    <width>175</width>
+    <height>22</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="17.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="VisibilityRule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>false</value>
+        </exp>
+        <pv_name>CstatV-Ctrl:opMode:sLocal</pv_name>
+      </rule>
+    </rules>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Panel 2</name>
+    <x>200</x>
+    <y>60</y>
+    <width>141</width>
+    <height>31</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Rule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>false</value>
+        </exp>
+        <pv_name>$(p_name)-sCmdOn:sForced</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template_1</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Start</description>
+        </action>
+      </actions>
+      <pv_name>$(p_name)-sCmdOn:cmdSet</pv_name>
+      <width>64</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template_2</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Stop</description>
+        </action>
+      </actions>
+      <pv_name>$(p_name)-sCmdOn:cmdRst</pv_name>
+      <x>74</x>
+      <width>64</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_6</name>
+    <text>"Start" actuation:</text>
+    <x>60</x>
+    <y>157</y>
+    <width>104</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template_5</name>
+    <pv_name>$(p_name)-sCmdOn:sProcInp-raw</pv_name>
+    <bit>0</bit>
+    <x>233</x>
+    <y>149</y>
+    <width>36</width>
+    <height>36</height>
+    <off_label>OFF</off_label>
+    <off_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </off_color>
+    <on_label>ON</on_label>
+    <on_color>
+      <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+      </color>
+    </on_color>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Auto</text>
+    <x>12</x>
+    <y>33</y>
+    <width>45</width>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>20</x>
+    <y>200</y>
+    <width>340</width>
+    <height>0</height>
+    <points>
+      <point x="340.0" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Status</text>
+    <x>20</x>
+    <y>200</y>
+    <width>340</width>
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_1</name>
+    <macros>
+      <AI>DI2Macro</AI>
+    </macros>
+    <x>20</x>
+    <y>240</y>
+    <width>259</width>
+    <height>180</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="action_button" version="3.0.0">
+      <name>Menu Button Template_1</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(p_name)-sOn:cmdNorm</pv_name>
+          <value>1</value>
+          <description>Normal</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>$(p_name)-sOn:cmdForced</pv_name>
+          <value>1</value>
+          <description>Forced</description>
+        </action>
+      </actions>
+      <pv_name>$(p_name)-sOn:sForced</pv_name>
+      <text>Operation Mode</text>
+      <width>130</width>
+      <height>26</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_11</name>
+      <text>Read-in value:</text>
+      <y>118</y>
+      <width>96</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_13</name>
+      <text>Process value:</text>
+      <y>82</y>
+      <width>96</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_1</name>
+      <pv_name>$(p_name)-sOn:sProcInp</pv_name>
+      <x>139</x>
+      <y>80</y>
+      <width>120</width>
+      <height>30</height>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_2</name>
+      <pv_name>$(p_name)-sOn:sInp</pv_name>
+      <x>139</x>
+      <y>116</y>
+      <width>120</width>
+      <height>30</height>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_2</name>
+      <y>40</y>
+      <width>259</width>
+      <height>41</height>
+      <visible>false</visible>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="New Rule" prop_id="visible" out_exp="false">
+          <exp bool_exp="pvInt0">
+            <value>true</value>
+          </exp>
+          <pv_name>$(p_name)-sOn:sForced</pv_name>
+        </rule>
+      </rules>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_14</name>
+        <text>Forced value:</text>
+        <y>5</y>
+        <width>90</width>
+        <height>21</height>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <description>ON</description>
+          </action>
+        </actions>
+        <pv_name>$(p_name)-sOn:cmdSet</pv_name>
+        <x>140</x>
+        <width>50</width>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_1</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <description>OFF</description>
+          </action>
+        </actions>
+        <pv_name>$(p_name)-sOn:cmdRst</pv_name>
+        <x>205</x>
+        <width>50</width>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_4</name>
+      <pv_name>$(p_name)-sOn:sForced</pv_name>
+      <x>139</x>
+      <width>120</width>
+      <height>26</height>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>CstatV-Vac:P090_1</name>
+    <pv_name>$(p_name)-sOn:sProcInp</pv_name>
+    <symbols>
+      <symbol>../../cryogenics/PV_Vacuum_Pump_RED.svg</symbol>
+      <symbol>../../cryogenics/PV_Vacuum_Pump_GREEN.svg</symbol>
+    </symbols>
+    <x>300</x>
+    <y>260</y>
+    <width>60</width>
+    <height>60</height>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <rotation>180.0</rotation>
+    <actions execute_as_one="true">
+      <action type="open_display">
+        <file>TP_TD20.bob</file>
+        <macros>
+          <P>CstatV-Vac:TP060</P>
+        </macros>
+        <target>standalone</target>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+Click for details</tooltip>
+    <preserve_ratio>false</preserve_ratio>
+  </widget>
+</display>
