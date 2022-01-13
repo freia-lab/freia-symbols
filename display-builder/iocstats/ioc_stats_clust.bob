@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ioc_stats_clust</name>
+  <x>903</x>
+  <y>166</y>
+  <width>427</width>
+  <height>268</height>
+  <actions>
+  </actions>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <y>58</y>
+    <width>427</width>
+    <height>2</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>IOC $(name) Pool Cluster Info</text>
+    <x>6</x>
+    <y>4</y>
+    <width>211</width>
+    <height>25</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="17.821782178217823">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(ioc):</text>
+    <x>5</x>
+    <y>29</y>
+    <width>212</width>
+    <height>27</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="17.821782178217823">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Total % Free</text>
+    <x>328</x>
+    <y>122</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Max</text>
+    <x>343</x>
+    <y>165</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):$(pool)_MBUF_FREE</pv_name>
+    <x>312</x>
+    <y>139</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):$(pool)_MBUF_MAX</pv_name>
+    <x>312</x>
+    <y>183</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>MBUFs</text>
+    <x>251</x>
+    <y>100</y>
+    <width>79</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_0_0</pv_name>
+    <x>8</x>
+    <y>102</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Size</text>
+    <x>21</x>
+    <y>84</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Clusters</text>
+    <x>72</x>
+    <y>83</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_0_1</pv_name>
+    <x>66</x>
+    <y>102</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Free</text>
+    <x>138</x>
+    <y>83</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_0_2</pv_name>
+    <x>124</x>
+    <y>102</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Free (%)</text>
+    <x>188</x>
+    <y>83</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):$(pool)_CLUST_AVAIL_0</pv_name>
+    <x>182</x>
+    <y>102</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_0_3</pv_name>
+    <x>240</x>
+    <y>102</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Usage</text>
+    <x>254</x>
+    <y>83</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(name) Pool</text>
+    <x>100</x>
+    <y>65</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>MBUFs</text>
+    <x>340</x>
+    <y>102</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_1_0</pv_name>
+    <x>8</x>
+    <y>122</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_1_1</pv_name>
+    <x>66</x>
+    <y>122</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_1_2</pv_name>
+    <x>124</x>
+    <y>122</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):$(pool)_CLUST_AVAIL_1</pv_name>
+    <x>182</x>
+    <y>122</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_1_3</pv_name>
+    <x>240</x>
+    <y>122</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_3_0</pv_name>
+    <x>8</x>
+    <y>162</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_3_1</pv_name>
+    <x>66</x>
+    <y>162</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_3_2</pv_name>
+    <x>124</x>
+    <y>162</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):$(pool)_CLUST_AVAIL_3</pv_name>
+    <x>182</x>
+    <y>162</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_3_3</pv_name>
+    <x>240</x>
+    <y>162</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_4_0</pv_name>
+    <x>8</x>
+    <y>182</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_4_1</pv_name>
+    <x>66</x>
+    <y>182</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_4_2</pv_name>
+    <x>124</x>
+    <y>182</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):$(pool)_CLUST_AVAIL_4</pv_name>
+    <x>182</x>
+    <y>182</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_4_3</pv_name>
+    <x>240</x>
+    <y>182</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_2_0</pv_name>
+    <x>8</x>
+    <y>142</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_2_1</pv_name>
+    <x>66</x>
+    <y>142</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_2_2</pv_name>
+    <x>124</x>
+    <y>142</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):$(pool)_CLUST_AVAIL_2</pv_name>
+    <x>182</x>
+    <y>142</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_2_3</pv_name>
+    <x>240</x>
+    <y>142</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_5_0</pv_name>
+    <x>8</x>
+    <y>202</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_5_1</pv_name>
+    <x>66</x>
+    <y>202</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_5_2</pv_name>
+    <x>124</x>
+    <y>202</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):$(pool)_CLUST_AVAIL_5</pv_name>
+    <x>182</x>
+    <y>202</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_5_3</pv_name>
+    <x>240</x>
+    <y>202</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_6_0</pv_name>
+    <x>8</x>
+    <y>222</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_6_1</pv_name>
+    <x>66</x>
+    <y>222</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_6_2</pv_name>
+    <x>124</x>
+    <y>222</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):$(pool)_CLUST_AVAIL_6</pv_name>
+    <x>182</x>
+    <y>222</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_6_3</pv_name>
+    <x>240</x>
+    <y>222</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_7_0</pv_name>
+    <x>8</x>
+    <y>242</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_7_1</pv_name>
+    <x>66</x>
+    <y>242</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_7_2</pv_name>
+    <x>124</x>
+    <y>242</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):$(pool)_CLUST_AVAIL_7</pv_name>
+    <x>182</x>
+    <y>242</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(ioc):CLUST_$(idx)_7_3</pv_name>
+    <x>240</x>
+    <y>242</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>
