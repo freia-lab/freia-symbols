@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>MKS Gauge Relay Status</name>
+  <width>90</width>
+  <height>56</height>
+  <widget type="textupdate" version="2.0.0">
+    <name>Relay</name>
+    <pv_name>$(DEVICENAME):Rly$(RELAY):NameR</pv_name>
+    <width>90</width>
+    <height>25</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="DAQ" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvInt0">
+          <value>
+            <color name="WHITE" red="255" green="255" blue="255">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(DEVICENAME):Rly$(RELAY):DAQTrigR</pv_name>
+      </rule>
+      <rule name="DAQ2" prop_id="border_width" out_exp="false">
+        <exp bool_exp="pvInt0">
+          <value>3</value>
+        </exp>
+        <pv_name>$(DEVICENAME):Rly$(RELAY):DAQTrigR</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(RELAY$(RELAY)_DESC=$(pv_name)
+$(pv_value))</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Relay Enablement</name>
+    <pv_name>$(DEVICENAME):Rly$(RELAY):Enable-RB</pv_name>
+    <y>31</y>
+    <width>59</width>
+    <height>25</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Relay State</name>
+    <pv_name>$(DEVICENAME):Rly$(RELAY):StatR</pv_name>
+    <x>64</x>
+    <y>31</y>
+    <width>25</width>
+    <height>25</height>
+    <off_color>
+      <color name="LED-GREEN-OFF" red="90" green="110" blue="90">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+      </color>
+    </on_color>
+  </widget>
+</display>

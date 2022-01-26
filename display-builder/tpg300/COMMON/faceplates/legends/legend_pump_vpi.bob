@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(vacDEV) - Vacuum Pump Legend</name>
+  <macros>
+    <ROOT>../../..</ROOT>
+    <vacDEV>vpi</vacDEV>
+  </macros>
+  <width>410</width>
+  <height>260</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>410</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Title</name>
+    <class>TITLE</class>
+    <text>$(TITLE)</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>390</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Primary Blue" red="0" green="148" blue="202">
+      </color>
+    </background_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Tip</name>
+    <text>Check the tooltips for explanations!</text>
+    <x>10</x>
+    <y>60</y>
+    <width>390</width>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group - Block icon</name>
+    <x>67</x>
+    <y>90</y>
+    <width>266</width>
+    <height>140</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Device</name>
+      <text>$(vacDEV)</text>
+      <width>80</width>
+      <height>40</height>
+      <font>
+        <font name="LARGE-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="21.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>Type of device
+sec-subsec:dis-DEV-idx</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Index</name>
+      <text>IDX</text>
+      <y>60</y>
+      <width>80</width>
+      <height>40</height>
+      <font>
+        <font name="LARGE-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="21.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>The index part of device name
+sec-subsec:dis-dev-IDX</tooltip>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol</name>
+      <pv_name>sim://ramp(0,5,2)</pv_name>
+      <symbols>
+        <symbol>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-invalid.svg</symbol>
+        <symbol>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-on.svg</symbol>
+        <symbol>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-off.svg</symbol>
+        <symbol>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-error.svg</symbol>
+        <symbol>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-over-range.svg</symbol>
+        <symbol>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-under-range.svg</symbol>
+      </symbols>
+      <x>96</x>
+      <y>3</y>
+      <width>92</width>
+      <height>92</height>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Open Symbol Legend</name>
+      <actions>
+        <action type="open_display">
+          <file>legend_pump_vpi_symbol.bob</file>
+          <target>standalone</target>
+          <description>Open Symbol Legend</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>96</x>
+      <y>3</y>
+      <width>92</width>
+      <height>92</height>
+      <transparent>true</transparent>
+      <tooltip>Symbol
+GREEN            - ON
+WHITE             - OFF
+YELLOW          - OVERRANGE
+DARK GREEN  - UNDERRANGE
+RED                - ERROR
+GRAY              - INVALID</tooltip>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>Interlock_badge</name>
+      <pv_name>sim://ramp(0,4,2)</pv_name>
+      <symbols>
+        <symbol>$(ROOT)/COMMON/symbols/interlocks/interlock-invalid.svg</symbol>
+        <symbol>$(ROOT)/COMMON/symbols/interlocks/interlock-healthy.svg</symbol>
+        <symbol>$(ROOT)/COMMON/symbols/interlocks/interlock-tripped.svg</symbol>
+        <symbol>$(ROOT)/COMMON/symbols/interlocks/interlock-overridden.svg</symbol>
+        <symbol>$(ROOT)/COMMON/symbols/interlocks/interlock-disabled.svg</symbol>
+      </symbols>
+      <x>92</x>
+      <y>104</y>
+      <width>32</width>
+      <height>32</height>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Open Interlock Legend</name>
+      <actions>
+        <action type="open_display">
+          <file>legend_interlocks.bob</file>
+          <target>standalone</target>
+          <description>Open Interlock Legend</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>92</x>
+      <y>104</y>
+      <width>32</width>
+      <height>32</height>
+      <transparent>true</transparent>
+      <tooltip>Interlock status
+Clickable - will show a window with the status of all the various interlocks
+GREEN   - HEALTHY
+YELLOW - OVERRIDDEN
+WHITE    - DISABLED
+RED        - TRIPPED
+GRAY      - INVALID</tooltip>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Badge Locked</name>
+      <file>$(ROOT)/COMMON/symbols/badges/lock.svg</file>
+      <x>198</x>
+      <width>32</width>
+      <height>32</height>
+      <tooltip>Automatic Start Disabled</tooltip>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Badge Started</name>
+      <file>$(ROOT)/COMMON/symbols/badges/started.svg</file>
+      <x>198</x>
+      <y>68</y>
+      <width>32</width>
+      <height>32</height>
+      <tooltip>Started</tooltip>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Badge Manual</name>
+      <file>$(ROOT)/COMMON/symbols/badges/manual.svg</file>
+      <x>232</x>
+      <y>68</y>
+      <width>32</width>
+      <height>32</height>
+      <tooltip>Manual Control Enabled</tooltip>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Badge Warning</name>
+      <file>$(ROOT)/COMMON/symbols/badges/warning.svg</file>
+      <x>198</x>
+      <y>104</y>
+      <width>32</width>
+      <height>32</height>
+      <tooltip>Warning
+Clickable - Will show a window with the warning and error status and message</tooltip>
+    </widget>
+  </widget>
+</display>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(vacDEV) - Vacuum Gauge Legend</name>
+  <macros>
+    <ROOT>../../..</ROOT>
+  </macros>
+  <width>420</width>
+  <height>200</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>420</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Title</name>
+    <class>TITLE</class>
+    <text>$(TITLE)</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>400</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Primary Blue" red="0" green="148" blue="202">
+      </color>
+    </background_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Tip</name>
+    <text>Check the tooltips for explanations!</text>
+    <x>10</x>
+    <y>60</y>
+    <width>400</width>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group - Block icon</name>
+    <x>115</x>
+    <y>90</y>
+    <width>190</width>
+    <height>100</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Device</name>
+      <text>$(vacDEV)</text>
+      <width>80</width>
+      <height>40</height>
+      <font>
+        <font name="LARGE-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="21.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>Type of device
+sec-subsec:dis-DEV-idx</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Index</name>
+      <text>IDX</text>
+      <y>60</y>
+      <width>80</width>
+      <height>40</height>
+      <font>
+        <font name="LARGE-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="21.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>The index part of device name
+sec-subsec:dis-dev-IDX</tooltip>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>Symbol</name>
+      <pv_name>sim://ramp(0,3,2)</pv_name>
+      <symbols>
+        <symbol>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-invalid.svg</symbol>
+        <symbol>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-open.svg</symbol>
+        <symbol>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-closed.svg</symbol>
+        <symbol>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-error.svg</symbol>
+      </symbols>
+      <x>96</x>
+      <y>3</y>
+      <width>92</width>
+      <height>92</height>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Open Symbol Legend</name>
+      <actions>
+        <action type="open_display">
+          <file>legend_gauge_vvmc_symbol.bob</file>
+          <target>standalone</target>
+          <description>Open Symbol Legend</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>96</x>
+      <y>3</y>
+      <width>92</width>
+      <height>92</height>
+      <transparent>true</transparent>
+      <tooltip>Symbol
+GREEN            - OPEN
+WHITE             - CLOSED
+RED                - ERROR
+GRAY              - INVALID</tooltip>
+    </widget>
+  </widget>
+</display>

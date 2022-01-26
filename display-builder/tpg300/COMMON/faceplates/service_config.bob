@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(SERVICE_SECTION) Section Service Config</name>
+  <width>660</width>
+  <height>320</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Title Rectangle</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>660</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Title</name>
+    <class>TITLE</class>
+    <text>$(SERVICE_SECTION) section service</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>450</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Current State</name>
+    <x>30</x>
+    <y>80</y>
+    <width>280</width>
+    <height>140</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="rectangle" version="2.0.0">
+      <name>CS-titlebar</name>
+      <width>280</width>
+      <height>140</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>CS-background</name>
+      <x>10</x>
+      <y>30</y>
+      <width>260</width>
+      <height>100</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <corner_width>5</corner_width>
+      <corner_height>5</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>CS-title</name>
+      <text>Current State</text>
+      <x>10</x>
+      <width>260</width>
+      <height>30</height>
+      <font>
+        <font name="SUBSUB-GROUP-HEADER" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>CS-content-group</name>
+      <x>10</x>
+      <y>30</y>
+      <width>260</width>
+      <height>100</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>SrvStat-RB</name>
+        <pv_name>VacS-$(SERVICE_SECTION)::$(SERVICE_SUBSECTION=)SrvStat-RB</pv_name>
+        <x>20</x>
+        <y>20</y>
+        <width>220</width>
+        <height>25</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>SrvResp-RB</name>
+        <pv_name>VacS-$(SERVICE_SECTION)::$(SERVICE_SUBSECTION=)SrvResp-RB</pv_name>
+        <x>20</x>
+        <y>60</y>
+        <width>220</width>
+        <height>25</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>New State</name>
+    <x>350</x>
+    <y>80</y>
+    <width>280</width>
+    <height>140</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="rectangle" version="2.0.0">
+      <name>NS-titlebar</name>
+      <width>280</width>
+      <height>140</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>NS-background</name>
+      <x>10</x>
+      <y>30</y>
+      <width>260</width>
+      <height>100</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <corner_width>5</corner_width>
+      <corner_height>5</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>NS-title</name>
+      <text>New State</text>
+      <x>10</x>
+      <width>260</width>
+      <height>30</height>
+      <font>
+        <font name="SUBSUB-GROUP-HEADER" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>NS-content-group</name>
+      <x>10</x>
+      <y>30</y>
+      <width>260</width>
+      <height>100</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="choice" version="2.0.0">
+        <name>SrvStat-S</name>
+        <pv_name>VacS-$(SERVICE_SECTION)::$(SERVICE_SUBSECTION=)SrvStat-S</pv_name>
+        <x>20</x>
+        <y>20</y>
+        <width>220</width>
+        <height>25</height>
+        <items>
+          <item>In Operation</item>
+          <item>In Service</item>
+        </items>
+      </widget>
+      <widget type="combo" version="2.0.0">
+        <name>SrvResp-S</name>
+        <pv_name>VacS-$(SERVICE_SECTION)::$(SERVICE_SUBSECTION=)SrvResp-S</pv_name>
+        <x>20</x>
+        <y>60</y>
+        <width>220</width>
+        <height>25</height>
+        <rules>
+          <rule name="Enabled" prop_id="enabled" out_exp="true">
+            <exp bool_exp="True">
+              <expression>pvInt0</expression>
+            </exp>
+            <pv_name>VacS-$(SERVICE_SECTION)::$(SERVICE_SUBSECTION=)SrvStat-S</pv_name>
+          </rule>
+        </rules>
+        <items>
+          <item>Mattias Malmstrom</item>
+          <item>Niklas Cerovina</item>
+          <item>Fredrik Svensson</item>
+          <item>Ralf Huber</item>
+          <item>Thomas Cornes</item>
+          <item>Delphine Hardion</item>
+          <item>Marcelo Juni Ferreira</item>
+          <item>Hilko Spoelstra</item>
+          <item>Laurence Page</item>
+          <item>Artur Gevorgyan</item>
+          <item>Adrien Besson</item>
+          <item>Yong Kian Sin</item>
+        </items>
+        <items_from_pv>false</items_from_pv>
+        <editable>true</editable>
+        <enabled>false</enabled>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>CommitSrvChangeCmd</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Commit</description>
+      </action>
+      <action type="execute">
+        <script file="EmbeddedPy">
+          <text><![CDATA[from org.csstudio.display.builder.runtime.script import ScriptUtil
+ScriptUtil.closeDisplay(widget)]]></text>
+        </script>
+        <description>Close window</description>
+      </action>
+    </actions>
+    <pv_name>VacS-$(SERVICE_SECTION)::$(SERVICE_SUBSECTION=)CommitSrvChangeCmd</pv_name>
+    <text>Commit</text>
+    <x>400</x>
+    <y>260</y>
+    <width>230</width>
+    <rules>
+      <rule name="Enabled" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pvInt0 == 0 or pvStr1 != &quot;&quot;">
+          <value>true</value>
+        </exp>
+        <pv_name>VacS-$(SERVICE_SECTION)::$(SERVICE_SUBSECTION=)SrvStat-S</pv_name>
+        <pv_name>VacS-$(SERVICE_SECTION)::$(SERVICE_SUBSECTION=)SrvResp-S</pv_name>
+      </rule>
+    </rules>
+    <tooltip>Commit change</tooltip>
+    <enabled>false</enabled>
+    <show_confirm_dialog>true</show_confirm_dialog>
+  </widget>
+</display>

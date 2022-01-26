@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>LegendButton</name>
+  <width>156</width>
+  <height>36</height>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>../faceplates/legends/legend.bob</file>
+        <target>window</target>
+        <description>Open Legend</description>
+      </action>
+    </actions>
+    <text>Legend</text>
+    <x>3</x>
+    <y>3</y>
+    <width>150</width>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>

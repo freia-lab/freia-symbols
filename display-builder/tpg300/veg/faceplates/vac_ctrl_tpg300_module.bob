@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Module Configuration</name>
+  <width>590</width>
+  <height>151</height>
+  <widget type="group" version="2.0.0">
+    <name>Module Configuration</name>
+    <width>590</width>
+    <height>151</height>
+    <style>2</style>
+    <foreground_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Configuration</name>
+      <text>MODULE CONFIGURATION</text>
+      <width>590</width>
+      <height>35</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GRAY-TEXT" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>SlotA</name>
+      <text>Slot A</text>
+      <x>120</x>
+      <y>50</y>
+      <width>110</width>
+      <height>25</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>SlotB</name>
+      <text>Slot B</text>
+      <x>236</x>
+      <y>50</y>
+      <width>110</width>
+      <height>25</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Separator</name>
+      <x>10</x>
+      <y>80</y>
+      <width>570</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="570.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Module Type</name>
+      <text>Module Type:</text>
+      <y>85</y>
+      <width>110</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Sensor Types</name>
+      <text>Sensor Types:</text>
+      <y>116</y>
+      <width>110</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>ModTypeA</name>
+      <pv_name>${DEVICENAME}:ModA:TypeR</pv_name>
+      <x>120</x>
+      <y>85</y>
+      <width>110</width>
+      <height>25</height>
+      <background_color>
+        <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>ModTypeB</name>
+      <pv_name>${DEVICENAME}:ModB:TypeR</pv_name>
+      <x>236</x>
+      <y>85</y>
+      <width>110</width>
+      <height>25</height>
+      <background_color>
+        <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>SensorTypeA1</name>
+      <pv_name>${DEVICENAME}:A1:SensorTypeR</pv_name>
+      <x>120</x>
+      <y>116</y>
+      <width>50</width>
+      <height>25</height>
+      <background_color>
+        <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>SensorTypeA2</name>
+      <pv_name>${DEVICENAME}:A2:SensorTypeR</pv_name>
+      <x>180</x>
+      <y>116</y>
+      <width>50</width>
+      <height>25</height>
+      <background_color>
+        <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>SensorTypeB1</name>
+      <pv_name>${DEVICENAME}:B1:SensorTypeR</pv_name>
+      <x>236</x>
+      <y>116</y>
+      <width>50</width>
+      <height>25</height>
+      <background_color>
+        <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>SensorTypeB2</name>
+      <pv_name>${DEVICENAME}:B2:SensorTypeR</pv_name>
+      <x>296</x>
+      <y>116</y>
+      <width>50</width>
+      <height>25</height>
+      <background_color>
+        <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Comm</name>
+      <text>Comm</text>
+      <x>352</x>
+      <y>50</y>
+      <width>110</width>
+      <height>25</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="PRIMARY-LIGHT" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>ModTypeComm</name>
+      <pv_name>${DEVICENAME}:ModComm:TypeR</pv_name>
+      <x>352</x>
+      <y>85</y>
+      <width>110</width>
+      <height>25</height>
+      <background_color>
+        <color name="PRIMARY-LIGHT" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Main</name>
+      <text>Main</text>
+      <x>468</x>
+      <y>50</y>
+      <width>110</width>
+      <height>25</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="PRIMARY-LIGHT" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>ModTypeMain</name>
+      <pv_name>${DEVICENAME}:ModMain:TypeR</pv_name>
+      <x>468</x>
+      <y>85</y>
+      <width>110</width>
+      <height>25</height>
+      <background_color>
+        <color name="PRIMARY-LIGHT" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>FWMain</name>
+      <pv_name>${DEVICENAME}:ModMain:FWVersionR</pv_name>
+      <x>468</x>
+      <y>116</y>
+      <width>110</width>
+      <height>25</height>
+      <background_color>
+        <color name="PRIMARY-LIGHT" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Firmware Version</name>
+      <text>Firmware:</text>
+      <x>359</x>
+      <y>116</y>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+</display>

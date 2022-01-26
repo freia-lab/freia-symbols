@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(DEVICENAME)</name>
+  <width>824</width>
+  <height>638</height>
+  <widget type="group" version="2.0.0">
+    <name>MKS - 937B / 946</name>
+    <width>824</width>
+    <height>638</height>
+    <style>2</style>
+    <foreground_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Configuration</name>
+      <text>$(DEVICENAME)</text>
+      <width>824</width>
+      <height>35</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GRAY-TEXT" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CommsStatR</name>
+      <pv_name>$(DEVICENAME):CommsStatR</pv_name>
+      <x>664</x>
+      <y>5</y>
+      <width>150</width>
+      <height>25</height>
+      <font>
+        <font name="SMALL-SERIF-BOLD" family="Source Serif Pro" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <transparent>true</transparent>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Module Configuration</name>
+      <file>vac_ctrl_mks946_937b_module.bob</file>
+      <x>10</x>
+      <y>50</y>
+      <width>804</width>
+      <height>195</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Combination Channel Configuration</name>
+      <file>vac_ctrl_mks946_937b_comb_chan.bob</file>
+      <x>10</x>
+      <y>285</y>
+      <width>804</width>
+      <height>155</height>
+      <resize>2</resize>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Front Panel</name>
+      <x>10</x>
+      <y>460</y>
+      <width>376</width>
+      <height>168</height>
+      <style>2</style>
+      <foreground_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
+        </color>
+      </background_color>
+      <widget type="label" version="2.0.0">
+        <name>Front Panel Configuration</name>
+        <text>Front Panel</text>
+        <width>375</width>
+        <height>30</height>
+        <font>
+          <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="GRAY-TEXT" red="255" green="255" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Display Format</name>
+        <text>Display Format:</text>
+        <y>40</y>
+        <width>120</width>
+        <height>25</height>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="combo" version="2.0.0">
+        <name>Display FormatS</name>
+        <pv_name>${DEVICENAME}:DisplayFormatS</pv_name>
+        <x>130</x>
+        <y>40</y>
+        <width>120</width>
+        <height>25</height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Display FormatR</name>
+        <pv_name>$(DEVICENAME):DisplayFormat-RB</pv_name>
+        <x>256</x>
+        <y>40</y>
+        <width>110</width>
+        <height>25</height>
+        <format>6</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Display Mode</name>
+        <text>Display Mode:</text>
+        <y>71</y>
+        <width>120</width>
+        <height>25</height>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="combo" version="2.0.0">
+        <name>Display ModeS</name>
+        <pv_name>${DEVICENAME}:DisplayModeS</pv_name>
+        <x>130</x>
+        <y>71</y>
+        <width>120</width>
+        <height>25</height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Display ModeR</name>
+        <pv_name>$(DEVICENAME):DisplayMode-RB</pv_name>
+        <x>256</x>
+        <y>71</y>
+        <width>110</width>
+        <height>25</height>
+        <format>6</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Panel Lock</name>
+        <text>Panel Lock:</text>
+        <y>102</y>
+        <width>120</width>
+        <height>25</height>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="combo" version="2.0.0">
+        <name>Panel LockS</name>
+        <pv_name>$(DEVICENAME):FPLockS</pv_name>
+        <x>130</x>
+        <y>102</y>
+        <width>120</width>
+        <height>25</height>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Panel LockR</name>
+        <pv_name>$(DEVICENAME):FPLock-RB</pv_name>
+        <x>256</x>
+        <y>102</y>
+        <width>110</width>
+        <height>25</height>
+        <format>6</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Screen Saver</name>
+        <text>Screen Saver:</text>
+        <y>133</y>
+        <width>120</width>
+        <height>25</height>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="spinner" version="2.0.0">
+        <name>Screen SaverS</name>
+        <pv_name>$(DEVICENAME):ScrnSvrTimeoutS</pv_name>
+        <x>130</x>
+        <y>133</y>
+        <width>120</width>
+        <height>25</height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Screen SaverR</name>
+        <pv_name>$(DEVICENAME):ScrnSvrTimeout-RB</pv_name>
+        <x>256</x>
+        <y>133</y>
+        <width>110</width>
+        <height>25</height>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>System Settings</name>
+      <x>438</x>
+      <y>460</y>
+      <width>376</width>
+      <height>168</height>
+      <style>2</style>
+      <foreground_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
+        </color>
+      </background_color>
+      <widget type="label" version="2.0.0">
+        <name>System Settings</name>
+        <text>System Settings</text>
+        <width>375</width>
+        <height>30</height>
+        <font>
+          <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="GRAY-TEXT" red="255" green="255" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Pressure Unit</name>
+        <text>Pressure Unit:</text>
+        <y>40</y>
+        <width>120</width>
+        <height>25</height>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="combo" version="2.0.0">
+        <name>Pressure UnitS</name>
+        <pv_name>${DEVICENAME}:UnitS</pv_name>
+        <x>130</x>
+        <y>40</y>
+        <width>120</width>
+        <height>25</height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Pressure UnitR</name>
+        <pv_name>$(DEVICENAME):Unit-RB</pv_name>
+        <x>256</x>
+        <y>40</y>
+        <width>110</width>
+        <height>25</height>
+        <format>6</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>User Calibration</name>
+        <text>User Calibration:</text>
+        <y>71</y>
+        <width>120</width>
+        <height>25</height>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="combo" version="2.0.0">
+        <name>User CalibrationS</name>
+        <pv_name>${DEVICENAME}:CalibS</pv_name>
+        <x>130</x>
+        <y>71</y>
+        <width>120</width>
+        <height>25</height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>User CalibrationR</name>
+        <pv_name>$(DEVICENAME):Calib-RB</pv_name>
+        <x>256</x>
+        <y>71</y>
+        <width>110</width>
+        <height>25</height>
+        <format>6</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Parameter Setting</name>
+        <text>Parameter Setting:</text>
+        <y>102</y>
+        <width>120</width>
+        <height>25</height>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="combo" version="2.0.0">
+        <name>Parameter SettingS</name>
+        <pv_name>$(DEVICENAME):ParamSettingS</pv_name>
+        <x>130</x>
+        <y>102</y>
+        <width>120</width>
+        <height>25</height>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Parameter SettingR</name>
+        <pv_name>$(DEVICENAME):ParamSetting-RB</pv_name>
+        <x>256</x>
+        <y>102</y>
+        <width>110</width>
+        <height>25</height>
+        <format>6</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Force Pascal</name>
+        <text>Force Pascal:</text>
+        <y>133</y>
+        <width>120</width>
+        <height>25</height>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="combo" version="2.0.0">
+        <name>Force PascalS</name>
+        <pv_name>$(DEVICENAME):ForcePascalS</pv_name>
+        <x>130</x>
+        <y>133</y>
+        <width>120</width>
+        <height>25</height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Force PascalR</name>
+        <pv_name>$(DEVICENAME):ForcePascal-RB</pv_name>
+        <x>256</x>
+        <y>133</y>
+        <width>110</width>
+        <height>25</height>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+  </widget>
+</display>

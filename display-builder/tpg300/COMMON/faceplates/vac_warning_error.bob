@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(SEC)-$(SUBSEC):$(DIS)-$(DEV)-$(IDX) Warning / Error</name>
+  <macros>
+    <vacPREFIX>$(SEC)-$(SUBSEC):$(DIS)-$(DEV)-$(IDX)</vacPREFIX>
+  </macros>
+  <width>500</width>
+  <height>155</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Background</name>
+    <width>500</width>
+    <height>155</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Header</name>
+    <text>$(vacPREFIX) Warning / Error</text>
+    <width>500</width>
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="GRAY-TEXT" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>10</x>
+    <y>40</y>
+    <width>480</width>
+    <height>105</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>ErrorR</name>
+      <pv_name>$(vacPREFIX):ErrorR</pv_name>
+      <width>25</width>
+      <height>25</height>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-RED-ON" red="255" green="60" blue="46">
+        </color>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>ErrorMsg</name>
+      <text></text>
+      <x>31</x>
+      <width>449</width>
+      <height>25</height>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="RED-TEXT" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="Background Color" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pvInt0 == false">
+            <value>
+              <color name="Read_Background" red="230" green="235" blue="232">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(vacPREFIX):ErrorR</pv_name>
+        </rule>
+      </rules>
+      <scripts>
+        <script file="../../$(WIDGET)/scripts/error.py">
+          <pv_name>$(vacPREFIX):ErrorR</pv_name>
+          <pv_name>$(vacPREFIX):ErrorCodeR</pv_name>
+        </script>
+      </scripts>
+      <tooltip>N/A</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>WarningR</name>
+      <pv_name>$(vacPREFIX):WarningR</pv_name>
+      <x>2</x>
+      <y>35</y>
+      <off_color>
+        <color name="LED-YELLOW-OFF" red="110" green="108" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+        </color>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>WarningMsg</name>
+      <text></text>
+      <x>31</x>
+      <y>35</y>
+      <width>449</width>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="YELLOW-TEXT" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="YELLOW" red="252" green="242" blue="17">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="Background Color" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pvInt0 == false">
+            <value>
+              <color name="Read_Background" red="230" green="235" blue="232">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(vacPREFIX):WarningR</pv_name>
+        </rule>
+      </rules>
+      <scripts>
+        <script file="../../$(WIDGET)/scripts/warning.py">
+          <pv_name>$(vacPREFIX):WarningR</pv_name>
+          <pv_name>$(vacPREFIX):WarningCodeR</pv_name>
+        </script>
+      </scripts>
+      <tooltip>N/A</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>RstErrorsCmd</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(vacPREFIX):RstErrorsCmd</pv_name>
+      <text>Reset Errors and Warnings</text>
+      <y>75</y>
+      <width>480</width>
+      <tooltip>$(actions)</tooltip>
+      <show_confirm_dialog>true</show_confirm_dialog>
+    </widget>
+  </widget>
+</display>

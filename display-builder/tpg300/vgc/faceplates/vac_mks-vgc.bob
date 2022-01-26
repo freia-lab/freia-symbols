@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(DEVICENAME)</name>
+  <width>982</width>
+  <height>712</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Gauge Background</name>
+    <width>982</width>
+    <height>712</height>
+    <line_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Gauge</name>
+    <text>$(DEVICENAME)</text>
+    <width>982</width>
+    <height>35</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Status</name>
+    <text>XX @ Yy</text>
+    <x>902</x>
+    <y>5</y>
+    <width>70</width>
+    <height>25</height>
+    <font>
+      <font name="SMALL-MONO-BOLD" family="Source Code Pro" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="ERROR" red="252" green="13" blue="27">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <scripts>
+      <script file="../../COMMON/scripts/gauge_status.py">
+        <pv_name>$(DEVICENAME):ValidR</pv_name>
+        <pv_name>$(DEVICENAME):SensorTypeR</pv_name>
+        <pv_name>$(DEVICENAME):ChanR</pv_name>
+      </script>
+    </scripts>
+    <tooltip>NA</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group Relays</name>
+    <x>10</x>
+    <y>55</y>
+    <width>962</width>
+    <height>252</height>
+    <style>3</style>
+    <widget type="rectangle" version="2.0.0">
+      <name>Relay Background</name>
+      <width>962</width>
+      <height>252</height>
+      <line_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Relays Header</name>
+      <text>RELAYS</text>
+      <width>962</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GRAY-TEXT" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>MKS Gauge Relay Labels</name>
+      <file>../../COMMON/embedded/vac_gauge-mks-relay-labels.bob</file>
+      <y>40</y>
+      <width>80</width>
+      <height>200</height>
+      <resize>1</resize>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>MKS Gauge Relay Control 1</name>
+      <macros>
+        <RELAY>1</RELAY>
+      </macros>
+      <file>../../COMMON/embedded/vac_gauge-mks-relay-control.bob</file>
+      <x>90</x>
+      <y>40</y>
+      <width>206</width>
+      <height>200</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Relay Separator 1</name>
+      <x>303</x>
+      <y>45</y>
+      <width>1</width>
+      <height>192</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="192.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>MKS Gauge Relay Control 2</name>
+      <macros>
+        <RELAY>2</RELAY>
+      </macros>
+      <file>../../COMMON/embedded/vac_gauge-mks-relay-control.bob</file>
+      <x>308</x>
+      <y>40</y>
+      <width>206</width>
+      <height>200</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Relay Separator 2</name>
+      <x>521</x>
+      <y>45</y>
+      <width>1</width>
+      <height>192</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="192.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>MKS Gauge Relay Control 3</name>
+      <macros>
+        <RELAY>3</RELAY>
+      </macros>
+      <file>../../COMMON/embedded/vac_gauge-mks-relay-control.bob</file>
+      <x>526</x>
+      <y>40</y>
+      <width>206</width>
+      <height>200</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Relay Separator 3</name>
+      <x>739</x>
+      <y>45</y>
+      <width>1</width>
+      <height>192</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="192.0">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>MKS Gauge Relay Control 4</name>
+      <macros>
+        <RELAY>4</RELAY>
+      </macros>
+      <file>../../COMMON/embedded/vac_gauge-mks-relay-control.bob</file>
+      <x>744</x>
+      <y>40</y>
+      <width>206</width>
+      <height>200</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group Control</name>
+    <x>10</x>
+    <y>327</y>
+    <width>390</width>
+    <height>285</height>
+    <style>3</style>
+    <widget type="rectangle" version="2.0.0">
+      <name>Control Background</name>
+      <width>390</width>
+      <height>285</height>
+      <line_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Control Header</name>
+      <text>CONTROL</text>
+      <width>390</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GRAY-TEXT" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Power Status</name>
+      <text>Power:</text>
+      <y>40</y>
+      <width>144</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>PowerStatusS</name>
+      <pv_name>$(DEVICENAME):PowerS</pv_name>
+      <x>154</x>
+      <y>40</y>
+      <width>110</width>
+      <height>25</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>PowerStatusR</name>
+      <pv_name>$(DEVICENAME):Power-RB</pv_name>
+      <x>269</x>
+      <y>40</y>
+      <width>110</width>
+      <height>25</height>
+      <off_color>
+        <color name="LED-GREEN-OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Control Mode</name>
+      <text>Control Mode:</text>
+      <y>75</y>
+      <width>144</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CtrlModeS</name>
+      <pv_name>$(DEVICENAME):CtrlModeS</pv_name>
+      <x>154</x>
+      <y>75</y>
+      <width>110</width>
+      <height>25</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CtrlMode-RB</name>
+      <pv_name>$(DEVICENAME):CtrlMode-RB</pv_name>
+      <x>270</x>
+      <y>75</y>
+      <width>110</width>
+      <height>25</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Control Channel</name>
+      <text>Control Channel:</text>
+      <y>110</y>
+      <width>144</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CtrlChanS</name>
+      <pv_name>$(DEVICENAME):CtrlChanS</pv_name>
+      <x>154</x>
+      <y>110</y>
+      <width>110</width>
+      <height>25</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CtrlChan-RB</name>
+      <pv_name>$(DEVICENAME):CtrlChan-RB</pv_name>
+      <x>269</x>
+      <y>110</y>
+      <width>110</width>
+      <height>25</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Control Setpoint</name>
+      <text>Control Setpoint:</text>
+      <y>145</y>
+      <width>144</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>Control Setpoint</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>CtrlSPS</name>
+      <pv_name>$(DEVICENAME):CtrlSPS</pv_name>
+      <x>154</x>
+      <y>145</y>
+      <width>110</width>
+      <height>25</height>
+      <format>2</format>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CtrlSP-RB</name>
+      <pv_name>$(DEVICENAME):CtrlSP-RB</pv_name>
+      <x>270</x>
+      <y>145</y>
+      <width>110</width>
+      <height>25</height>
+      <format>2</format>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Control Setpoint Hysteresis</name>
+      <text>Control Hysteresis:</text>
+      <y>180</y>
+      <width>144</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>Control Setpoint Hysteresis</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>CtrlSPHystS</name>
+      <pv_name>$(DEVICENAME):CtrlSPHystS</pv_name>
+      <x>154</x>
+      <y>180</y>
+      <width>110</width>
+      <height>25</height>
+      <format>2</format>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CtrlSPHyst-RB</name>
+      <pv_name>$(DEVICENAME):CtrlSPHyst-RB</pv_name>
+      <x>270</x>
+      <y>180</y>
+      <width>110</width>
+      <height>25</height>
+      <format>2</format>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Extend Control Setpoint</name>
+      <text>Extend Control:</text>
+      <y>215</y>
+      <width>144</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>Extend the Upper Control Setpoint Range</tooltip>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CtrlSPExtRngS</name>
+      <pv_name>$(DEVICENAME):CtrlSPExtRngS</pv_name>
+      <x>154</x>
+      <y>215</y>
+      <width>110</width>
+      <height>25</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CtrlSPExtRng-RB</name>
+      <pv_name>$(DEVICENAME):CtrlSPExtRng-RB</pv_name>
+      <x>270</x>
+      <y>215</y>
+      <width>110</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Protection Setpoint</name>
+      <text>Protection Setpoint:</text>
+      <y>250</y>
+      <width>144</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>Protection Setpoint</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>ProtSPS</name>
+      <pv_name>$(DEVICENAME):ProtSPS</pv_name>
+      <x>154</x>
+      <y>250</y>
+      <width>110</width>
+      <height>25</height>
+      <format>2</format>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>ProtSP-RB</name>
+      <pv_name>$(DEVICENAME):ProtSP-RB</pv_name>
+      <x>270</x>
+      <y>250</y>
+      <width>110</width>
+      <height>25</height>
+      <format>2</format>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group Misc</name>
+    <x>420</x>
+    <y>327</y>
+    <width>376</width>
+    <height>215</height>
+    <style>3</style>
+    <widget type="rectangle" version="2.0.0">
+      <name>Misc Background</name>
+      <width>376</width>
+      <height>215</height>
+      <line_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Misc Header</name>
+      <text>MISC</text>
+      <width>376</width>
+      <height>30</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GRAY-TEXT" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Gauge Status</name>
+      <text>Gauge Status:</text>
+      <y>40</y>
+      <width>130</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>GaugeStatR</name>
+      <pv_name>$(DEVICENAME):GaugeStatR</pv_name>
+      <x>141</x>
+      <y>40</y>
+      <width>226</width>
+      <height>25</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Gas Type</name>
+      <text>Gas Type:</text>
+      <y>75</y>
+      <width>130</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>GasTypeS</name>
+      <pv_name>$(DEVICENAME):GasTypeS</pv_name>
+      <x>141</x>
+      <y>75</y>
+      <width>110</width>
+      <height>25</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>GasType-RB</name>
+      <pv_name>$(DEVICENAME):GasType-RB</pv_name>
+      <x>256</x>
+      <y>75</y>
+      <width>110</width>
+      <height>25</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Gas Correction Factor</name>
+      <text>Gas Correction:</text>
+      <y>110</y>
+      <width>130</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>Gas Correction Factor</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>GasCorrFS</name>
+      <pv_name>$(DEVICENAME):GasCorrFS</pv_name>
+      <x>141</x>
+      <y>110</y>
+      <width>110</width>
+      <height>25</height>
+      <show_units>false</show_units>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>GasCorrF-RB</name>
+      <pv_name>$(DEVICENAME):GasCorrF-RB</pv_name>
+      <x>256</x>
+      <y>110</y>
+      <width>110</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Fast Relay Trigger</name>
+      <text>Fast Relay Trigger:</text>
+      <y>145</y>
+      <width>130</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>Pressure to Trigger Fast Relay Control Output</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>FastRlySPS</name>
+      <pv_name>$(DEVICENAME):FastRlySPS</pv_name>
+      <x>141</x>
+      <y>145</y>
+      <width>110</width>
+      <height>25</height>
+      <format>2</format>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>FastRlySP-RB</name>
+      <pv_name>$(DEVICENAME):FastRlySP-RB</pv_name>
+      <x>256</x>
+      <y>145</y>
+      <width>110</width>
+      <height>25</height>
+      <format>2</format>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Startup Delay</name>
+      <text>Startup Delay:</text>
+      <y>180</y>
+      <width>130</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>Time delay for starting the gauge</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>StartupDlyS</name>
+      <pv_name>$(DEVICENAME):StartupDlyS</pv_name>
+      <x>141</x>
+      <y>180</y>
+      <width>110</width>
+      <height>25</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>StartupDly-RB</name>
+      <pv_name>$(DEVICENAME):StartupDly-RB</pv_name>
+      <x>256</x>
+      <y>180</y>
+      <width>110</width>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Separator</name>
+    <x>5</x>
+    <y>627</y>
+    <width>972</width>
+    <height>3</height>
+    <line_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Controller Detailed</name>
+    <actions>
+      <action type="open_display">
+        <file>../../veg/faceplates/vac_ctrl_mks946_937b_controller.bob</file>
+        <macros>
+          <DEVICENAME>$(CONTROLLER)</DEVICENAME>
+        </macros>
+        <target>window</target>
+        <description>Open Controller Screen</description>
+      </action>
+    </actions>
+    <x>812</x>
+    <y>645</y>
+    <width>150</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>

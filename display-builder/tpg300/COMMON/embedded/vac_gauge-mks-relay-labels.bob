@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>MKS Gauge Relay Labels</name>
+  <width>80</width>
+  <height>200</height>
+  <widget type="label" version="2.0.0">
+    <name>Setpoint</name>
+    <text>Setpoint:</text>
+    <y>35</y>
+    <width>80</width>
+    <height>25</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Hysteresis</name>
+    <text>Hysteresis:</text>
+    <y>70</y>
+    <width>80</width>
+    <height>25</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Direction</name>
+    <text>Direction:</text>
+    <y>105</y>
+    <width>80</width>
+    <height>25</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Control</name>
+    <text>Control:</text>
+    <y>140</y>
+    <width>80</width>
+    <height>25</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Status</name>
+    <text>Status:</text>
+    <y>175</y>
+    <width>80</width>
+    <height>25</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+</display>

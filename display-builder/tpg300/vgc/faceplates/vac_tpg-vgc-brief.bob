@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(DEVICENAME) Brief</name>
+  <macros>
+    <FACEPLATE_300>../../veg/faceplates/vac_ctrl_tpg300_controller.bob</FACEPLATE_300>
+    <FACEPLATE_500>../../veg/faceplates/vac_ctrl_tpg500_controller.bob</FACEPLATE_500>
+  </macros>
+  <width>375</width>
+  <height>298</height>
+  <rules>
+    <rule name="Fake rule to have iUITypeR always connected" prop_id="name" out_exp="false">
+      <pv_name trigger="false">${CONTROLLER}:iUITypeR</pv_name>
+    </rule>
+  </rules>
+  <widget type="rectangle" version="2.0.0">
+    <name>Background</name>
+    <width>375</width>
+    <height>298</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Brief</name>
+    <text>$(DEVICENAME)</text>
+    <width>375</width>
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="GRAY-TEXT" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Status</name>
+    <text>XX @ Yy</text>
+    <x>295</x>
+    <y>5</y>
+    <width>70</width>
+    <font>
+      <font name="SMALL-MONO-BOLD" family="Source Code Pro" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="ERROR" red="252" green="13" blue="27">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <scripts>
+      <script file="../../COMMON/scripts/gauge_status.py">
+        <pv_name>$(DEVICENAME):ValidR</pv_name>
+        <pv_name>$(DEVICENAME):SensorTypeR</pv_name>
+        <pv_name>$(DEVICENAME):ChanR</pv_name>
+      </script>
+    </scripts>
+    <tooltip>NA</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Pressure</name>
+    <text>Pressure:</text>
+    <x>10</x>
+    <y>40</y>
+    <width>80</width>
+    <height>35</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>PressureR</name>
+    <pv_name>$(DEVICENAME):PrsR</pv_name>
+    <x>100</x>
+    <y>40</y>
+    <width>110</width>
+    <height>35</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <format>2</format>
+    <precision>2</precision>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>PressureStatR</name>
+    <pv_name>$(DEVICENAME):PrsStatR</pv_name>
+    <x>220</x>
+    <y>40</y>
+    <width>145</width>
+    <height>35</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <scripts>
+      <script file="../../COMMON/scripts/pressure_status.py">
+        <pv_name>$(DEVICENAME):PrsStatR</pv_name>
+        <pv_name>$(DEVICENAME):GaugeStatR</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Relay 1</name>
+    <macros>
+      <RELAY>1</RELAY>
+    </macros>
+    <file>../../COMMON/embedded/vac_gauge-tpg-relay-status.bob</file>
+    <x>105</x>
+    <y>82</y>
+    <width>96</width>
+    <height>62</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Relay Separator</name>
+    <x>205</x>
+    <y>86</y>
+    <width>1</width>
+    <height>50</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="50.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Relay 2</name>
+    <macros>
+      <RELAY>2</RELAY>
+    </macros>
+    <file>../../COMMON/embedded/vac_gauge-tpg-relay-status.bob</file>
+    <x>209</x>
+    <y>82</y>
+    <width>96</width>
+    <height>62</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Control Mode</name>
+    <text>Control:</text>
+    <x>10</x>
+    <y>170</y>
+    <width>80</width>
+    <height>25</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>CtrlModeS</name>
+    <pv_name>$(DEVICENAME):CtrlModeS</pv_name>
+    <x>100</x>
+    <y>170</y>
+    <width>130</width>
+    <height>25</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>CtrlMode-RB</name>
+    <pv_name>$(DEVICENAME):CtrlMode-RB</pv_name>
+    <x>240</x>
+    <y>170</y>
+    <width>125</width>
+    <height>25</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Separator</name>
+    <x>5</x>
+    <y>215</y>
+    <width>365</width>
+    <height>3</height>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Gauge Detailed</name>
+    <actions>
+      <action type="open_display">
+        <file>vac_tpg-vgc.bob</file>
+        <target>standalone</target>
+        <description>Open detailed screen</description>
+      </action>
+    </actions>
+    <x>45</x>
+    <y>238</y>
+    <width>150</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Controller Detailed</name>
+    <actions>
+      <action type="execute">
+        <script file="../../veg/scripts/open_tpg_screen.py">
+        </script>
+        <description>Open Controller Screen</description>
+      </action>
+    </actions>
+    <x>215</x>
+    <y>238</y>
+    <width>150</width>
+    <height>50</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+</display>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>widget</name>
+  <width>50</width>
+  <height>50</height>
+  <widget type="picture" version="2.0.0">
+    <name>Picture</name>
+    <file>../../../$(vacDEV)/symbols/$(vacDEV)$(SYMBOL)</file>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>$(LEGEND_DETAIL)</file>
+        <target>standalone</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text></text>
+    <width>50</width>
+    <height>50</height>
+    <transparent>true</transparent>
+    <tooltip>$(TOOLTIP)</tooltip>
+  </widget>
+</display>

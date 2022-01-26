@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(vacPREFIX)</name>
+  <macros>
+    <FACEPLATE_MKS>../faceplates/vac_mks-$(vacDEV)-brief.bob</FACEPLATE_MKS>
+    <FACEPLATE_TPG>../faceplates/vac_tpg-$(vacDEV)-brief.bob</FACEPLATE_TPG>
+    <vacDEV>vgc</vacDEV>
+    <vacPREFIX>$(SEC)-$(SUBSEC):$(DIS)-$(DEV)-$(IDX)</vacPREFIX>
+    <vacSYMBOL>../symbols/$(vacDEV)-</vacSYMBOL>
+  </macros>
+  <width>133</width>
+  <height>70</height>
+  <scripts>
+    <script file="../../COMMON/scripts/gauge_isvalid.py" check_connections="false">
+      <pv_name>$(vacPREFIX):ValidR</pv_name>
+      <pv_name>$(vacPREFIX):RlyValidR</pv_name>
+    </script>
+    <script file="../../COMMON/scripts/gauge_macros.py">
+      <pv_name>$(vacPREFIX):CtrlNameR</pv_name>
+      <pv_name>$(vacPREFIX):CtrlUITypeR</pv_name>
+      <pv_name>$(vacPREFIX):ModuleNameR</pv_name>
+    </script>
+  </scripts>
+  <widget type="polyline" version="2.0.0">
+    <name>PIPE_ABOVE</name>
+    <x>46</x>
+    <width>50</width>
+    <height>3</height>
+    <visible>$(PIPE_ABOVE=false)</visible>
+    <points>
+      <point x="25.0" y="0.0">
+      </point>
+      <point x="25.0" y="3.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>PIPE_LEFT</name>
+    <width>48</width>
+    <height>50</height>
+    <visible>$(PIPE_LEFT=false)</visible>
+    <points>
+      <point x="0.0" y="25.0">
+      </point>
+      <point x="48.0" y="25.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>PIPE_RIGHT</name>
+    <x>94</x>
+    <width>39</width>
+    <height>50</height>
+    <visible>$(PIPE_RIGHT=false)</visible>
+    <points>
+      <point x="0.0" y="25.0">
+      </point>
+      <point x="39.0" y="25.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>PIPE_BELOW</name>
+    <x>46</x>
+    <y>48</y>
+    <width>50</width>
+    <height>22</height>
+    <visible>$(PIPE_BELOW=false)</visible>
+    <points>
+      <point x="25.0" y="0.0">
+      </point>
+      <point x="25.0" y="22.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Symbol</name>
+    <pv_name>$(vacPREFIX):PrsStatR</pv_name>
+    <symbols>
+      <symbol>$(vacSYMBOL)invalid.svg</symbol>
+      <symbol>$(vacSYMBOL)on.svg</symbol>
+      <symbol>$(vacSYMBOL)off.svg</symbol>
+      <symbol>$(vacSYMBOL)error.svg</symbol>
+      <symbol>$(vacSYMBOL)over-range.svg</symbol>
+      <symbol>$(vacSYMBOL)under-range.svg</symbol>
+    </symbols>
+    <x>48</x>
+    <y>3</y>
+    <width>46</width>
+    <height>46</height>
+    <actions>
+      <action type="open_display">
+        <file>../../COMMON/LEGEND/legend_gauge.bob</file>
+        <macros>
+          <TITLE>VGC - Cold Cathode Gauge</TITLE>
+        </macros>
+        <target>standalone</target>
+        <description>Open Legend</description>
+      </action>
+    </actions>
+    <scripts>
+      <script file="../../COMMON/scripts/pressure.py">
+        <pv_name>$(vacPREFIX):PrsStatR</pv_name>
+        <pv_name>$(vacPREFIX):PrsR</pv_name>
+        <pv_name>$(vacPREFIX):PrsR-STR</pv_name>
+      </script>
+    </scripts>
+    <tooltip>N/A</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Device</name>
+    <text>$(DEV)</text>
+    <width>40</width>
+    <font>
+      <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Index</name>
+    <text>$(IDX)</text>
+    <y>30</y>
+    <width>40</width>
+    <font>
+      <font name="TINY-MONO-PLAIN" family="Source Code Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Open Faceplate</name>
+    <actions>
+      <action type="execute">
+        <script file="../../COMMON/scripts/open_gauge_brief_screen.py">
+        </script>
+        <description>Open Faceplate</description>
+      </action>
+    </actions>
+    <text></text>
+    <width>46</width>
+    <height>50</height>
+    <transparent>true</transparent>
+    <tooltip>Open faceplate</tooltip>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Badge warning</name>
+    <pv_name>$(vacPREFIX):ModuleValidR</pv_name>
+    <symbols>
+      <symbol>../../COMMON/symbols/badges/warning.svg</symbol>
+    </symbols>
+    <x>99</x>
+    <y>52</y>
+    <width>16</width>
+    <height>16</height>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="true">
+        <exp bool_exp="True">
+          <expression>not pvInt0</expression>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+    <tooltip>Measurement board has changed
+$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+</display>

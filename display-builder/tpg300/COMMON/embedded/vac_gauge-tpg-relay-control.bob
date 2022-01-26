@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>TPG Gauge Relay Control</name>
+  <width>212</width>
+  <height>206</height>
+  <widget type="textupdate" version="2.0.0">
+    <name>Relay Name</name>
+    <pv_name>$(DEVICENAME):Rly$(RELAY):NameR</pv_name>
+    <x>3</x>
+    <y>3</y>
+    <width>206</width>
+    <height>25</height>
+    <transparent>true</transparent>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="DAQ" prop_id="transparent" out_exp="false">
+        <exp bool_exp="pvInt0">
+          <value>false</value>
+        </exp>
+        <pv_name>$(DEVICENAME):Rly$(RELAY):DAQTrigR</pv_name>
+      </rule>
+      <rule name="DAQ2" prop_id="border_width" out_exp="false">
+        <exp bool_exp="pvInt0">
+          <value>3</value>
+        </exp>
+        <pv_name>$(DEVICENAME):Rly$(RELAY):DAQTrigR</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(RELAY$(RELAY)_DESC=$(pv_name)
+$(pv_value))</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>ChanS</name>
+    <pv_name>$(DEVICENAME):Rly$(RELAY):ChanS</pv_name>
+    <x>3</x>
+    <y>38</y>
+    <height>25</height>
+    <background_color>
+      <color name="Write_Background" red="224" green="217" blue="202">
+      </color>
+    </background_color>
+    <format>6</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Chan-RB</name>
+    <pv_name>$(DEVICENAME):Rly$(RELAY):Chan-RB</pv_name>
+    <x>109</x>
+    <y>38</y>
+    <height>25</height>
+    <format>6</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="Validity check" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvInt0 == 0">
+          <value>
+            <color name="ERROR" red="252" green="13" blue="27">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(DEVICENAME):Rly$(RELAY):ValidR</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>HighSPS</name>
+    <pv_name>$(DEVICENAME):Rly$(RELAY):HighSPS</pv_name>
+    <x>3</x>
+    <y>73</y>
+    <height>25</height>
+    <format>2</format>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>HighSP-RB</name>
+    <pv_name>$(DEVICENAME):Rly$(RELAY):HighSP-RB</pv_name>
+    <x>109</x>
+    <y>73</y>
+    <height>25</height>
+    <format>2</format>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>LowSPS</name>
+    <pv_name>$(DEVICENAME):Rly$(RELAY):LowSPS</pv_name>
+    <x>3</x>
+    <y>108</y>
+    <height>25</height>
+    <format>2</format>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>LowSP-RB</name>
+    <pv_name>$(DEVICENAME):Rly$(RELAY):LowSP-RB</pv_name>
+    <x>109</x>
+    <y>108</y>
+    <height>25</height>
+    <format>2</format>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>CommitS</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>0</value>
+        <description>Commit</description>
+      </action>
+    </actions>
+    <pv_name>$(DEVICENAME):Rly$(RELAY):CommitS</pv_name>
+    <x>3</x>
+    <y>143</y>
+    <height>25</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>CommitS-ErrorR</name>
+    <pv_name>$(DEVICENAME):Rly$(RELAY):CommitS-ErrorR</pv_name>
+    <x>109</x>
+    <y>143</y>
+    <height>25</height>
+    <format>6</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>StatR</name>
+    <pv_name>$(DEVICENAME):Rly$(RELAY):StatR</pv_name>
+    <x>3</x>
+    <y>178</y>
+    <width>206</width>
+    <height>25</height>
+    <off_color>
+      <color name="LED-GREEN-OFF" red="90" green="110" blue="90">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+      </color>
+    </on_color>
+    <square>true</square>
+  </widget>
+</display>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(vacDEV) - Vacuum Pump Legend</name>
+  <macros>
+    <ROOT>../../..</ROOT>
+  </macros>
+  <height>430</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>800</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Title</name>
+    <class>TITLE</class>
+    <text>$(TITLE) Legend</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>780</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Primary Blue" red="0" green="148" blue="202">
+      </color>
+    </background_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>NOMINAL Symbol</name>
+    <file>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-nominal-speed.svg</file>
+    <x>10</x>
+    <y>70</y>
+    <width>50</width>
+    <height>50</height>
+    <tooltip>At Nominal Speed</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>NOMINAL Status</name>
+    <text>Nominal
+Speed</text>
+    <x>66</x>
+    <y>70</y>
+    <width>90</width>
+    <height>50</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>NOMINAL Description</name>
+    <text>This status is set if the “nominal speed” status is true</text>
+    <x>170</x>
+    <y>70</y>
+    <width>610</width>
+    <height>50</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>ACCELERATING Symbol</name>
+    <file>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-acceleration.svg</file>
+    <x>10</x>
+    <y>140</y>
+    <width>50</width>
+    <height>50</height>
+    <tooltip>Accelerating</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>ACCELERATING Status</name>
+    <text>Accelerating</text>
+    <x>66</x>
+    <y>140</y>
+    <width>90</width>
+    <height>50</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>ACCELERATING Description</name>
+    <text>This status is set if the “start command feedback” status is true and the “nominal speed” status is false</text>
+    <x>170</x>
+    <y>140</y>
+    <width>610</width>
+    <height>50</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>OFF Symbol</name>
+    <file>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-off.svg</file>
+    <x>10</x>
+    <y>210</y>
+    <width>50</width>
+    <height>50</height>
+    <tooltip>OFF</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>OFF Status</name>
+    <text>OFF</text>
+    <x>66</x>
+    <y>210</y>
+    <width>90</width>
+    <height>50</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>OFF Description</name>
+    <text>This status is set if the “start command feedback” status is false</text>
+    <x>170</x>
+    <y>210</y>
+    <width>610</width>
+    <height>50</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>ERROR Symbol</name>
+    <file>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-error.svg</file>
+    <x>10</x>
+    <y>280</y>
+    <width>50</width>
+    <height>50</height>
+    <tooltip>ERROR</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>ERROR Status</name>
+    <text>ERROR</text>
+    <x>66</x>
+    <y>280</y>
+    <width>90</width>
+    <height>50</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>ERROR Description</name>
+    <text>This status is set if the “error status” generated by the pump’s controller is true</text>
+    <x>170</x>
+    <y>280</y>
+    <width>610</width>
+    <height>50</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>INVALID Symbol</name>
+    <file>$(ROOT)/$(vacDEV)/symbols/$(vacDEV)-invalid.svg</file>
+    <x>10</x>
+    <y>350</y>
+    <width>50</width>
+    <height>50</height>
+    <tooltip>INVALID</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>INVALID Status</name>
+    <text>INVALID</text>
+    <x>66</x>
+    <y>350</y>
+    <width>90</width>
+    <height>50</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>INVALID Description</name>
+    <text>This status is set if none of the above is applicable</text>
+    <x>170</x>
+    <y>350</y>
+    <width>610</width>
+    <height>50</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+</display>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>TPG Gauge Relay Labels</name>
+  <width>80</width>
+  <height>206</height>
+  <widget type="label" version="2.0.0">
+    <name>Channel</name>
+    <text>Channel:</text>
+    <y>38</y>
+    <width>80</width>
+    <height>25</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <tooltip>Sensor assigned to relay</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>High Setpoint</name>
+    <text>High SP:</text>
+    <y>73</y>
+    <width>80</width>
+    <height>25</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <tooltip>High Setpoint</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Low Setpoint</name>
+    <text>Low SP:</text>
+    <y>108</y>
+    <width>80</width>
+    <height>25</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <tooltip>Low Setpoint</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Commit</name>
+    <text>Commit:</text>
+    <y>143</y>
+    <width>80</width>
+    <height>25</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <tooltip>Commit setpoints</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Status</name>
+    <text>Status:</text>
+    <y>178</y>
+    <width>80</width>
+    <height>25</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+</display>

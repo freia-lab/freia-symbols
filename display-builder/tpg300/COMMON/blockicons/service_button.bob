@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ServiceButton</name>
+  <width>156</width>
+  <height>36</height>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions execute_as_one="true">
+      <action type="open_display">
+        <file>../faceplates/service_config.bob</file>
+        <target>window</target>
+        <description>Open Service</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Write PV</description>
+      </action>
+    </actions>
+    <pv_name>VacS-ACCV::as-is-system-expert</pv_name>
+    <text>Service</text>
+    <x>3</x>
+    <y>3</y>
+    <width>150</width>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="true">
+        <exp bool_exp="True">
+          <expression>not pvs[0].isReadonly()</expression>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+    <tooltip>Open Service Configuration</tooltip>
+  </widget>
+</display>

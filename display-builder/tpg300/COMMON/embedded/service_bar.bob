@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ServiceBar</name>
+  <width>406</width>
+  <height>80</height>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <width>406</width>
+    <height>80</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="true">
+        <exp bool_exp="True">
+          <expression>pvInt0</expression>
+        </exp>
+        <pv_name>VacS-$(SERVICE_SECTION)::$(SERVICE_SUBSECTION=)SrvStat-RB</pv_name>
+      </rule>
+    </rules>
+    <widget type="rectangle" version="2.0.0">
+      <name>Background</name>
+      <width>406</width>
+      <height>80</height>
+      <line_width>5</line_width>
+      <line_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="SECONDARY" red="202" green="0" blue="0">
+        </color>
+      </background_color>
+      <corner_width>5</corner_width>
+      <corner_height>5</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>InService</name>
+      <text>Section in Service</text>
+      <width>406</width>
+      <height>40</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="RED-TEXT" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Responsible</name>
+      <text>Responsible:</text>
+      <x>23</x>
+      <y>45</y>
+      <height>25</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="RED-TEXT" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>SrvResp-RB</name>
+      <pv_name>VacS-$(SERVICE_SECTION)::$(SERVICE_SUBSECTION=)SrvResp-RB</pv_name>
+      <x>129</x>
+      <y>45</y>
+      <width>250</width>
+      <height>25</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+</display>

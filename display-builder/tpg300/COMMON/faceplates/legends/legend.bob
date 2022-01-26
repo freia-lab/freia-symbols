@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Vacuum System Legend</name>
+  <macros>
+    <ROOT>../../..</ROOT>
+  </macros>
+  <width>730</width>
+  <height>470</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>730</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Title</name>
+    <class>TITLE</class>
+    <text>Vacuum System Legend</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>690</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Primary Blue" red="0" green="148" blue="202">
+      </color>
+    </background_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VGC</name>
+    <macros>
+      <LEGEND_DETAIL>legend_gauge.bob</LEGEND_DETAIL>
+      <SYMBOL>-off.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VGC - Cold Cathode Gauge</TOOLTIP>
+      <vacDEV>vgc</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>30</x>
+    <y>80</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VGD</name>
+    <macros>
+      <LEGEND_DETAIL>legend_gauge.bob</LEGEND_DETAIL>
+      <SYMBOL>-off.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VGD - Capacitance Gauge</TOOLTIP>
+      <vacDEV>vgd</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>130</x>
+    <y>80</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VGP</name>
+    <macros>
+      <LEGEND_DETAIL>legend_gauge.bob</LEGEND_DETAIL>
+      <SYMBOL>-off.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VGP - Pirani Gauge</TOOLTIP>
+      <vacDEV>vgp</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>230</x>
+    <y>80</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VGR</name>
+    <macros>
+      <LEGEND_DETAIL>legend_gauge_vgr.bob</LEGEND_DETAIL>
+      <SYMBOL>-off.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VGR - Partial Pressure Gauge</TOOLTIP>
+      <vacDEV>vgr</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>330</x>
+    <y>80</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VVMC</name>
+    <macros>
+      <LEGEND_DETAIL>legend_gauge_vvmc.bob</LEGEND_DETAIL>
+      <SYMBOL>-closed.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VVMC - Mass Flow Meter</TOOLTIP>
+      <vacDEV>vvmc</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>430</x>
+    <y>80</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VPI</name>
+    <macros>
+      <LEGEND_DETAIL>legend_pump_vpi.bob</LEGEND_DETAIL>
+      <SYMBOL>-off.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VPI - Sputter Ion Pump</TOOLTIP>
+      <vacDEV>vpi</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>30</x>
+    <y>180</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VPP</name>
+    <macros>
+      <LEGEND_DETAIL>legend_pump.bob</LEGEND_DETAIL>
+      <SYMBOL>-off.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VPP - Primary Pump</TOOLTIP>
+      <vacDEV>vpp</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>130</x>
+    <y>180</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VPDP</name>
+    <macros>
+      <LEGEND_DETAIL>legend_pump.bob</LEGEND_DETAIL>
+      <SYMBOL>-off.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VPDP - Primary Pump</TOOLTIP>
+      <vacDEV>vpdp</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>230</x>
+    <y>180</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VPT</name>
+    <macros>
+      <LEGEND_DETAIL>legend_pump.bob</LEGEND_DETAIL>
+      <SYMBOL>-off.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VPT - Turbopump</TOOLTIP>
+      <vacDEV>vpt</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>330</x>
+    <y>180</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VVA</name>
+    <macros>
+      <LEGEND_DETAIL>legend_valve.bob</LEGEND_DETAIL>
+      <SYMBOL>-closed.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VVA - Angle Valve</TOOLTIP>
+      <vacDEV>vva</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>30</x>
+    <y>280</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VVA straight</name>
+    <macros>
+      <FLAVOR>-straight</FLAVOR>
+      <LEGEND_DETAIL>legend_valve.bob</LEGEND_DETAIL>
+      <SYMBOL>-straight-closed.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VVA - Straight Angle Valve</TOOLTIP>
+      <vacDEV>vva</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>130</x>
+    <y>280</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VVF</name>
+    <macros>
+      <LEGEND_DETAIL>legend_valve.bob</LEGEND_DETAIL>
+      <SYMBOL>-closed.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VVF - Fast Valve</TOOLTIP>
+      <vacDEV>vvf</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>230</x>
+    <y>280</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VVG</name>
+    <macros>
+      <LEGEND_DETAIL>legend_valve.bob</LEGEND_DETAIL>
+      <SYMBOL>-closed.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VVG - Gate Valve</TOOLTIP>
+      <vacDEV>vvg</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>330</x>
+    <y>280</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VVM</name>
+    <macros>
+      <LEGEND_DETAIL>legend_valve.bob</LEGEND_DETAIL>
+      <SYMBOL>-not-controlled.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VVM - Manual Valve</TOOLTIP>
+      <vacDEV>vvm</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>430</x>
+    <y>280</y>
+    <width>50</width>
+    <height>50</height>
+    <visible>false</visible>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>VVM</name>
+    <file>$(ROOT)/vvm/symbols/vvm-not-controlled.svg</file>
+    <x>430</x>
+    <y>280</y>
+    <width>50</width>
+    <height>50</height>
+    <tooltip>VVM - Manual Valve
+(Not controlled)</tooltip>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VVM Straight</name>
+    <macros>
+      <FLAVOR>-straight</FLAVOR>
+      <SYMBOL>-straight-not-controlled.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VVM - Straight Manual Valve</TOOLTIP>
+      <vacDEV>vvm</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>530</x>
+    <y>280</y>
+    <width>50</width>
+    <height>50</height>
+    <visible>false</visible>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>VVM Straight</name>
+    <file>$(ROOT)/vvm/symbols/vvm-straight-not-controlled.svg</file>
+    <x>530</x>
+    <y>280</y>
+    <width>50</width>
+    <height>50</height>
+    <tooltip>VVM - Straight Manual Valve
+(Not controlled)</tooltip>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>VVS</name>
+    <macros>
+      <LEGEND_DETAIL>legend_valve.bob</LEGEND_DETAIL>
+      <SYMBOL>-closed.svg</SYMBOL>
+      <TITLE>$(TOOLTIP)</TITLE>
+      <TOOLTIP>VVS - Sector Gate Valve</TOOLTIP>
+      <vacDEV>vvs</vacDEV>
+    </macros>
+    <file>widget.bob</file>
+    <x>30</x>
+    <y>380</y>
+    <width>50</width>
+    <height>50</height>
+  </widget>
+</display>

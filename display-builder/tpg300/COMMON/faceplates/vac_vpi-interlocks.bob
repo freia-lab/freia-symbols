@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(SEC)-$(SUBSEC):$(DIS)-$(DEV)-$(IDX) Interlock</name>
+  <macros>
+    <vacPREFIX>$(SEC)-$(SUBSEC):$(DIS)-$(DEV)-$(IDX)</vacPREFIX>
+  </macros>
+  <width>500</width>
+  <height>267</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Background</name>
+    <width>500</width>
+    <height>267</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Header</name>
+    <text>$(vacPREFIX) Interlocks</text>
+    <width>500</width>
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="GRAY-TEXT" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>10</x>
+    <y>40</y>
+    <width>480</width>
+    <height>217</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>ITLckTrigR</name>
+      <pv_name>$(vacPREFIX):ITLckTrigR</pv_name>
+      <width>25</width>
+      <height>25</height>
+      <off_color>
+        <color name="LED-GREEN-OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label ITLckTrigR</name>
+      <text>Interlock Trigger</text>
+      <x>31</x>
+      <width>150</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>ITLck LED Group</name>
+      <y>45</y>
+      <width>480</width>
+      <height>112</height>
+      <style>2</style>
+      <foreground_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </foreground_color>
+      <transparent>true</transparent>
+      <widget type="embedded" version="2.0.0">
+        <name>Interlock Header</name>
+        <file>../embedded/vac_interlock_header.bob</file>
+        <x>156</x>
+        <width>320</width>
+        <height>25</height>
+        <resize>2</resize>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label HW Interlock</name>
+        <text>Hardware:</text>
+        <y>25</y>
+        <width>150</width>
+        <height>29</height>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="embedded" version="2.0.0">
+        <name>HW Interlock</name>
+        <macros>
+          <ITLck>HW</ITLck>
+        </macros>
+        <file>../embedded/vac_interlock_leds.bob</file>
+        <x>156</x>
+        <y>25</y>
+        <width>320</width>
+        <height>29</height>
+        <resize>2</resize>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label SW Interlock</name>
+        <text>Software:</text>
+        <y>54</y>
+        <width>150</width>
+        <height>29</height>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="embedded" version="2.0.0">
+        <name>SW Interlock</name>
+        <macros>
+          <ITLck>SW</ITLck>
+        </macros>
+        <file>../embedded/vac_interlock_leds.bob</file>
+        <x>156</x>
+        <y>54</y>
+        <width>320</width>
+        <height>29</height>
+        <resize>2</resize>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Prs Interlock</name>
+        <text>Pressure:</text>
+        <y>83</y>
+        <width>150</width>
+        <height>29</height>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="embedded" version="2.0.0">
+        <name>Prs Interlock</name>
+        <macros>
+          <ITLck>Prs</ITLck>
+        </macros>
+        <file>../embedded/vac_interlock_leds.bob</file>
+        <x>156</x>
+        <y>83</y>
+        <width>320</width>
+        <height>29</height>
+        <resize>2</resize>
+        <transparent>true</transparent>
+      </widget>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>OverrideITLckCmd</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(vacPREFIX):OverrideITLckCmd</pv_name>
+      <text>Bypass Interlocks</text>
+      <x>70</x>
+      <y>177</y>
+      <width>200</width>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+      <show_confirm_dialog>true</show_confirm_dialog>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>ClrOverrideITLckCmd</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(vacPREFIX):ClrOverrideITLckCmd</pv_name>
+      <text>Clear Interlock Bypass</text>
+      <x>280</x>
+      <y>177</y>
+      <width>200</width>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+      <show_confirm_dialog>true</show_confirm_dialog>
+    </widget>
+  </widget>
+</display>

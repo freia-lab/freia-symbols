@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Combination Channel Configuration</name>
+  <width>804</width>
+  <height>155</height>
+  <widget type="group" version="2.0.0">
+    <name>Combination Channel Configuration</name>
+    <width>804</width>
+    <height>155</height>
+    <style>2</style>
+    <foreground_color>
+      <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Configuration</name>
+      <text>Combination Channel Configuration</text>
+      <width>804</width>
+      <height>35</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GRAY-TEXT" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BLUE-GROUP-BORDER" red="138" green="167" blue="167">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>High</name>
+      <text>High</text>
+      <x>130</x>
+      <y>50</y>
+      <width>120</width>
+      <height>25</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="PRIMARY-GROUP-BORDER" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Middle</name>
+      <text>Middle</text>
+      <x>270</x>
+      <y>50</y>
+      <width>120</width>
+      <height>25</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="PRIMARY-GROUP-BORDER" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Low</name>
+      <text>Low</text>
+      <x>410</x>
+      <y>50</y>
+      <width>120</width>
+      <height>25</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="PRIMARY-GROUP-BORDER" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Enable</name>
+      <text>Enable</text>
+      <x>674</x>
+      <y>50</y>
+      <width>120</width>
+      <height>25</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="PRIMARY-GROUP-BORDER" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Separator</name>
+      <x>10</x>
+      <y>80</y>
+      <width>784</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="784.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CC1 EnabledR</name>
+      <pv_name>${DEVICENAME}:CC1:Enabled-RB</pv_name>
+      <x>10</x>
+      <y>85</y>
+      <width>25</width>
+      <height>25</height>
+      <off_color>
+        <color name="LED-GREEN-OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Combo 1</name>
+      <text>Combo #1:</text>
+      <x>41</x>
+      <y>85</y>
+      <width>79</width>
+      <height>25</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CC1 HighSetS</name>
+      <pv_name>${DEVICENAME}:CC1:HP:SettingS</pv_name>
+      <x>130</x>
+      <y>85</y>
+      <width>60</width>
+      <height>25</height>
+      <foreground_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CC1 HighSetR</name>
+      <pv_name>${DEVICENAME}:CC1:HP:Setting-RB</pv_name>
+      <x>200</x>
+      <y>85</y>
+      <width>50</width>
+      <height>25</height>
+      <background_color>
+        <color name="PRIMARY-LIGHT" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CC1 MiddleSetS</name>
+      <pv_name>${DEVICENAME}:CC1:MP:SettingS</pv_name>
+      <x>270</x>
+      <y>85</y>
+      <width>60</width>
+      <height>25</height>
+      <foreground_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CC1 MiddleSetR</name>
+      <pv_name>${DEVICENAME}:CC1:MP:Setting-RB</pv_name>
+      <x>340</x>
+      <y>85</y>
+      <width>50</width>
+      <height>25</height>
+      <background_color>
+        <color name="PRIMARY-LIGHT" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CC1 LowSetS</name>
+      <pv_name>${DEVICENAME}:CC1:LP:SettingS</pv_name>
+      <x>410</x>
+      <y>85</y>
+      <width>60</width>
+      <height>25</height>
+      <foreground_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CC1 LowSetR</name>
+      <pv_name>${DEVICENAME}:CC1:LP:Setting-RB</pv_name>
+      <x>480</x>
+      <y>85</y>
+      <width>50</width>
+      <height>25</height>
+      <background_color>
+        <color name="PRIMARY-LIGHT" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>CC1 Apply</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Apply</description>
+        </action>
+      </actions>
+      <pv_name>$(DEVICENAME):CC1:CommitS</pv_name>
+      <x>550</x>
+      <y>85</y>
+      <width>94</width>
+      <height>25</height>
+      <tooltip>Apply configuration settings</tooltip>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CC1 EnableS</name>
+      <pv_name>$(DEVICENAME):CC1:EnableS</pv_name>
+      <x>674</x>
+      <y>85</y>
+      <width>120</width>
+      <height>25</height>
+      <foreground_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>CC2 EnabledR</name>
+      <pv_name>${DEVICENAME}:CC2:Enabled-RB</pv_name>
+      <x>10</x>
+      <y>120</y>
+      <width>25</width>
+      <height>25</height>
+      <off_color>
+        <color name="LED-GREEN-OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Combo 2</name>
+      <text>Combo #2:</text>
+      <x>41</x>
+      <y>120</y>
+      <width>79</width>
+      <height>25</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CC2 HighSetS</name>
+      <pv_name>${DEVICENAME}:CC2:HP:SettingS</pv_name>
+      <x>130</x>
+      <y>120</y>
+      <width>60</width>
+      <height>25</height>
+      <foreground_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CC2 HighSetR</name>
+      <pv_name>${DEVICENAME}:CC2:HP:Setting-RB</pv_name>
+      <x>200</x>
+      <y>120</y>
+      <width>50</width>
+      <height>25</height>
+      <background_color>
+        <color name="PRIMARY-LIGHT" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CC2 MiddleSetS</name>
+      <pv_name>${DEVICENAME}:CC2:MP:SettingS</pv_name>
+      <x>270</x>
+      <y>120</y>
+      <width>60</width>
+      <height>25</height>
+      <foreground_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CC2 MiddleSetR</name>
+      <pv_name>${DEVICENAME}:CC2:MP:Setting-RB</pv_name>
+      <x>340</x>
+      <y>120</y>
+      <width>50</width>
+      <height>25</height>
+      <background_color>
+        <color name="PRIMARY-LIGHT" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CC2 LowSetS</name>
+      <pv_name>${DEVICENAME}:CC2:LP:SettingS</pv_name>
+      <x>410</x>
+      <y>120</y>
+      <width>60</width>
+      <height>25</height>
+      <foreground_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>CC2 LowSetR</name>
+      <pv_name>${DEVICENAME}:CC2:LP:Setting-RB</pv_name>
+      <x>480</x>
+      <y>120</y>
+      <width>50</width>
+      <height>25</height>
+      <background_color>
+        <color name="PRIMARY-LIGHT" red="151" green="188" blue="202">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>CC2 Apply</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Apply</description>
+        </action>
+      </actions>
+      <pv_name>$(DEVICENAME):CC2:CommitS</pv_name>
+      <x>550</x>
+      <y>120</y>
+      <width>94</width>
+      <height>25</height>
+      <tooltip>Apply configuration settings</tooltip>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>CC2 EnableS</name>
+      <pv_name>$(DEVICENAME):CC2:EnableS</pv_name>
+      <x>674</x>
+      <y>120</y>
+      <width>120</width>
+      <height>25</height>
+      <foreground_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+</display>

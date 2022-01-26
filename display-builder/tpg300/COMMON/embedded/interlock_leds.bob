@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Interlock LEDs</name>
+  <width>320</width>
+  <height>20</height>
+  <actions>
+  </actions>
+  <widget type="led" version="2.0.0">
+    <name>LED Healthy</name>
+    <pv_name>$(vacPREFIX):ITLck:$(ITLck):HltyR</pv_name>
+    <x>30</x>
+    <off_color>
+      <color name="LED-GREEN-OFF" red="90" green="110" blue="90">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color name="Button Grey" red="180" green="180" blue="180">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Tripped</name>
+    <pv_name>$(vacPREFIX):ITLck:$(ITLck):TrpR</pv_name>
+    <x>110</x>
+    <off_color>
+      <color name="LED-RED-OFF" red="110" green="101" blue="90">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="LED-RED-ON" red="255" green="60" blue="46">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color name="Button Grey" red="180" green="180" blue="180">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Bypassed</name>
+    <pv_name>$(vacPREFIX):ITLck:$(ITLck):OvRidnR</pv_name>
+    <x>190</x>
+    <off_color>
+      <color name="LED-YELLOW-OFF" red="110" green="108" blue="90">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="LED-YELLOW-ON" red="255" green="235" blue="17">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color name="Button Grey" red="180" green="180" blue="180">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Disabled</name>
+    <pv_name>$(vacPREFIX):ITLck:$(ITLck):DisR</pv_name>
+    <x>270</x>
+    <off_color>
+      <color name="LED-GREEN-OFF" red="90" green="110" blue="90">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color name="Button Grey" red="180" green="180" blue="180">
+      </color>
+    </foreground_color>
+  </widget>
+</display>
