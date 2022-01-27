@@ -136,8 +136,17 @@
     <y>82</y>
     <width>96</width>
     <height>62</height>
+    <visible>false</visible>
     <resize>2</resize>
     <transparent>true</transparent>
+    <rules>
+      <rule name="Vivsible" prop_id="visible" out_exp="false">
+        <exp bool_exp="1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(DEVICENAME):Rly$(RELAY):StatR</pv_name>
+      </rule>
+    </rules>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Relay Separator</name>
@@ -167,8 +176,17 @@
     <y>82</y>
     <width>96</width>
     <height>62</height>
+    <visible>false</visible>
     <resize>2</resize>
     <transparent>true</transparent>
+    <rules>
+      <rule name="Vivsible" prop_id="visible" out_exp="false">
+        <exp bool_exp="1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(DEVICENAME):Rly$(RELAY):StatR</pv_name>
+      </rule>
+    </rules>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Control Mode</name>

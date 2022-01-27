@@ -121,8 +121,8 @@
       <name>TPG Gauge Relay Labels</name>
       <file>../../COMMON/embedded/vac_gauge-tpg-relay-labels.bob</file>
       <y>40</y>
-      <width>78</width>
-      <height>204</height>
+      <width>80</width>
+      <height>206</height>
       <resize>2</resize>
       <transparent>true</transparent>
     </widget>
@@ -134,10 +134,19 @@
       <file>../../COMMON/embedded/vac_gauge-tpg-relay-control.bob</file>
       <x>90</x>
       <y>40</y>
-      <width>210</width>
-      <height>204</height>
+      <width>212</width>
+      <height>206</height>
+      <visible>false</visible>
       <resize>2</resize>
       <transparent>true</transparent>
+      <rules>
+        <rule name="Vivsible" prop_id="visible" out_exp="false">
+          <exp bool_exp="1">
+            <value>true</value>
+          </exp>
+          <pv_name>$(DEVICENAME):Rly$(RELAY):StatR</pv_name>
+        </rule>
+      </rules>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Relay Separator 1</name>
@@ -165,10 +174,19 @@
       <file>../../COMMON/embedded/vac_gauge-tpg-relay-control.bob</file>
       <x>314</x>
       <y>40</y>
-      <width>210</width>
-      <height>204</height>
+      <width>212</width>
+      <height>206</height>
+      <visible>false</visible>
       <resize>2</resize>
       <transparent>true</transparent>
+      <rules>
+        <rule name="Vivsible" prop_id="visible" out_exp="false">
+          <exp bool_exp="1">
+            <value>true</value>
+          </exp>
+          <pv_name>$(DEVICENAME):Rly$(RELAY):StatR</pv_name>
+        </rule>
+      </rules>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
