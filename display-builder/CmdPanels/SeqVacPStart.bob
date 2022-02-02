@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
+  <name>SeqHNOSSvac</name>
   <macros>
     <A>StartPmp</A>
     <A2>StopPmp</A2>
@@ -463,17 +464,17 @@ $(pv_value)</tooltip>
     <y>345</y>
     <width>638</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="637.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -714,17 +715,17 @@ $(pv_value)</tooltip>
     <y>220</y>
     <width>58</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="57.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -779,14 +780,6 @@ $(pv_value)</tooltip>
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <rules>
-      <rule name="TipRule" prop_id="tooltip" out_exp="true">
-        <exp bool_exp="true">
-          <expression>pvStr0</expression>
-        </exp>
-        <pv_name>CstatH-Vac:PT015:sRdV.NAME</pv_name>
-      </rule>
-    </rules>
     <tooltip>###</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
@@ -869,17 +862,17 @@ Click for details</tooltip>
     <y>186</y>
     <width>1</width>
     <height>32</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="31.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -887,7 +880,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_6</name>
-    <pv_name>CstatH-Vac:PT017:sRdV</pv_name>
+    <pv_name>CstatH-Vac:PT017:PrsR</pv_name>
     <x>528</x>
     <y>169</y>
     <width>49</width>
@@ -918,7 +911,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_7</name>
-    <pv_name>CstatH-Vac:PT015:sRdV</pv_name>
+    <pv_name>CstatH-Vac:PT015:PrsR</pv_name>
     <x>528</x>
     <y>148</y>
     <width>49</width>
@@ -975,7 +968,7 @@ $(pv_value)</tooltip>
         <exp bool_exp="true">
           <expression>pvStr0</expression>
         </exp>
-        <pv_name>CstatH-Vac:PT015:sRdV.NAME</pv_name>
+        <pv_name>CstatH-Vac:PT015:ChanR</pv_name>
       </rule>
     </rules>
     <tooltip>###</tooltip>
@@ -1012,7 +1005,7 @@ $(pv_value)</tooltip>
         <exp bool_exp="true">
           <expression>pvStr0</expression>
         </exp>
-        <pv_name>CstatH-Vac:PT017:sRdV.NAME</pv_name>
+        <pv_name>CstatH-Vac:PT017:ChanR</pv_name>
       </rule>
     </rules>
     <tooltip>###</tooltip>
@@ -1023,7 +1016,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_8</name>
-    <pv_name>CstatH-Vac:PT011:sRdV</pv_name>
+    <pv_name>CstatH-Vac:PT011:PrsR</pv_name>
     <x>618</x>
     <y>232</y>
     <width>49</width>
@@ -1080,7 +1073,7 @@ $(pv_value)</tooltip>
         <exp bool_exp="true">
           <expression>pvStr0</expression>
         </exp>
-        <pv_name>CstatH-Vac:PT011:sRdV.NAME</pv_name>
+        <pv_name>CstatH-Vac:PT011:ChanR</pv_name>
       </rule>
     </rules>
     <tooltip>###</tooltip>
