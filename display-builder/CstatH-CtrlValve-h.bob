@@ -18,7 +18,7 @@
     </actions>
     <widget type="symbol" version="2.0.0">
       <name>Symbol_9</name>
-      <pv_name>$(P)-$(S):$(V):sRdV</pv_name>
+      <pv_name>=(`$(P)-$(S):$(V):sRdV`!=0)</pv_name>
       <symbols>
         <symbol>../cryogenics/valve_control_RED.svg</symbol>
         <symbol>../cryogenics/valve_control_GREEN.svg</symbol>

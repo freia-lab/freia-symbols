@@ -98,7 +98,7 @@
       </widget>
       <widget type="symbol" version="2.0.0">
         <name>Symbol_8</name>
-        <pv_name>$(P)-$(S):V:UY$(V)-PercOut</pv_name>
+        <pv_name>=(`$(P)-$(S):V:UY$(V)-PercOut`!=0)</pv_name>
         <symbols>
           <symbol>../../cryogenics/valve_general_closed_RED.svg</symbol>
           <symbol>../../cryogenics/valve_general_GREEN.svg</symbol>
@@ -261,7 +261,7 @@ of UY$(V).</tooltip>
       <x>90</x>
       <y>10</y>
       <width>60</width>
-      <height>21</height>
+      <height>23</height>
       <auto_size>true</auto_size>
     </widget>
     <widget type="led" version="2.0.0">
@@ -348,7 +348,7 @@ of UY$(V).</tooltip>
       </widget>
       <widget type="symbol" version="2.0.0">
         <name>Symbol_9</name>
-        <pv_name>$(P)-$(S):V:UY$(V)-PercOut</pv_name>
+        <pv_name>=(`$(P)-$(S):V:UY$(V)-PercOut`!=0)</pv_name>
         <symbols>
           <symbol>../../cryogenics/valve_general_closed_RED.svg</symbol>
           <symbol>../../cryogenics/valve_general_GREEN.svg</symbol>
@@ -465,7 +465,7 @@ of UY$(V).</tooltip>
       <x>89</x>
       <y>9</y>
       <width>60</width>
-      <height>21</height>
+      <height>23</height>
       <auto_size>true</auto_size>
     </widget>
     <widget type="led" version="2.0.0">
