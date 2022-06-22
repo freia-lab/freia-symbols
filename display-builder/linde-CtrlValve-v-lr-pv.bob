@@ -60,8 +60,8 @@
     <widget type="label" version="2.0.0">
       <name>Label_10</name>
       <text>$(V)</text>
-      <x>16</x>
-      <width>45</width>
+      <x>10</x>
+      <width>48</width>
       <height>15</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="12.0">
