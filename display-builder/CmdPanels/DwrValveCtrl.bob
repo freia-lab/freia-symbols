@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>DwrV control</name>
   <width>650</width>
-  <height>400</height>
+  <height>440</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
@@ -34,7 +34,7 @@
     <x>20</x>
     <y>50</y>
     <width>282</width>
-    <height>313</height>
+    <height>360</height>
     <style>1</style>
     <foreground_color>
       <color name="GREEN-GROUP-BORDER" red="131" green="150" blue="131">
@@ -45,7 +45,7 @@
       <name>Label_1</name>
       <text>Automatic control</text>
       <x>19</x>
-      <y>78</y>
+      <y>108</y>
       <width>122</width>
       <height>30</height>
       <vertical_alignment>1</vertical_alignment>
@@ -55,7 +55,7 @@
       <class>COMMENT</class>
       <text>Request to open from the CM</text>
       <x>19</x>
-      <y>178</y>
+      <y>208</y>
       <width>106</width>
       <height>50</height>
       <font>
@@ -161,13 +161,13 @@
       <name>Boolean Button</name>
       <pv_name>Cryo-Dwr:CV$(V):cAuto</pv_name>
       <x>159</x>
-      <y>78</y>
+      <y>108</y>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_1</name>
       <pv_name>$(P1)-Ctrl:CV$(V):sOpenReq</pv_name>
       <x>229</x>
-      <y>188</y>
+      <y>218</y>
       <width>30</width>
       <height>30</height>
     </widget>
@@ -176,7 +176,7 @@
       <class>COMMENT</class>
       <text>Request to open from HNOSS</text>
       <x>19</x>
-      <y>238</y>
+      <y>268</y>
       <width>106</width>
       <height>50</height>
       <font>
@@ -189,14 +189,14 @@
       <name>Boolean Button_2</name>
       <pv_name>$(P2)-Ctrl:CV$(V):sOpenReq</pv_name>
       <x>138</x>
-      <y>248</y>
+      <y>278</y>
       <width>70</width>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_2</name>
       <pv_name>$(P2)-Ctrl:CV$(V):sOpenReq</pv_name>
       <x>229</x>
-      <y>248</y>
+      <y>278</y>
       <width>30</width>
       <height>30</height>
     </widget>
@@ -204,7 +204,7 @@
       <name>LED_3</name>
       <pv_name>CstatH-Ctrl:opMode:sCMmode</pv_name>
       <x>189</x>
-      <y>128</y>
+      <y>158</y>
       <width>30</width>
       <height>30</height>
     </widget>
@@ -225,7 +225,7 @@
       <pv_name>CstatH-Ctrl:opMode:sCMmode</pv_name>
       <text>Cryomod. Mode</text>
       <x>49</x>
-      <y>128</y>
+      <y>158</y>
       <width>130</width>
       <height>26</height>
       <font>
@@ -261,7 +261,7 @@ of UY$(V).</tooltip>
       <x>90</x>
       <y>10</y>
       <width>60</width>
-      <height>23</height>
+      <height>21</height>
       <auto_size>true</auto_size>
     </widget>
     <widget type="led" version="2.0.0">
@@ -297,6 +297,30 @@ of UY$(V).</tooltip>
       <actions>
       </actions>
     </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>Set Point:</text>
+      <x>19</x>
+      <y>68</y>
+      <width>71</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>Cryo-Dwr:V:cUY$(V)_PercOut</pv_name>
+      <x>99</x>
+      <y>68</y>
+      <width>61</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>Cryo-Dwr:V:cUY$(V)_PercOut-RBK</pv_name>
+      <x>179</x>
+      <y>68</y>
+      <width>81</width>
+      <tooltip>Update delayed up to 10 s
+$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>  CV$(V)  </name>
@@ -307,7 +331,7 @@ of UY$(V).</tooltip>
     <x>340</x>
     <y>50</y>
     <width>282</width>
-    <height>253</height>
+    <height>360</height>
     <style>1</style>
     <foreground_color>
       <color name="GREEN-GROUP-BORDER" red="131" green="150" blue="131">
@@ -411,7 +435,7 @@ of UY$(V).</tooltip>
       <name>Label_11</name>
       <text>Automatic control</text>
       <x>19</x>
-      <y>78</y>
+      <y>108</y>
       <width>122</width>
       <height>30</height>
       <vertical_alignment>1</vertical_alignment>
@@ -421,7 +445,7 @@ of UY$(V).</tooltip>
       <class>COMMENT</class>
       <text>Request to open from Gersemi</text>
       <x>30</x>
-      <y>160</y>
+      <y>190</y>
       <width>106</width>
       <height>50</height>
       <font>
@@ -434,13 +458,13 @@ of UY$(V).</tooltip>
       <name>Boolean Button_4</name>
       <pv_name>Cryo-Dwr:CV$(V):cAuto</pv_name>
       <x>159</x>
-      <y>78</y>
+      <y>108</y>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_5</name>
       <pv_name>$(P)-Ctrl:CV$(V):sOpenReq</pv_name>
       <x>170</x>
-      <y>170</y>
+      <y>200</y>
       <width>30</width>
       <height>30</height>
     </widget>
@@ -465,7 +489,7 @@ of UY$(V).</tooltip>
       <x>89</x>
       <y>9</y>
       <width>60</width>
-      <height>23</height>
+      <height>21</height>
       <auto_size>true</auto_size>
     </widget>
     <widget type="led" version="2.0.0">
@@ -500,6 +524,30 @@ of UY$(V).</tooltip>
       <square>true</square>
       <actions>
       </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>Set Point:</text>
+      <x>19</x>
+      <y>67</y>
+      <width>71</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_1</name>
+      <pv_name>Cryo-Dwr:V:cUY$(V)_PercOut</pv_name>
+      <x>99</x>
+      <y>67</y>
+      <width>61</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>Cryo-Dwr:V:cUY$(V)_PercOut-RBK</pv_name>
+      <x>179</x>
+      <y>67</y>
+      <width>81</width>
+      <tooltip>Update delayed up to 10 s
+$(pv_name)
+$(pv_value)</tooltip>
     </widget>
   </widget>
 </display>
