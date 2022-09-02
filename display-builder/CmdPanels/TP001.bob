@@ -43,7 +43,7 @@
     <x>470</x>
     <y>600</y>
     <width>68</width>
-    <height>13</height>
+    <height>12</height>
     <font>
       <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
       </font>
@@ -99,7 +99,7 @@
       <x>5</x>
       <y>162</y>
       <width>79</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -162,14 +162,6 @@
         <y>7</y>
         <width>80</width>
         <height>25</height>
-        <foreground_color>
-          <color name="WHITE" red="255" green="255" blue="255">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="GRAY-BORDER" red="121" green="121" blue="121">
-          </color>
-        </background_color>
         <actions>
         </actions>
       </widget>
@@ -202,14 +194,6 @@
         <y>42</y>
         <width>80</width>
         <height>25</height>
-        <foreground_color>
-          <color name="WHITE" red="255" green="255" blue="255">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="GRAY-BORDER" red="121" green="121" blue="121">
-          </color>
-        </background_color>
         <actions>
         </actions>
       </widget>
@@ -220,7 +204,7 @@
       <x>202</x>
       <y>162</y>
       <width>55</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -244,7 +228,7 @@
       <x>5</x>
       <y>219</y>
       <width>95</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -268,7 +252,7 @@
       <x>8</x>
       <y>269</y>
       <width>74</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -292,7 +276,7 @@
       <x>5</x>
       <y>244</y>
       <width>119</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -316,18 +300,6 @@
       <x>284</x>
       <y>163</y>
       <width>46</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <vertical_alignment>1</vertical_alignment>
       <wrap_words>false</wrap_words>
       <actions>
@@ -339,18 +311,6 @@
       <x>101</x>
       <y>163</y>
       <width>96</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <vertical_alignment>1</vertical_alignment>
       <wrap_words>false</wrap_words>
       <actions>
@@ -362,18 +322,6 @@
       <x>145</x>
       <y>220</y>
       <width>85</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <vertical_alignment>1</vertical_alignment>
       <wrap_words>false</wrap_words>
       <actions>
@@ -385,18 +333,6 @@
       <x>145</x>
       <y>245</y>
       <width>85</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <vertical_alignment>1</vertical_alignment>
       <wrap_words>false</wrap_words>
       <actions>
@@ -408,18 +344,6 @@
       <x>145</x>
       <y>270</y>
       <width>85</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <vertical_alignment>1</vertical_alignment>
       <wrap_words>false</wrap_words>
       <actions>
@@ -564,18 +488,6 @@
         <pv_name>$(P):sFaults</pv_name>
         <x>96</x>
         <width>229</width>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="WHITE" red="255" green="255" blue="255">
-          </color>
-        </background_color>
         <vertical_alignment>1</vertical_alignment>
         <wrap_words>false</wrap_words>
         <actions>
@@ -670,11 +582,6 @@
       <x>32</x>
       <y>203</y>
       <width>70</width>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -685,7 +592,7 @@
       <text>Control Unit CPU</text>
       <x>145</x>
       <y>7</y>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -702,7 +609,7 @@
       <x>292</x>
       <y>7</y>
       <width>81</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -719,11 +626,6 @@
       <x>161</x>
       <y>202</y>
       <width>70</width>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -735,11 +637,6 @@
       <x>297</x>
       <y>202</y>
       <width>70</width>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -751,29 +648,24 @@
     <x>16</x>
     <y>370</y>
     <width>186</width>
-    <height>230</height>
-    <widget type="meter" version="2.0.0">
+    <height>180</height>
+    <widget type="meter" version="3.0.0">
       <name>Gauge Template</name>
       <pv_name>$(P):sFreq</pv_name>
-      <skin>0</skin>
-      <knob_position>3</knob_position>
       <x>3</x>
       <y>1</y>
       <width>138</width>
-      <height>138</height>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
+      <height>98</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <transparent>false</transparent>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
       <actions>
       </actions>
-      <highligh_zones>false</highligh_zones>
-      <lcd_visible>false</lcd_visible>
       <needle_color>
         <color name="IO Stick" red="0" green="32" blue="92">
         </color>
@@ -782,7 +674,8 @@
     <widget type="label" version="2.0.0">
       <name>Label Template_1</name>
       <text>Set-point:</text>
-      <y>165</y>
+      <x>3</x>
+      <y>114</y>
       <width>59</width>
       <height>18</height>
       <font>
@@ -804,21 +697,9 @@
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template</name>
       <pv_name>$(P):sFreqSP</pv_name>
-      <x>62</x>
-      <y>165</y>
+      <x>65</x>
+      <y>114</y>
       <width>76</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <vertical_alignment>1</vertical_alignment>
       <wrap_words>false</wrap_words>
       <actions>
@@ -831,76 +712,64 @@
     <y>20</y>
     <width>202</width>
     <height>333</height>
-    <widget type="meter" version="2.0.0">
+    <widget type="meter" version="3.0.0">
       <name>Meter Template</name>
       <pv_name>$(P):sMotI</pv_name>
       <y>17</y>
       <width>170</width>
       <height>75</height>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <transparent>false</transparent>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
       <actions>
       </actions>
-      <highligh_zones>false</highligh_zones>
-      <lcd_visible>false</lcd_visible>
       <needle_color>
         <color name="IO Stick" red="0" green="32" blue="92">
         </color>
       </needle_color>
     </widget>
-    <widget type="meter" version="2.0.0">
+    <widget type="meter" version="3.0.0">
       <name>Meter Template_1</name>
       <pv_name>$(P):sMotV</pv_name>
       <y>113</y>
       <width>170</width>
       <height>75</height>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <transparent>false</transparent>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
       <actions>
       </actions>
-      <highligh_zones>false</highligh_zones>
-      <lcd_visible>false</lcd_visible>
       <needle_color>
         <color name="IO Stick" red="0" green="32" blue="92">
         </color>
       </needle_color>
     </widget>
-    <widget type="meter" version="2.0.0">
+    <widget type="meter" version="3.0.0">
       <name>Meter Template_2</name>
       <pv_name>$(P):sMotP</pv_name>
       <y>211</y>
       <width>170</width>
       <height>75</height>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <transparent>false</transparent>
-      <level_low>0.0</level_low>
-      <level_lolo>0.0</level_lolo>
-      <title>Power</title>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
       <actions>
       </actions>
-      <highligh_zones>false</highligh_zones>
-      <lcd_visible>false</lcd_visible>
       <needle_color>
         <color name="IO Stick" red="0" green="32" blue="92">
         </color>

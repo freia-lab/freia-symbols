@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Turbo Pump TD20 Controller</name>
+  <width>680</width>
+  <height>550</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_visible>false</grid_visible>
+  <widget type="group" version="2.0.0">
+    <name>Pump Controls</name>
+    <y>46</y>
+    <width>290</width>
+    <height>234</height>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button Template</name>
+      <pv_name>$(P):cRemote</pv_name>
+      <y>8</y>
+      <width>116</width>
+      <height>40</height>
+      <off_label>Local  </off_label>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_label>Remote   </on_label>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button Template_1</name>
+      <pv_name>$(P):cOn</pv_name>
+      <x>120</x>
+      <y>8</y>
+      <width>110</width>
+      <height>40</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <show_confirm_dialog>1</show_confirm_dialog>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Reset</description>
+        </action>
+      </actions>
+      <pv_name>$(P):cmdReset</pv_name>
+      <y>58</y>
+      <width>116</width>
+      <height>40</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_9</name>
+      <text>Total Running Time:</text>
+      <y>120</y>
+      <width>119</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_1</name>
+      <pv_name>$(P):sOpTime</pv_name>
+      <x>140</x>
+      <y>121</y>
+      <width>85</width>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_11</name>
+      <text>Cycle No:</text>
+      <y>153</y>
+      <width>55</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_3</name>
+      <pv_name>$(P):sNoOfStarts</pv_name>
+      <x>140</x>
+      <y>154</y>
+      <width>85</width>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="byte_monitor" version="2.0.0">
+    <name>Byte Monitor Template</name>
+    <pv_name>$(P):sStatus</pv_name>
+    <x>310</x>
+    <y>71</y>
+    <width>141</width>
+    <height>309</height>
+    <numBits>16</numBits>
+    <horizontal>false</horizontal>
+    <off_color>
+      <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <labels>
+      <text>Ready</text>
+      <text></text>
+      <text>Active</text>
+      <text>Fault</text>
+      <text>Accelerating</text>
+      <text>Breaking</text>
+      <text>Start Disabled</text>
+      <text>Temp. Warn.</text>
+      <text></text>
+      <text>Accepting par.</text>
+      <text>Normal Oper.</text>
+      <text>Rotating</text>
+      <text></text>
+      <text>Hi Load Warn.</text>
+      <text>Sum Warn.</text>
+      <text>Remote</text>
+    </labels>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template</name>
+    <text>Pump Status:</text>
+    <x>310</x>
+    <y>46</y>
+    <width>79</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(P)</text>
+    <x>16</x>
+    <y>5</y>
+    <width>520</width>
+    <height>41</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="35.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Pump Motor</name>
+    <x>460</x>
+    <y>46</y>
+    <width>210</width>
+    <height>234</height>
+    <widget type="meter" version="3.0.0">
+      <name>Meter Template</name>
+      <pv_name>$(P):sMotI</pv_name>
+      <y>17</y>
+      <width>170</width>
+      <height>75</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <needle_color>
+        <color name="IO Stick" red="0" green="32" blue="92">
+        </color>
+      </needle_color>
+    </widget>
+    <widget type="meter" version="3.0.0">
+      <name>Meter Template_1</name>
+      <pv_name>$(P):sMotV</pv_name>
+      <y>113</y>
+      <width>170</width>
+      <height>75</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <needle_color>
+        <color name="IO Stick" red="0" green="32" blue="92">
+        </color>
+      </needle_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_5</name>
+      <text>Motor Current [A]</text>
+      <x>35</x>
+      <width>102</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_6</name>
+      <text>Motor Voltage [V]</text>
+      <x>36</x>
+      <y>95</y>
+      <width>101</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Temperatures</name>
+    <x>430</x>
+    <y>280</y>
+    <width>241</width>
+    <height>259</height>
+    <widget type="thermometer" version="2.0.0">
+      <name>Thermometer Template_4</name>
+      <pv_name>$(P):sBearingT</pv_name>
+      <x>1</x>
+      <y>28</y>
+      <width>102</width>
+      <height>170</height>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)$(pv_value)</tooltip>
+      <maximum>400.0</maximum>
+    </widget>
+    <widget type="thermometer" version="2.0.0">
+      <name>Thermometer Template_5</name>
+      <pv_name>$(P):sCPU_T</pv_name>
+      <x>103</x>
+      <y>25</y>
+      <width>97</width>
+      <height>170</height>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Pump Housing</text>
+      <x>8</x>
+      <y>7</y>
+      <width>87</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>$(P):sBearingT</pv_name>
+      <x>18</x>
+      <y>203</y>
+      <width>70</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>Control Unit </text>
+      <x>114</x>
+      <y>7</y>
+      <width>75</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):sCPU_T</pv_name>
+      <x>118</x>
+      <y>203</y>
+      <width>70</width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  Pump Speed  </name>
+    <y>280</y>
+    <width>287</width>
+    <height>212</height>
+    <transparent>true</transparent>
+    <widget type="meter" version="3.0.0">
+      <name>Gauge Template</name>
+      <pv_name>$(P):sFreq</pv_name>
+      <width>245</width>
+      <height>138</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <needle_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </needle_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_10</name>
+      <text>Set-point:</text>
+      <x>21</x>
+      <y>150</y>
+      <width>94</width>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_2</name>
+      <pv_name>$(P):sFreqSP</pv_name>
+      <x>124</x>
+      <y>150</y>
+      <width>76</width>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+</display>
