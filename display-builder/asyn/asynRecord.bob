@@ -1735,7 +1735,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="choice" version="2.0.0">
     <name>Choice Button_8</name>
-    <pv_name>$(P)$(R).TIB2</pv_name>
+    <pv_name>$(P)$(R).TIB1</pv_name>
     <x>186</x>
     <y>347</y>
     <width>55</width>
