@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>2KpumpsAndGasBag</name>
-  <width>560</width>
+  <width>580</width>
   <height>235</height>
   <widget type="group" version="2.0.0">
     <name>Group</name>
     <macros>
       <P>CstatH</P>
     </macros>
-    <width>531</width>
+    <width>570</width>
     <height>230</height>
     <style>3</style>
     <transparent>true</transparent>
@@ -465,9 +465,9 @@ HNOSS</text>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_27</name>
       <file>../gasBagLidar.bob</file>
-      <x>380</x>
+      <x>371</x>
       <y>10</y>
-      <width>145</width>
+      <width>199</width>
       <height>205</height>
     </widget>
   </widget>
