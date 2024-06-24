@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-06-24 12:05:09 by konrad-->
 <display version="2.0.0">
   <name>gasBagLidar</name>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Exhaust</name>
     <x>3</x>
     <y>3</y>
@@ -29,7 +30,7 @@ $(pv_value)</tooltip>
       <limits_from_pv>false</limits_from_pv>
       <maximum>115.0</maximum>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>Cryo-Rec:LP:GSH7225</name>
       <macros>
         <pv>Cryo-Rec:LP:GSH7225</pv>
@@ -43,6 +44,10 @@ $(pv_value)</tooltip>
         <color red="0" green="128" blue="255">
         </color>
       </foreground_color>
+      <line_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </line_color>
       <background_color>
         <color red="240" green="240" blue="240">
         </color>
@@ -226,7 +231,7 @@ $(pv_value)</tooltip>
       <y>30</y>
       <width>60</width>
     </widget>
-    <widget type="group" version="2.0.0">
+    <widget type="group" version="3.0.0">
       <name>Cryo-Rec:LP:GSH7225_1</name>
       <macros>
         <pv>Cryo-Rec:LP:C4:GlobStat</pv>
@@ -239,6 +244,10 @@ $(pv_value)</tooltip>
         <color red="0" green="128" blue="255">
         </color>
       </foreground_color>
+      <line_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </line_color>
       <background_color>
         <color red="240" green="240" blue="240">
         </color>
@@ -324,7 +333,7 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
         <name>LED_3</name>
-        <pv_name>=`$(pv).RVAL`==9</pv_name>
+        <pv_name>=`$(pv).RVAL`==9||`$(pv).RVAL`==13</pv_name>
         <x>5</x>
         <y>41</y>
         <width>35</width>
