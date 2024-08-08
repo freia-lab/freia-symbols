@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-08-08 09:19:43 by konrad-->
 <display version="2.0.0">
   <name>$(DEVICENAME)</name>
   <macros>
@@ -77,7 +76,7 @@
     </scripts>
     <tooltip>NA</tooltip>
   </widget>
-  <widget type="group" version="3.0.0">
+  <widget type="group" version="2.0.0">
     <name>Group Relays</name>
     <x>10</x>
     <y>55</y>
@@ -190,7 +189,7 @@
       </rules>
     </widget>
   </widget>
-  <widget type="group" version="3.0.0">
+  <widget type="group" version="2.0.0">
     <name>Group Control</name>
     <x>10</x>
     <y>333</y>
@@ -309,7 +308,7 @@
       <vertical_alignment>1</vertical_alignment>
     </widget>
   </widget>
-  <widget type="group" version="3.0.0">
+  <widget type="group" version="2.0.0">
     <name>Group Misc</name>
     <x>10</x>
     <y>463</y>
@@ -388,12 +387,9 @@
   <widget type="action_button" version="3.0.0">
     <name>Controller Detailed</name>
     <actions>
-      <action type="open_display">
-        <file>../../veg/faceplates/vac_ctrl_tpg300_controller.bob</file>
-        <macros>
-          <DEVICENAME>$(CONTROLLER)</DEVICENAME>
-        </macros>
-        <target>window</target>
+      <action type="execute">
+        <script file="../../veg/scripts/open_tpg_screen.py">
+        </script>
         <description>Open Controller Screen</description>
       </action>
     </actions>

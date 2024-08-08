@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-08-08 09:15:19 by konrad-->
 <display version="2.0.0">
   <name>$(DEVICENAME) Brief</name>
   <macros>
@@ -250,12 +249,9 @@
   <widget type="action_button" version="3.0.0">
     <name>Controller Detailed</name>
     <actions>
-      <action type="open_display">
-        <file>../../veg/faceplates/vac_ctrl_tpg300_controller.bob</file>
-        <macros>
-          <DEVICENAME>$(CONTROLLER)</DEVICENAME>
-        </macros>
-        <target>window</target>
+      <action type="execute">
+        <script file="../../veg/scripts/open_tpg_screen.py">
+        </script>
         <description>Open Controller Screen</description>
       </action>
     </actions>
