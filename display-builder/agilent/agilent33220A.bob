@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-08-22 13:45:52 by konrad-->
+<display version="2.0.0">
+  <name>Agilent 33220A - $(agilent)</name>
+  <x>1328</x>
+  <y>642</y>
+  <width>370</width>
+  <height>776</height>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="bool_button" version="2.0.0">
+    <name>EDM activeButtonClass</name>
+    <pv_name>$(agilent):DISABLE</pv_name>
+    <x>10</x>
+    <y>745</y>
+    <width>115</width>
+    <height>20</height>
+    <off_label></off_label>
+    <on_label></on_label>
+    <on_color>
+      <color name="ERROR" red="252" green="13" blue="27">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <labels_from_pv>true</labels_from_pv>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Not Connected</text>
+    <x>130</x>
+    <y>745</y>
+    <width>115</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Mon: MAJOR/unack" red="192" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Disconn/Invalid" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="EDM visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;5.0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>false</value>
+        </exp>
+        <pv_name>$(agilent):FREQ:RBV.SEVR</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>EDM shellCmdClass</name>
+    <actions>
+      <action type="open_display">
+        <description>Asyn</description>
+        <file>../asyn/asynRecord.bob</file>
+        <macros>
+          <P>$(IOC)</P>
+          <R>:asynRec</R>
+        </macros>
+        <target>window</target>
+      </action>
+    </actions>
+    <text>AsynRec...</text>
+    <x>265</x>
+    <y>740</y>
+    <width>76</width>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>EDM activeXTextClass</name>
+    <text>Agilent - $(agilent)</text>
+    <x>12</x>
+    <width>348</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLUE-BORDER" red="47" green="135" blue="148">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>   General   </name>
+    <y>30</y>
+    <width>372</width>
+    <height>432</height>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM TextentryClass</name>
+      <pv_name>$(agilent):PHASE</pv_name>
+      <x>90</x>
+      <y>215</y>
+      <width>115</width>
+      <height>25</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM TextupdateClass</name>
+      <pv_name>$(agilent):PHASE:RBV</pv_name>
+      <x>210</x>
+      <y>215</y>
+      <width>115</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Phase Angle:</text>
+      <x>5</x>
+      <y>215</y>
+      <width>75</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Trigger Edge:</text>
+      <x>5</x>
+      <y>255</y>
+      <width>83</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>EDM activeMenuButtonClass</name>
+      <pv_name>$(agilent):TRIGEDGE</pv_name>
+      <x>90</x>
+      <y>255</y>
+      <width>235</width>
+      <height>25</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>EDM activeButtonClass</name>
+      <pv_name>$(agilent):TRIG</pv_name>
+      <x>90</x>
+      <y>365</y>
+      <width>180</width>
+      <height>25</height>
+      <off_label>Manual Trigger</off_label>
+      <off_color>
+        <color name="Button_Background" red="236" green="236" blue="236">
+        </color>
+      </off_color>
+      <on_label>Manual Trigger</on_label>
+      <on_color>
+        <color name="Button_Background" red="236" green="236" blue="236">
+        </color>
+      </on_color>
+      <show_led>false</show_led>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(agilent):TRIG:RBV</pv_name>
+      <x>300</x>
+      <y>370</y>
+      <off_color>
+        <color name="LED-GREEN-OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Frequency:</text>
+      <x>5</x>
+      <y>60</y>
+      <width>75</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Update:</text>
+      <x>5</x>
+      <width>105</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>EDM activeMenuButtonClass</name>
+      <pv_name>$(agilent):UPDATE.SCAN</pv_name>
+      <x>90</x>
+      <width>115</width>
+      <height>25</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM TextentryClass</name>
+      <pv_name>$(agilent):FREQ</pv_name>
+      <x>90</x>
+      <y>60</y>
+      <width>115</width>
+      <height>25</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM TextupdateClass</name>
+      <pv_name>$(agilent):FREQ:RBV</pv_name>
+      <x>210</x>
+      <y>60</y>
+      <width>115</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM TextentryClass</name>
+      <pv_name>$(agilent):AMP</pv_name>
+      <x>90</x>
+      <y>90</y>
+      <width>115</width>
+      <height>25</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM TextupdateClass</name>
+      <pv_name>$(agilent):AMP:RBV</pv_name>
+      <x>210</x>
+      <y>90</y>
+      <width>115</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Amplitude:</text>
+      <x>5</x>
+      <y>90</y>
+      <width>75</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM TextupdateClass</name>
+      <pv_name>$(agilent):OFF:RBV</pv_name>
+      <x>210</x>
+      <y>120</y>
+      <width>115</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Offset:</text>
+      <x>5</x>
+      <y>120</y>
+      <width>75</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM TextentryClass</name>
+      <pv_name>$(agilent):OFF</pv_name>
+      <x>90</x>
+      <y>120</y>
+      <width>115</width>
+      <height>25</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>EDM activeMenuButtonClass</name>
+      <pv_name>$(agilent):FUNC</pv_name>
+      <x>90</x>
+      <y>30</y>
+      <width>235</width>
+      <height>25</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>EDM activeMenuButtonClass</name>
+      <pv_name>$(agilent):OUT</pv_name>
+      <x>90</x>
+      <y>300</y>
+      <width>235</width>
+      <height>25</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Function:</text>
+      <x>5</x>
+      <y>30</y>
+      <width>75</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Output:</text>
+      <x>5</x>
+      <y>300</y>
+      <width>75</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Read</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(agilent):UPDATE.PROC</pv_name>
+      <text>Read</text>
+      <x>210</x>
+      <width>115</width>
+      <height>25</height>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 2</name>
+      <y>145</y>
+      <width>325</width>
+      <height>35</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=1.0 &amp;&amp; pv0&lt;2.0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>false</value>
+          </exp>
+          <pv_name>$(agilent):FUNC:RBV</pv_name>
+        </rule>
+      </rules>
+      <widget type="label" version="2.0.0">
+        <name>EDM activeXTextClass</name>
+        <text>Duty Cycle:</text>
+        <x>5</x>
+        <y>5</y>
+        <width>75</width>
+        <height>25</height>
+        <font>
+          <font family="Liberation Sans" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>EDM TextentryClass</name>
+        <pv_name>$(agilent):DCYC</pv_name>
+        <x>90</x>
+        <y>5</y>
+        <width>115</width>
+        <height>25</height>
+        <font>
+          <font family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Controller" red="0" green="0" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="GLOBAL canvas" red="200" green="200" blue="200">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextupdateClass</name>
+        <pv_name>$(agilent):DCYC:RBV</pv_name>
+        <x>210</x>
+        <y>5</y>
+        <width>115</width>
+        <height>25</height>
+        <font>
+          <font family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="green-16" red="0" green="224" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 3</name>
+      <y>145</y>
+      <width>325</width>
+      <height>35</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=2.0 &amp;&amp; pv0&lt;3.0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>false</value>
+          </exp>
+          <pv_name>$(agilent):FUNC:RBV</pv_name>
+        </rule>
+      </rules>
+      <widget type="label" version="2.0.0">
+        <name>EDM activeXTextClass</name>
+        <text>Symmetry:</text>
+        <x>5</x>
+        <y>5</y>
+        <width>75</width>
+        <height>25</height>
+        <font>
+          <font family="Liberation Sans" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>EDM TextentryClass</name>
+        <pv_name>$(agilent):SYMM</pv_name>
+        <x>90</x>
+        <y>5</y>
+        <width>115</width>
+        <height>25</height>
+        <font>
+          <font family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="Controller" red="0" green="0" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="GLOBAL canvas" red="200" green="200" blue="200">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextupdateClass</name>
+        <pv_name>$(agilent):SYMM:RBV</pv_name>
+        <x>210</x>
+        <y>5</y>
+        <width>115</width>
+        <height>25</height>
+        <font>
+          <font family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="green-16" red="0" green="224" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>EDM Group 4</name>
+      <x>5</x>
+      <y>145</y>
+      <width>325</width>
+      <height>65</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="EDM visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0&gt;=3.0 &amp;&amp; pv0&lt;4.0">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="true">
+            <value>false</value>
+          </exp>
+          <pv_name>$(agilent):FUNC:RBV</pv_name>
+        </rule>
+      </rules>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextupdateClass</name>
+        <pv_name>$(agilent):TRAN:RBV</pv_name>
+        <x>205</x>
+        <y>35</y>
+        <width>115</width>
+        <height>25</height>
+        <format>2</format>
+        <precision>2</precision>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>EDM TextentryClass</name>
+        <pv_name>$(agilent):TRAN</pv_name>
+        <x>85</x>
+        <y>35</y>
+        <width>115</width>
+        <height>25</height>
+        <format>2</format>
+        <precision>2</precision>
+        <show_units>false</show_units>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM activeXTextClass</name>
+        <text>Transition:</text>
+        <y>35</y>
+        <width>75</width>
+        <height>25</height>
+        <font>
+          <font family="Liberation Sans" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>EDM TextupdateClass</name>
+        <pv_name>$(agilent):WIDT:RBV</pv_name>
+        <x>205</x>
+        <y>5</y>
+        <width>115</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>EDM TextentryClass</name>
+        <pv_name>$(agilent):WIDT</pv_name>
+        <x>85</x>
+        <y>5</y>
+        <width>115</width>
+        <height>25</height>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>EDM activeXTextClass</name>
+        <text>Width:</text>
+        <x>5</x>
+        <y>5</y>
+        <width>75</width>
+        <height>25</height>
+        <font>
+          <font family="Liberation Sans" style="BOLD" size="12.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="black-14" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Trigger Src:</text>
+      <x>5</x>
+      <y>330</y>
+      <width>75</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>EDM activeMenuButtonClass</name>
+      <pv_name>$(agilent):TRIGSRC</pv_name>
+      <x>90</x>
+      <y>330</y>
+      <width>235</width>
+      <height>25</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>   Burst Mode   </name>
+    <y>459</y>
+    <width>372</width>
+    <height>133</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Burst Mode:</text>
+      <width>75</width>
+      <height>26</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>EDM activeMenuButtonClass</name>
+      <pv_name>$(agilent):BURSTMODE</pv_name>
+      <x>85</x>
+      <width>235</width>
+      <height>26</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Burst NCyc:</text>
+      <y>35</y>
+      <width>75</width>
+      <height>26</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM TextentryClass</name>
+      <pv_name>$(agilent):BURSTNCYC</pv_name>
+      <x>85</x>
+      <y>35</y>
+      <width>97</width>
+      <height>25</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Inf</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(agilent):BURSTNCYC:INF.PROC</pv_name>
+      <text>Inf</text>
+      <x>185</x>
+      <y>35</y>
+      <width>31</width>
+      <height>25</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>EDM TextupdateClass</name>
+      <pv_name>$(agilent):BURSTNCYC:RBV</pv_name>
+      <x>220</x>
+      <y>35</y>
+      <width>97</width>
+      <height>25</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>EDM activeMenuButtonClass</name>
+      <pv_name>$(agilent):BURST</pv_name>
+      <x>85</x>
+      <y>65</y>
+      <width>235</width>
+      <height>26</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Burst State:</text>
+      <y>65</y>
+      <width>75</width>
+      <height>26</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>   EPICS Controlled Sweep   </name>
+    <y>589</y>
+    <width>372</width>
+    <height>157</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Start Freq:</text>
+      <width>75</width>
+      <height>26</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Stop Freq:</text>
+      <y>30</y>
+      <width>75</width>
+      <height>26</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM TextentryClass</name>
+      <pv_name>$(agilent):STARTFREQ</pv_name>
+      <x>85</x>
+      <width>115</width>
+      <height>25</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM TextentryClass</name>
+      <pv_name>$(agilent):STOPFREQ</pv_name>
+      <x>85</x>
+      <y>30</y>
+      <width>115</width>
+      <height>25</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Freq step:</text>
+      <y>60</y>
+      <width>90</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>EDM TextentryClass</name>
+      <pv_name>$(agilent):FREQSTEP</pv_name>
+      <x>85</x>
+      <y>60</y>
+      <width>115</width>
+      <height>25</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>EDM activeMessageButtonClass</name>
+      <actions>
+        <action type="write_pv">
+          <description>Start Ramp</description>
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(agilent):STARTRAMP.PROC</pv_name>
+      <text>Start Ramp</text>
+      <x>205</x>
+      <width>115</width>
+      <height>25</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>EDM activeMenuButtonClass</name>
+      <pv_name>$(agilent):PERFORMRAMP.SCAN</pv_name>
+      <x>85</x>
+      <y>90</y>
+      <width>115</width>
+      <height>25</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>EDM activeXTextClass</name>
+      <text>Ramp rate:</text>
+      <y>90</y>
+      <width>90</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="black-14" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Wid-bg/Anno-pri" red="105" green="105" blue="105">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+</display>
