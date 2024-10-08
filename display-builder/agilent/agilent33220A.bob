@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-08-22 13:45:52 by konrad-->
+<!--Saved on 2024-08-22 14:01:53 by konrad-->
 <display version="2.0.0">
   <name>Agilent 33220A - $(agilent)</name>
   <x>1328</x>
@@ -85,6 +85,7 @@
     <name>EDM activeXTextClass</name>
     <text>Agilent - $(agilent)</text>
     <x>12</x>
+    <y>3</y>
     <width>348</width>
     <height>25</height>
     <font>
