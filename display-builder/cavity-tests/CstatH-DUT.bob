@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-10-09 10:52:55 by konrad-->
+<display version="2.0.0">
+  <name>CstatH-DUT</name>
+  <width>370</width>
+  <height>140</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <width>360</width>
+    <height>130</height>
+    <line_color>
+      <color name="BLACK-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>30</corner_width>
+    <corner_height>30</corner_height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_17</name>
+    <text>HNOSS</text>
+    <x>20</x>
+    <width>320</width>
+    <height>40</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>cavity</name>
+    <macros>
+      <N>3</N>
+      <POS>2A</POS>
+      <CS>CstatH</CS>
+    </macros>
+    <file>embedded/cavity.bob</file>
+    <x>130</x>
+    <y>40</y>
+    <width>110</width>
+    <height>60</height>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>cavity_1</name>
+    <macros>
+      <N>1</N>
+      <POS>1</POS>
+      <CS>CstatH</CS>
+    </macros>
+    <file>embedded/cavity.bob</file>
+    <x>20</x>
+    <y>40</y>
+    <width>110</width>
+    <height>60</height>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>cavity_2</name>
+    <macros>
+      <N>2</N>
+      <POS>2</POS>
+      <CS>CstatH</CS>
+    </macros>
+    <file>embedded/cavity.bob</file>
+    <x>240</x>
+    <y>40</y>
+    <width>110</width>
+    <height>60</height>
+    <transparent>true</transparent>
+  </widget>
+</display>

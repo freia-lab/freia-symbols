@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-10-09 10:45:08 by konrad-->
+<display version="2.0.0">
+  <name>cavity</name>
+  <widget type="group" version="3.0.0">
+    <name>Group_6</name>
+    <macros>
+      <N>$(N)</N>
+      <CS>$(CS)</CS>
+      <pv_name>LLRF-Ctrl:Connected:Position</pv_name>
+      <POS>$(POS)</POS>
+    </macros>
+    <width>102</width>
+    <height>52</height>
+    <style>2</style>
+    <rules>
+      <rule name="LLRF Connected" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pvInt0=$(N)">
+          <value>
+            <color name="GREEN" red="61" green="216" blue="61">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+      <rule name="Position simulated" prop_id="line_color" out_exp="false">
+        <exp bool_exp="(pvInt0!=0) and pvInt1=$(N)">
+          <value>
+            <color name="WARNING" red="252" green="242" blue="17">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(pv_name).SEVR</pv_name>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+    <tooltip>Enter 0 if no cavity in this position</tooltip>
+    <widget type="label" version="2.0.0">
+      <name>Label_14</name>
+      <text>      Pos. $(POS):
+CAV-LB-</text>
+      <x>5</x>
+      <width>90</width>
+      <height>50</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_6</name>
+      <pv_name>$(CS)-Ctrl:Pos$(POS):CAV-LB</pv_name>
+      <x>60</x>
+      <y>21</y>
+      <width>30</width>
+      <tooltip>$(CS)-Ctrl:Pos$(POS):CAV-LB
+Cavity Id or 0 if no cavity</tooltip>
+    </widget>
+  </widget>
+</display>

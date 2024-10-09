@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-10-09 12:13:39 by konrad-->
+<display version="2.0.0">
+  <name>StatV-DUT</name>
+  <width>150</width>
+  <height>260</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <width>140</width>
+    <height>250</height>
+    <line_color>
+      <color name="BLACK-BORDER" red="121" green="121" blue="121">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </background_color>
+    <corner_width>30</corner_width>
+    <corner_height>30</corner_height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_21</name>
+    <text>Gersemi</text>
+    <x>20</x>
+    <height>40</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>cavity_1</name>
+    <macros>
+      <N>4</N>
+      <POS>1</POS>
+      <CS>CstatV</CS>
+    </macros>
+    <file>embedded/cavity.bob</file>
+    <x>20</x>
+    <y>170</y>
+    <width>110</width>
+    <height>60</height>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>cavity_2</name>
+    <macros>
+      <N>5</N>
+      <POS>2</POS>
+      <CS>CstatV</CS>
+    </macros>
+    <file>embedded/cavity.bob</file>
+    <x>20</x>
+    <y>110</y>
+    <width>110</width>
+    <height>60</height>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>cavity_3</name>
+    <macros>
+      <N>6</N>
+      <POS>3</POS>
+      <CS>CstatV</CS>
+    </macros>
+    <file>embedded/cavity.bob</file>
+    <x>20</x>
+    <y>50</y>
+    <width>110</width>
+    <height>60</height>
+    <transparent>true</transparent>
+  </widget>
+</display>
