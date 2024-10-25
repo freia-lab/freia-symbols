@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-10-25 14:00:45 by konrad-->
+<!--Saved on 2024-10-25 15:23:54 by konrad-->
 <display version="2.0.0">
   <name>gasBagLidar</name>
-  <width>190</width>
+  <width>200</width>
   <height>200</height>
+  <background_color>
+    <color red="241" green="238" blue="228">
+    </color>
+  </background_color>
   <widget type="group" version="3.0.0">
     <name>Exhaust</name>
-    <x>3</x>
-    <y>3</y>
+    <x>10</x>
     <width>187</width>
     <style>3</style>
     <transparent>true</transparent>
@@ -194,38 +197,6 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
-    <widget type="meter" version="3.0.0">
-      <name>Gauge</name>
-      <pv_name>Cryo-Rec:LP:GasBagLidar-rate</pv_name>
-      <y>110</y>
-      <width>115</width>
-      <height>70</height>
-      <foreground_color>
-        <color red="255" green="255" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="0" green="64" blue="128">
-        </color>
-      </background_color>
-      <show_value>false</show_value>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-      <minimum>-5.0</minimum>
-      <maximum>5.0</maximum>
-      <needle_color>
-        <color red="255" green="0" blue="0">
-        </color>
-      </needle_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>cm/min</text>
-      <y>180</y>
-      <width>130</width>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update</name>
       <pv_name>Cryo-Rec:LP:GasBagLidar</pv_name>
@@ -403,30 +374,72 @@ $(pv_value)</tooltip>
       <x>77</x>
       <y>3</y>
     </widget>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_1</name>
-    <pv_name>Cryo-Rec:LP:GasBagLidar-status</pv_name>
-    <y>110</y>
-    <width>118</width>
-    <height>70</height>
-    <off_label>Lidar kaputt</off_label>
-    <off_color>
-      <color name="WARNING" red="252" green="242" blue="17">
-      </color>
-    </off_color>
-    <on_color>
-      <color red="70" green="255" blue="70" alpha="0">
-      </color>
-    </on_color>
-    <font>
-      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-      </font>
-    </font>
-    <line_color>
-      <color red="50" green="50" blue="50" alpha="0">
-      </color>
-    </line_color>
-    <square>true</square>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <y>117</y>
+      <width>118</width>
+      <height>70</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pvInt0">
+            <value>false</value>
+          </exp>
+          <pv_name>Cryo-Rec:LP:GasBagLidar-status</pv_name>
+        </rule>
+      </rules>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle</name>
+        <width>118</width>
+        <height>70</height>
+        <line_color>
+          <color name="ATTENTION" red="252" green="242" blue="17">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="ATTENTION" red="252" green="242" blue="17">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>Lidar kaputt</text>
+        <y>25</y>
+        <width>118</width>
+        <font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </font>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <y>117</y>
+      <width>118</width>
+      <height>65</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_2</name>
+        <pv_name>Cryo-Rec:LP:GasBagLidar-rate</pv_name>
+        <x>9</x>
+        <y>45</y>
+        <font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </font>
+        <precision>1</precision>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_2</name>
+        <text>Gas bag 
+filling rate</text>
+        <width>118</width>
+        <height>50</height>
+        <horizontal_alignment>1</horizontal_alignment>
+      </widget>
+    </widget>
   </widget>
 </display>
