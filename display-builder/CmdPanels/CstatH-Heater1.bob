@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-11-12 11:26:14 by konrad-->
+<!--Saved on 2024-11-12 15:09:36 by konrad-->
 <display version="2.0.0">
   <name>$(Heater1)</name>
   <width>480</width>
@@ -74,7 +74,7 @@
     <x>77</x>
     <y>31</y>
     <width>175</width>
-    <height>22</height>
+    <height>23</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="17.0">
       </font>
@@ -96,7 +96,7 @@
         <exp bool_exp="pv0==0">
           <value>false</value>
         </exp>
-        <pv_name>CstatH-Ctrl:opMode:sLocal</pv_name>
+        <pv_name>$(P)-Ctrl:opMode:sLocal</pv_name>
       </rule>
     </rules>
     <border_color>
@@ -150,8 +150,8 @@
     <text>Lower limit [K]:</text>
     <x>54</x>
     <y>274</y>
-    <width>89</width>
-    <height>18</height>
+    <width>102</width>
+    <height>21</height>
     <vertical_alignment>1</vertical_alignment>
     <auto_size>true</auto_size>
     <actions>
@@ -313,8 +313,8 @@
     <text>Upper limit [K]:</text>
     <x>54</x>
     <y>244</y>
-    <width>89</width>
-    <height>18</height>
+    <width>102</width>
+    <height>21</height>
     <vertical_alignment>1</vertical_alignment>
     <auto_size>true</auto_size>
     <actions>
@@ -510,7 +510,6 @@ $(pv_value)</tooltip>
       <text>Heater</text>
       <x>8</x>
       <width>43</width>
-      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="15.0">
         </font>
@@ -539,7 +538,6 @@ $(pv_value)</tooltip>
       <x>3</x>
       <y>15</y>
       <width>53</width>
-      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="15.0">
         </font>
@@ -606,25 +604,5 @@ $(pv_value)</tooltip>
     </line_color>
     <actions>
     </actions>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Rectangle</name>
-    <x>200</x>
-    <y>207</y>
-    <width>50</width>
-    <height>30</height>
-    <line_width>0</line_width>
-    <background_color>
-      <color name="RED" red="252" green="13" blue="27">
-      </color>
-    </background_color>
-    <rules>
-      <rule name="Visible" prop_id="visible" out_exp="false">
-        <exp bool_exp="pv0 != 1">
-          <value>false</value>
-        </exp>
-        <pv_name>$(Heater1):sHtrOn</pv_name>
-      </rule>
-    </rules>
   </widget>
 </display>
