@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-11-13 10:38:02 by konrad-->
+<display version="2.0.0">
+  <name>CstatH-PID</name>
+  <width>76</width>
+  <height>37</height>
+  <background_color>
+    <color red="0" green="0" blue="0" alpha="0">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <widget type="group" version="3.0.0">
+    <name>c-valve-h</name>
+    <x>10</x>
+    <width>65</width>
+    <height>37</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <y>1</y>
+      <width>64</width>
+      <height>34</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="MINOR" red="252" green="242" blue="17">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="Transparent" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 != 0">
+            <value>false</value>
+          </exp>
+          <pv_name>$(system):$(L):sAuto</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_28</name>
+      <actions>
+        <action type="open_display">
+          <file>CmdPanels/CstatH-PID.bob</file>
+          <macros>
+            <PID>$(system):$(L)</PID>
+          </macros>
+          <target>standalone</target>
+          <description>PID Control</description>
+        </action>
+      </actions>
+      <text>$(L)</text>
+      <x>2</x>
+      <y>3</y>
+      <width>60</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <tooltip>$(system):$(L)</tooltip>
+    </widget>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P)-$(S):$(L):sRegOn</pv_name>
+    <x>1</x>
+    <y>3</y>
+    <width>10</width>
+    <height>10</height>
+    <off_color>
+      <color red="0" green="100" blue="0">
+      </color>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <square>true</square>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+</display>

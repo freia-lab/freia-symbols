@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-11-13 09:52:46 by konrad-->
 <display version="2.0.0">
   <name>cvalve-h</name>
   <width>46</width>
@@ -8,7 +9,7 @@
     </color>
   </background_color>
   <grid_visible>false</grid_visible>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>c-valve-h</name>
     <width>43</width>
     <height>50</height>
@@ -18,7 +19,7 @@
     </actions>
     <widget type="symbol" version="2.0.0">
       <name>Symbol_9</name>
-      <pv_name>=(`$(P)-$(S):$(V):sRdV`!=0)</pv_name>
+      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
       <symbols>
         <symbol>../cryogenics/valve_control_RED.svg</symbol>
         <symbol>../cryogenics/valve_control_GREEN.svg</symbol>
@@ -27,6 +28,9 @@
       <y>10</y>
       <width>40</width>
       <height>26</height>
+      <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_10</name>
@@ -86,6 +90,7 @@
             <Cvalve>$(P)-$(S):$(V)</Cvalve>
           </macros>
           <target>standalone</target>
+          <description>Open Display</description>
         </action>
       </actions>
       <text></text>
