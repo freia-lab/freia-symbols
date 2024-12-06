@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-12-04 17:00:33 by konrad-->
 <display version="2.0.0">
   <name>Valve-LED</name>
   <width>40</width>
@@ -10,8 +11,7 @@
   <grid_visible>false</grid_visible>
   <widget type="symbol" version="2.0.0">
     <name>Symbol_8</name>
-    <pv_name>$(P)-$(S):$(V):VisuState
-</pv_name>
+    <pv_name>$(P)-$(S):$(V):VisuState</pv_name>
     <symbols>
       <symbol>../cryogenics/valve_general_closed_RED.svg</symbol>
       <symbol>../cryogenics/valve_general_GREEN.svg</symbol>
@@ -93,6 +93,7 @@
           <v_name>$(P)-$(S):$(V)</v_name>
         </macros>
         <target>standalone</target>
+        <description>Open Display</description>
       </action>
     </actions>
     <text></text>
