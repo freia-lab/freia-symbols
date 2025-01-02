@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-11-13 09:53:45 by konrad-->
+<!--Saved on 2025-01-02 14:48:11 by konrad-->
 <display version="2.0.0">
   <name>cvalve-v-ll</name>
   <width>55</width>
@@ -19,7 +19,7 @@
     </actions>
     <widget type="symbol" version="2.0.0">
       <name>Symbol_9</name>
-      <pv_name>$(P)-$(S):$(V):sOn</pv_name>
+      <pv_name>$(P)-$(S):$(V):sOpen</pv_name>
       <symbols>
         <symbol>../cryogenics/valve_control_RED_v.svg</symbol>
         <symbol>../cryogenics/valve_control_GREEN_v.svg</symbol>
