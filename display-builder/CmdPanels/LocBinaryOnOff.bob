@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-12-06 10:01:50 by konrad-->
+<!--Saved on 2025-01-08 14:52:13 by konrad-->
 <display version="2.0.0">
   <name>$(P)-$(S):$(V)</name>
   <width>450</width>
@@ -119,7 +119,7 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED Template_3</name>
-    <pv_name>$(v_name):sOn</pv_name>
+    <pv_name>$(v_name):cOn</pv_name>
     <bit>0</bit>
     <x>390</x>
     <y>133</y>
@@ -293,7 +293,7 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED Template_8</name>
-    <pv_name>$(P)-$(S):$(V):cOn.OMSL</pv_name>
+    <pv_name>$(P)-$(S):$(V):cAuto</pv_name>
     <bit>0</bit>
     <x>30</x>
     <y>70</y>
@@ -326,7 +326,7 @@
   </widget>
   <widget type="combo" version="2.0.0">
     <name>Combo Box</name>
-    <pv_name>$(P)-$(S):$(V):cOn.OMSL</pv_name>
+    <pv_name>$(P)-$(S):$(V):cAuto</pv_name>
     <x>98</x>
     <y>75</y>
     <width>127</width>
