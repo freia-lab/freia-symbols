@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-11-12 15:09:36 by konrad-->
+<!--Saved on 2025-01-10 14:03:57 by konrad-->
 <display version="2.0.0">
   <name>$(Heater1)</name>
   <width>480</width>
@@ -74,7 +74,7 @@
     <x>77</x>
     <y>31</y>
     <width>175</width>
-    <height>23</height>
+    <height>22</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="17.0">
       </font>
@@ -148,8 +148,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_7</name>
     <text>Lower limit [K]:</text>
-    <x>54</x>
-    <y>274</y>
+    <x>58</x>
+    <y>291</y>
     <width>102</width>
     <height>21</height>
     <vertical_alignment>1</vertical_alignment>
@@ -164,8 +164,8 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template</name>
     <pv_name>$(Heater1):cLL</pv_name>
-    <x>179</x>
-    <y>273</y>
+    <x>183</x>
+    <y>290</y>
     <width>56</width>
     <height>21</height>
     <precision>1</precision>
@@ -187,8 +187,8 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_1</name>
     <pv_name>$(Heater1):cHL</pv_name>
-    <x>179</x>
-    <y>243</y>
+    <x>183</x>
+    <y>260</y>
     <width>56</width>
     <height>21</height>
     <precision>1</precision>
@@ -311,8 +311,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_9</name>
     <text>Upper limit [K]:</text>
-    <x>54</x>
-    <y>244</y>
+    <x>58</x>
+    <y>261</y>
     <width>102</width>
     <height>21</height>
     <vertical_alignment>1</vertical_alignment>
@@ -327,8 +327,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_1</name>
     <pv_name>$(Heater1):sHL</pv_name>
-    <x>259</x>
-    <y>245</y>
+    <x>263</x>
+    <y>262</y>
     <width>60</width>
     <height>17</height>
     <precision>1</precision>
@@ -343,8 +343,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_2</name>
     <pv_name>$(Heater1):sLL</pv_name>
-    <x>259</x>
-    <y>275</y>
+    <x>263</x>
+    <y>292</y>
     <width>60</width>
     <height>17</height>
     <precision>1</precision>
@@ -510,6 +510,7 @@ $(pv_value)</tooltip>
       <text>Heater</text>
       <x>8</x>
       <width>43</width>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="15.0">
         </font>
@@ -538,6 +539,7 @@ $(pv_value)</tooltip>
       <x>3</x>
       <y>15</y>
       <width>53</width>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="15.0">
         </font>
@@ -600,6 +602,49 @@ $(pv_value)</tooltip>
     </foreground_color>
     <line_color>
       <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_11</name>
+    <text>External Cmd On</text>
+    <x>12</x>
+    <y>220</y>
+    <width>113</width>
+    <height>21</height>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <tooltip>Forces Heater element ON
+when HtrCmd is ON</tooltip>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template_4</name>
+    <pv_name>$(Heater1):sExtCmd</pv_name>
+    <bit>0</bit>
+    <x>164</x>
+    <y>223</y>
+    <off_color>
+      <color name="RED" red="252" green="13" blue="27">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="GRAY" red="169" green="169" blue="169">
       </color>
     </line_color>
     <actions>
