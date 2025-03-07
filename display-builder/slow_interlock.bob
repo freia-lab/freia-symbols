@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(P)</name>
+  <width>330</width>
+  <height>395</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_visible>false</grid_visible>
+  <widget type="group" version="2.0.0">
+    <name>Panel 2</name>
+    <x>10</x>
+    <y>58</y>
+    <width>311</width>
+    <height>280</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor Template</name>
+      <pv_name>$(P):sInp</pv_name>
+      <y>36</y>
+      <width>26</width>
+      <height>199</height>
+      <horizontal>false</horizontal>
+      <off_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor Template_1</name>
+      <pv_name>$(P):sLatched</pv_name>
+      <x>35</x>
+      <y>36</y>
+      <width>26</width>
+      <height>199</height>
+      <horizontal>false</horizontal>
+      <off_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P):cmdReset</pv_name>
+      <text>Reset</text>
+      <y>238</y>
+      <width>80</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_1</name>
+      <pv_name>$(P):sOutput</pv_name>
+      <bit>0</bit>
+      <x>183</x>
+      <y>1</y>
+      <width>106</width>
+      <height>36</height>
+      <off_label>ITLK OPEN</off_label>
+      <off_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>ITLK CLOSED</on_label>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Menu Button Template</name>
+      <pv_name>$(P):cNoLatch</pv_name>
+      <x>181</x>
+      <y>238</y>
+      <width>125</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template</name>
+      <text>Inp</text>
+      <x>1</x>
+      <y>15</y>
+      <width>18</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor Template_2</name>
+      <pv_name>$(P):sMask</pv_name>
+      <x>75</x>
+      <y>36</y>
+      <width>26</width>
+      <height>199</height>
+      <horizontal>false</horizontal>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template</name>
+      <pv_name>$(P):cMask</pv_name>
+      <label>n.u.</label>
+      <x>106</x>
+      <y>204</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <expression>pvStr0</expression>
+          </exp>
+          <pv_name>$(P):sInp-B0</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_1</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>1</bit>
+      <label>n.u.</label>
+      <x>106</x>
+      <y>180</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <expression>pvStr0</expression>
+          </exp>
+          <pv_name>$(P):sInp-B1</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_2</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>2</bit>
+      <label>n.u.</label>
+      <x>106</x>
+      <y>156</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <expression>pvStr0</expression>
+          </exp>
+          <pv_name>$(P):sInp-B2</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_3</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>3</bit>
+      <label>n.u.</label>
+      <x>106</x>
+      <y>132</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <expression>pvStr0</expression>
+          </exp>
+          <pv_name>$(P):sInp-B3</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_4</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>4</bit>
+      <label>n.u.</label>
+      <x>106</x>
+      <y>108</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <expression>pvStr0</expression>
+          </exp>
+          <pv_name>$(P):sInp-B4</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_5</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>5</bit>
+      <label>n.u.</label>
+      <x>106</x>
+      <y>84</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <expression>pvStr0</expression>
+          </exp>
+          <pv_name>$(P):sInp-B5</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_6</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>6</bit>
+      <label>n.u.</label>
+      <x>106</x>
+      <y>60</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <expression>pvStr0</expression>
+          </exp>
+          <pv_name>$(P):sInp-B6</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box Template_7</name>
+      <pv_name>$(P):cMask</pv_name>
+      <bit>7</bit>
+      <label>n.u.</label>
+      <x>106</x>
+      <y>36</y>
+      <width>200</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <expression>pvStr0</expression>
+          </exp>
+          <pv_name>$(P):sInp-B7</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template</name>
+      <pv_name>$(P):sNoLatch</pv_name>
+      <bit>0</bit>
+      <x>132</x>
+      <y>240</y>
+      <width>36</width>
+      <height>36</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_2</name>
+      <text>Latched</text>
+      <x>23</x>
+      <y>15</y>
+      <width>44</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_1</name>
+      <text>Mask</text>
+      <x>74</x>
+      <y>15</y>
+      <width>28</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(P)</text>
+    <x>10</x>
+    <width>292</width>
+    <height>31</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>$(DESC)</text>
+    <x>10</x>
+    <y>30</y>
+    <width>292</width>
+    <height>26</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="15.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>
