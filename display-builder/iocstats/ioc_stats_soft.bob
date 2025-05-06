@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2025-05-06 16:52:42 by konrad-->
 <display version="2.0.0">
   <name>ioc_stats_soft</name>
   <x>903</x>
   <y>166</y>
-  <width>542</width>
+  <width>850</width>
   <height>520</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
@@ -1239,7 +1240,29 @@ Access Configuration File for $(ioc)?</confirm_message>
     <name>Meter</name>
     <x>830</x>
     <y>405</y>
-    <width>0</width>
-    <height>0</height>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Module "$(modName)" Version:</text>
+    <x>255</x>
+    <y>29</y>
+    <width>210</width>
+    <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(ioc):$(modName)Version</pv_name>
+    <x>470</x>
+    <y>29</y>
+    <width>60</width>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <file>ioc_stats_plus.bob</file>
+    <x>542</x>
+    <width>308</width>
+    <height>519</height>
   </widget>
 </display>
