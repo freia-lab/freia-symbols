@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-07-06 08:06:34 by dev-->
+<!--Saved on 2025-11-20 17:18:52 by marek-->
 <display version="2.0.0">
   <name>ENV: $(IOC)</name>
   <width>550</width>
   <height>588</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
-    <class>TITLE</class>
+    <class>GROUP-TITLE</class>
     <text>ENV: $(IOC)</text>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
-    <width>550</width>
-    <height>31</height>
+    <x>20</x>
+    <width>520</width>
+    <height use_class="true">30</height>
     <font use_class="true">
-      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color name="GROUP-TEXT" red="25" green="25" blue="25">
       </color>
     </foreground_color>
-    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
   </widget>
   <widget type="template" version="2.0.0">
     <name>Template/Instance</name>
@@ -144,7 +145,7 @@
     </instances>
     <x>20</x>
     <y>36</y>
-    <width>459</width>
+    <width>522</width>
     <height>552</height>
     <gap>0</gap>
   </widget>

@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-05-17 09:46:41 by dev-->
+<!--Saved on 2025-11-27 16:36:32 by marek-->
 <display version="2.0.0">
   <name>NIC: $(IOC) $(NIC)</name>
   <macros>
     <P>$(IOC):NET:$(NIC)</P>
   </macros>
-  <width>550</width>
+  <width>520</width>
   <height>160</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
-    <class>TITLE</class>
-    <text>NIC: $(IOC) $(NIC)</text>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
-    <width>550</width>
-    <height>30</height>
+    <class>GROUP-TITLE</class>
+    <text>NIC: $(IOC) : $(NIC)</text>
+    <x>20</x>
+    <width>500</width>
+    <height use_class="true">30</height>
     <font use_class="true">
-      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color name="GROUP-TEXT" red="25" green="25" blue="25">
       </color>
     </foreground_color>
-    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">1</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_20</name>
@@ -35,9 +36,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_17</name>
     <pv_name>$(P):NAME</pv_name>
-    <x>90</x>
+    <x>75</x>
     <y>35</y>
-    <width>140</width>
+    <width>160</width>
     <format>6</format>
   </widget>
   <widget type="label" version="2.0.0">
