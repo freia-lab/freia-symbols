@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-12-03 13:03:09 by marek-->
+<!--Saved on 2025-12-03 13:42:10 by marek-->
 <display version="2.0.0">
   <name>IOC: $(IOC)</name>
   <width>540</width>
-  <height>700</height>
+  <height>720</height>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>GROUP-TITLE</class>
