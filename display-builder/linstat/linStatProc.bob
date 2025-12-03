@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-12-03 12:58:31 by marek-->
+<!--Saved on 2025-12-03 13:03:09 by marek-->
 <display version="2.0.0">
   <name>IOC: $(IOC)</name>
   <width>540</width>
@@ -701,7 +701,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update</name>
-    <pv_name>$(ioc):CBLOW_Q_USEDPER</pv_name>
+    <pv_name>$(IOC):CBLOW_Q_USEDPER</pv_name>
     <x>445</x>
     <y>510</y>
     <width>70</width>
@@ -717,7 +717,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_1</name>
-    <pv_name>$(ioc):CBLOW_Q_USED</pv_name>
+    <pv_name>$(IOC):CBLOW_Q_USED</pv_name>
     <x>445</x>
     <y>535</y>
     <width>70</width>
@@ -769,7 +769,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_2</name>
-    <pv_name>$(ioc):CBLOW_Q_HIGHPER</pv_name>
+    <pv_name>$(IOC):CBLOW_Q_HIGHPER</pv_name>
     <x>445</x>
     <y>560</y>
     <width>70</width>
@@ -785,7 +785,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_3</name>
-    <pv_name>$(ioc):CBLOW_Q_HIGH</pv_name>
+    <pv_name>$(IOC):CBLOW_Q_HIGH</pv_name>
     <x>445</x>
     <y>585</y>
     <width>70</width>
@@ -837,7 +837,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_5</name>
-    <pv_name>$(ioc):CBLOW_Q_OVERRUNS</pv_name>
+    <pv_name>$(IOC):CBLOW_Q_OVERRUNS</pv_name>
     <x>445</x>
     <y>610</y>
     <width>70</width>
@@ -853,7 +853,7 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_37</name>
-    <text>$(ioc):</text>
+    <text>$(IOC):</text>
     <x>20</x>
     <y>35</y>
     <width>200</width>
@@ -877,7 +877,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_38</name>
     <text>Module "$(modName)" Version:</text>
-    <x>240</x>
+    <x>220</x>
     <y>35</y>
     <width>210</width>
     <height>25</height>
@@ -885,10 +885,10 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_30</name>
-    <pv_name>$(ioc):$(modName)Version</pv_name>
-    <x>460</x>
+    <pv_name>$(IOC):$(modName)Version</pv_name>
+    <x>450</x>
     <y>35</y>
-    <width>65</width>
+    <width>75</width>
     <height>25</height>
   </widget>
 </display>
