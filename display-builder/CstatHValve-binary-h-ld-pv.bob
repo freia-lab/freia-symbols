@@ -20,13 +20,16 @@
     <y>3</y>
     <width>20</width>
     <height>15</height>
+    <tooltip>$(pv_name)
+$(pv_value)
+$(actions)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_9</name>
     <text>$(V)</text>
     <y>16</y>
     <width>32</width>
-    <height>10</height>
+    <height>14</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="12.0">
       </font>
@@ -41,6 +44,7 @@
     <name>Action Button_8</name>
     <actions>
       <action type="open_display">
+        <description>Open Display</description>
         <file>CmdPanels/LocBinaryOnOff.bob</file>
         <macros>
           <v_name>$(P)-$(S):$(V)</v_name>
