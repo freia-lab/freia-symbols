@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-01-02 14:48:53 by konrad-->
 <display version="2.0.0">
   <name>cvalve-v-ll</name>
   <width>55</width>
@@ -62,7 +61,7 @@ $(actions)</tooltip>
       <x>20</x>
       <y>30</y>
       <width>35</width>
-      <height>11</height>
+      <height>14</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="12.0">
         </font>
@@ -99,12 +98,12 @@ $(actions)</tooltip>
       <name>Action Button_9</name>
       <actions>
         <action type="open_display">
+          <description>Open Display</description>
           <file>CmdPanels/CstatH-Cvalve.bob</file>
           <macros>
             <Cvalve>$(P)-$(S):$(V)</Cvalve>
           </macros>
           <target>standalone</target>
-          <description>Open Display</description>
         </action>
       </actions>
       <text></text>
